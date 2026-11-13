@@ -46,6 +46,11 @@ def main():
         print(f"\n=== Feld: {FIELDS[field_key]['label']} ===")
         raw_list, seen_urls, searches = research_field(client, field_key, known_domains)
         kept = 0
+        print(f"  Gesehene Ergebnis-URLs: {len(seen_urls)}")
+        if os.environ.get("DEBUG"):
+            for u in sorted(seen_urls):
+                print("    URL:", u)
+            print("  Rohdaten:", json.dumps(raw_list, ensure_ascii=False)[:6000])
         for raw in raw_list:
             entry, removed = check_startup(raw, seen_urls, field_key)
             if entry:
