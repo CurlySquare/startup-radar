@@ -49,6 +49,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--modus", choices=["testlauf", "vollstaendig"], default="testlauf")
     parser.add_argument("--felder", default="alle", help="z. B. retail,food oder alle")
+    parser.add_argument("--themen", choices=["woche", "alle"], default="woche",
+                        help="woche = ein Unterthema pro Feld (Rotation), alle = alle Unterthemen (Auffüllen)")
     args = parser.parse_args()
 
     today = datetime.date.today().isoformat()
@@ -56,14 +58,22 @@ def main():
     db = load_db()
     for m in dedupe_existing(db, today):
         print(f"Bestehendes Duplikat zusammengeführt: {m}")
-    known_domains = {domain_of(s.get("website")) for s in db["startups"] if s.get("website")}
+    known = {domain_of(s.get("website")) or s["name"] for s in db["startups"]} | \
+            {domain_of(x.get("website")) or x["name"] for x in db.get("excluded", []) if x.get("hard")}
+    week = datetime.date.fromisoformat(today).isocalendar()[1]
     client = anthropic.Anthropic()  # liest ANTHROPIC_API_KEY aus der Umgebung
 
     # --- 1 + 2: recherchieren und Quellen prüfen ---
     checked, report = [], []
+    tasks = []
     for field_key in fields:
-        print(f"\n=== Feld: {FIELDS[field_key]['label']} ===")
-        raw_list, seen_urls, searches = research_field(client, field_key, known_domains)
+        subs = FIELDS[field_key]["subtopics"]
+        chosen = subs if args.themen == "alle" else [subs[week % len(subs)]]
+        tasks += [(field_key, t) for t in chosen]
+
+    for field_key, subtopic in tasks:
+        print(f"\n=== Feld: {FIELDS[field_key]['label']} · Unterthema: {subtopic} ===")
+        raw_list, seen_urls, searches = research_field(client, field_key, known, subtopic)
         print(f"  Gesehene Ergebnis-URLs: {len(seen_urls)}")
         if os.environ.get("DEBUG") == "true":
             for u in sorted(seen_urls):
@@ -80,7 +90,9 @@ def main():
             else:
                 name = raw.get("name", "?") if isinstance(raw, dict) else "?"
                 print(f"  ✘ {name} verworfen: keine belegte Beschreibung; {'; '.join(removed)}")
-        report.append({"field": field_key, "searches": searches, "found": len(raw_list), "kept": kept})
+        report.append({"field": field_key, "subtopic": subtopic, "searches": searches,
+                       "found": len(raw_list), "kept": kept})
+        known |= {domain_of(e.get("website")) or e["name"] for e in checked}
 
     # --- 2b: Startup-Prüfung nach EU-Definition ---
     print("\n=== Startup-Prüfung (EU 2026/720) ===")

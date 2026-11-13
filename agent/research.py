@@ -76,28 +76,29 @@ Regeln, die immer gelten:
 7. Gib immer die offizielle Website an (Startseite, z. B. https://firma.de). Sie ist von Regel 1 ausgenommen, weil das System sie selbst aufruft und prüft. Nur null, wenn du die Adresse wirklich nicht kennst."""
 
 
-def _user_prompt(field_key, known_domains, today):
+def _user_prompt(field_key, known, today, subtopic):
     field = FIELDS[field_key]
-    known = ", ".join(sorted(known_domains)) if known_domains else "keine"
+    known = ", ".join(sorted(known)) if known else "keine"
     return f"""Heute ist der {today}.
 
 Recherchiere bis zu {MAX_STARTUPS_PER_FIELD} relevante Startups im Feld "{field['label']}".
-Schwerpunkt: {field['focus']}.
+Unterthema dieser Suche: {subtopic}.
+(Das Feld umfasst allgemein: {field['focus']}.)
 
 Bevorzuge Startups mit aktuellen Meldungen (Finanzierungsrunde, Produktstart, Pilotprojekt mit Händlern oder Herstellern, Auszeichnung) aus den letzten acht Wochen. Europa hat Vorrang, weltweit ist erlaubt.
 
-Bereits in der Datenbank (Domains): {known}
-Diese nur aufnehmen, wenn du neue, belegte Informationen gefunden hast.
+Bereits bekannt (Namen bzw. Domains): {known}
+Suche bevorzugt nach Startups, die hier noch nicht stehen. Bekannte nur aufnehmen, wenn du neue, belegte Informationen gefunden hast.
 
 Erlaubte Finanzierungsphasen: {", ".join(FUNDING_STAGES)}.
 
 Wenn du fertig bist, rufe das Werkzeug "startups_speichern" auf."""
 
 
-def research_field(client, field_key, known_domains):
-    """Recherchiert ein Feld. Rückgabe: (Rohliste, gesehene URLs, Anzahl Suchen)."""
+def research_field(client, field_key, known, subtopic):
+    """Recherchiert ein Unterthema eines Felds. Rückgabe: (Rohliste, gesehene URLs, Anzahl Suchen)."""
     today = datetime.date.today().isoformat()
-    messages = [{"role": "user", "content": _user_prompt(field_key, known_domains, today)}]
+    messages = [{"role": "user", "content": _user_prompt(field_key, known, today, subtopic)}]
     seen_urls, searches, result = set(), 0, None
 
     for _ in range(6):  # Sicherheitsgrenze gegen Endlosschleifen
