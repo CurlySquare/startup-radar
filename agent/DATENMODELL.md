@@ -30,7 +30,7 @@ Diese Datei ist die verbindliche Grundlage für den Agenten und die Website.
   "founded":       { "value": 2021,       "source": "https://..." },
   "funding_stage": { "value": "Series A", "source": "https://..." },
   "maturity": { "score": 3, "reason": "Zahlende Kunden im DACH-Raum, Series-A-Finanzierung." },
-  "fit":      { "score": 4, "reason": "Adressiert Filialbelieferung, ein Kernprozess im Handel." },
+  "fit":      { "score": 4, "areas": ["logistics", "retail"], "reason": "Optimiert die Filialbelieferung, einen Kernprozess; in einer Region pilotierbar." },
   "sources": ["https://...", "https://..."],
   "first_seen": "2026-11-16",
   "last_updated": "2026-11-16",
@@ -43,14 +43,14 @@ Diese Datei ist die verbindliche Grundlage für den Agenten und die Website.
 
 ### Feste Wertelisten
 
-**`field`** (Feld):
-| Schlüssel | Anzeige |
-|---|---|
-| `retail` | Retail-Tech / Handel |
-| `logistics` | Logistik & Supply Chain |
-| `circular` | Kreislaufwirtschaft / Recycling |
-| `food` | Food-Tech / Produktion |
-| `cloud_ai` | Cloud / Cyber Security / Data & AI |
+**`field`** (Feld). Jedes Feld entspricht einer Sparte des Bezugskonzerns (siehe „Bezugsprofil“):
+| Schlüssel | Anzeige | Bezug im Konzern |
+|---|---|---|
+| `retail` | Retail-Tech / Handel | Lebensmittel-Filialhandel und Online-Marktplatz |
+| `food` | Food-Tech / Produktion | Eigenproduktion von Lebensmitteln, Getränken und Verpackungen für die Eigenmarken |
+| `circular` | Kreislaufwirtschaft / Recycling | Entsorgung, Sortierung, Recycling und Wertstoffhandel |
+| `cloud_ai` | Cloud / Cyber Security / Data & AI | Souveräne europäische Cloud, Cyber Security, Daten und KI |
+| `logistics` | Logistik & Supply Chain | Querschnittsfunktion: Warenfluss von Lieferanten und eigenen Werken über Lager zu den Filialen |
 
 **`funding_stage`** (Finanzierungsphase): `Pre-Seed`, `Seed`, `Series A`, `Series B`, `Series C+`, `Bootstrapped`, `Öffentlich gefördert`, `Übernommen`, `Börsennotiert`, oder `null` (unbekannt).
 
@@ -72,15 +72,34 @@ Feste Stufenbeschreibungen sorgen dafür, dass Bewertungen über Wochen vergleic
 
 ### Strategischer Fit (1–5)
 
-Bezugspunkt: ein großer europäischer Handels- und Digitalkonzern mit Lebensmittelhandel, eigener Produktion, Logistik, Entsorgung/Recycling sowie Cloud- und Security-Geschäft.
+#### Bezugsprofil
 
-| Stufe | Beschreibung |
-|---|---|
-| 1 | Kein erkennbarer Bezug zu den Geschäftsfeldern |
-| 2 | Indirekter Bezug oder Nischenanwendung |
-| 3 | Klarer Anwendungsfall in einem Geschäftsbereich |
-| 4 | Löst ein relevantes Problem in einem Kernprozess (z. B. Filiale, Lager, Lieferkette, Rücknahme), pilotfähig |
-| 5 | Hebelwirkung über mehrere Bereiche, auf Konzernebene skalierbar, passt zu europäischen Anforderungen (z. B. Datenschutz, Datensouveränität) |
+Bewertet wird der Fit für einen großen europäischen Handels- und Digitalkonzern mit fünf Sparten:
+
+1. **Handel:** zwei Lebensmittel-Handelsketten mit über 14.000 Filialen in über 30 Ländern sowie ein Online-Marktplatz
+2. **Produktion:** eigene Werke für Lebensmittel, Getränke und Verpackungen der Eigenmarken
+3. **Kreislaufwirtschaft:** Entsorgung, Sortierung und Recycling, auch für externe Kunden
+4. **Digital:** souveräne europäische Cloud, Cyber Security, KI und IT-Dienste, auch für externe Kunden
+5. **Logistik:** Querschnittsfunktion über alle Sparten hinweg
+
+Im Eintrag wird unter `fit.areas` festgehalten, welche Sparten betroffen sind (`retail`, `food`, `circular`, `cloud_ai`, `logistics`).
+
+#### Stufen
+
+| Stufe | Bezeichnung | Kriterium |
+|---|---|---|
+| 1 | Kein Bezug | Kein Anwendungsfall in einer der fünf Sparten erkennbar |
+| 2 | Randbezug | Anwendungsfall nur in einer Unterstützungsfunktion (z. B. Personal, allgemeines Marketing) oder einer Nische, ohne Bezug zu einem Kernprozess |
+| 3 | Sparten-Fit | Konkreter Anwendungsfall in genau einer Sparte, z. B. in der Filiale, im Werk, in der Sortieranlage, im Rechenzentrum oder im Lager |
+| 4 | Kernprozess-Fit | Adressiert einen Kernprozess einer Sparte mit messbarem Hebel (Kosten, Warenverfügbarkeit, Recyclingquote, Sicherheitsniveau) und ist kurzfristig pilotierbar, z. B. in einzelnen Filialen, Werken oder Ländern |
+| 5 | Konzern-Fit | Nutzen in mindestens zwei Sparten oder als gemeinsame Plattform; skalierbar auf tausende Standorte in vielen Ländern; vereinbar mit europäischer Datensouveränität |
+
+#### Prüffragen für die Begründung
+
+- Welche Sparte(n) profitieren, und in welchem Prozess?
+- Welcher Hebel ist messbar (Kosten, Verfügbarkeit, Quote, Risiko)?
+- Lässt es sich klein pilotieren und dann auf viele Standorte übertragen?
+- Gibt es Hürden (z. B. Datenschutz, außereuropäische Datenhaltung, Abhängigkeit von einem Anbieter)?
 
 ## Ein Briefing-Eintrag
 
