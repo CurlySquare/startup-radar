@@ -8,7 +8,7 @@ Modell, Suchbudget und die fünf Recherchefelder.
 MODEL = "claude-sonnet-5-5"
 
 # Kostenbremse: maximale Websuchen pro Feld und Lauf
-MAX_SEARCHES_PER_FIELD = 4
+MAX_SEARCHES_PER_FIELD = 5
 
 # Wie viele Startups pro Feld und Lauf höchstens aufgenommen werden
 MAX_STARTUPS_PER_FIELD = 5
@@ -50,3 +50,12 @@ FUNDING_STAGES = [
     "Pre-Seed", "Seed", "Series A", "Series B", "Series C+",
     "Bootstrapped", "Öffentlich gefördert", "Übernommen", "Börsennotiert",
 ]
+
+# Startup-Definition nach EU-Empfehlung 2026/720 ("innovatives Startup")
+STARTUP_MAX_AGE_YEARS = 10      # weniger als 10 Jahre seit Registrierung
+STARTUP_MAX_EMPLOYEES = 100     # weniger als 100 Beschäftigte
+# (Umsatz/Bilanz max. 10 Mio. € und Innovation: siehe agent/eligibility.py)
+
+# Nachrecherche fehlender Kriterien (Gründungsjahr usw.)
+VERIFY_BATCH_SIZE = 4
+MAX_SEARCHES_PER_VERIFY = 5

@@ -13,6 +13,9 @@ import requests
 
 from config import FUNDING_STAGES
 
+# Alle Faktenangaben mit Quellenpflicht
+FACT_KEYS = ("description", "country", "founded", "funding_stage", "employees", "parent_company")
+
 
 def normalize_url(url):
     """Vereinheitlicht eine URL, damit gleiche Links als gleich erkannt werden.
@@ -61,6 +64,10 @@ def _fact_ok(key, value):
         return value in FUNDING_STAGES
     if key == "description":
         return isinstance(value, str) and len(value) >= 20
+    if key == "employees":
+        return isinstance(value, int) and value > 0
+    if key == "parent_company":
+        return isinstance(value, str) and len(value.strip()) >= 2
     return True
 
 
@@ -88,7 +95,7 @@ def check_startup(raw, seen_urls, field_key):
     name = (raw.get("name") or "").strip()
     entry = {"name": name, "field": field_key}
 
-    for key in ("description", "country", "founded", "funding_stage"):
+    for key in FACT_KEYS:
         fact = _as_dict(raw.get(key))
         value, source = fact.get("value"), fact.get("source")
         if _fact_ok(key, value) and normalize_url(source) in seen_urls:
@@ -107,10 +114,18 @@ def check_startup(raw, seen_urls, field_key):
         if raw.get("website"):
             removed.append("website")
 
-    entry["sources"] = sorted({entry[k]["source"] for k in ("description", "country", "founded", "funding_stage")
-                               if entry[k]["source"]})
+    entry["sources"] = sorted({entry[k]["source"] for k in FACT_KEYS if entry[k]["source"]})
 
     # Ohne belegte Beschreibung ist ein Eintrag wertlos und wird verworfen.
     if not name or entry["description"]["value"] is None:
         return None, removed
     return entry, removed
+
+
+def check_fact(key, fact, seen_urls):
+    """Prüft eine einzelne Angabe (für die Nachrecherche). Rückgabe: Angabe oder None."""
+    fact = _as_dict(fact)
+    value, source = fact.get("value"), fact.get("source")
+    if _fact_ok(key, value) and normalize_url(source) in seen_urls:
+        return {"value": value, "source": source}
+    return None

@@ -3,6 +3,8 @@
 Ablauf:
   1. recherchieren   (research.py)  Websuche pro Feld
   2. Quellen prüfen  (sources.py)   nur belegte Angaben bleiben
+     + Startup-Prüfung (verify.py, eligibility.py): EU-Definition 2026/720,
+       fehlende Kriterien (z. B. Gründungsjahr) werden gezielt nachrecherchiert
   3. abgleichen      (merge.py)     Duplikate erkennen, Einträge aktualisieren
   4. bewerten        (rate.py)      Reifegrad + Fit für neue/geänderte Einträge
   5. speichern                      docs/data/startups.json
@@ -21,10 +23,12 @@ import anthropic
 
 from briefing import make_briefing
 from config import FIELDS
-from merge import dedupe_existing, merge
+from eligibility import check_eligibility
+from merge import dedupe_existing, is_same, merge
 from rate import rate_entries
 from research import research_field
-from sources import check_startup, domain_of
+from sources import FACT_KEYS, check_startup, domain_of
+from verify import verify_entries
 
 DATA_FILE = "docs/data/startups.json"
 BRIEFING_FILE = "docs/data/briefings.json"
@@ -78,8 +82,56 @@ def main():
                 print(f"  ✘ {name} verworfen: keine belegte Beschreibung; {'; '.join(removed)}")
         report.append({"field": field_key, "searches": searches, "found": len(raw_list), "kept": kept})
 
+    # --- 2b: Startup-Prüfung nach EU-Definition ---
+    print("\n=== Startup-Prüfung (EU 2026/720) ===")
+    db.setdefault("excluded", [])
+    for s_ in db["startups"]:  # ältere Einträge auf das erweiterte Datenmodell bringen
+        for key in FACT_KEYS:
+            s_.setdefault(key, {"value": None, "source": None})
+    hard_excluded = [x for x in db["excluded"] if x.get("hard")]
+    before = len(checked)
+    checked = [c for c in checked if not any(is_same(c, x) for x in hard_excluded)]
+    if before != len(checked):
+        print(f"  {before - len(checked)} bereits ausgeschlossene Kandidaten übersprungen")
+    for i, c in enumerate(checked):
+        c["id"] = f"kandidat-{i + 1}"  # vorläufige ID für die Nachrecherche
+    gaps = [c for c in checked if c["founded"]["value"] is None] + \
+           [s_ for s_ in db["startups"] if s_["founded"]["value"] is None or "startup_check" not in s_]
+    print(f"  Nachrecherche für {len(gaps)} Einträge …")
+    verify_entries(client, gaps)
+
+    eligible = []
+    for c in checked:
+        ok, hard, result = check_eligibility(c, today)
+        c["startup_check"] = result
+        if ok:
+            eligible.append(c)
+        else:
+            print(f"  ✘ {c['name']}: kein Startup nach EU-Definition ({result['age']}; {result['independent']}; {result['size']})")
+            if hard:
+                db["excluded"].append({"name": c["name"], "website": c.get("website"), "sources": c["sources"],
+                                       "reason": result, "hard": True, "date": today})
+    for c in eligible:
+        del c["id"]
+
     # --- 3: abgleichen ---
-    new, updated, filled = merge(db, checked, today)
+    new, updated, filled = merge(db, eligible, today)
+
+    # Bestand erneut prüfen (z. B. neues Gründungsjahr, Übernahme, Wachstum über 100 Beschäftigte)
+    kept = []
+    for s_ in db["startups"]:
+        ok, hard, result = check_eligibility(s_, today)
+        s_["startup_check"] = result
+        if ok:
+            kept.append(s_)
+        else:
+            print(f"  ✘ Aus dem Radar entfernt: {s_['name']} ({result['age']}; {result['independent']}; {result['size']})")
+            db["excluded"].append({"name": s_["name"], "website": s_.get("website"), "sources": s_["sources"],
+                                   "reason": result, "hard": hard, "date": today})
+            for lst in (new, updated, filled):
+                if s_ in lst:
+                    lst.remove(s_)
+    db["startups"] = kept
     print(f"\n=== Abgleich ===\n  neu: {len(new)} | neue Finanzierungsphase: {len(updated)} | "
           f"Angaben ergänzt: {len(filled)} | "
           f"ohne Änderung: {len(checked) - len(new) - len(updated) - len(filled)}")

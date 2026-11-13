@@ -6,11 +6,11 @@ Das ist reiner Code (deterministisch): gleiche Eingabe, gleiches Ergebnis.
 """
 import re
 
-from sources import domain_of
+from sources import FACT_KEYS, domain_of
 
-FACT_KEYS = ("description", "country", "founded", "funding_stage")
 LABELS = {"description": "Beschreibung", "country": "Land", "founded": "Gründungsjahr",
-          "funding_stage": "Finanzierungsphase", "website": "Website"}
+          "funding_stage": "Finanzierungsphase", "website": "Website",
+          "employees": "Beschäftigte", "parent_company": "Mutterunternehmen"}
 
 # Rechtsformen werden beim Namensvergleich ignoriert ("Beispiel GmbH" = "Beispiel")
 LEGAL_FORMS = r"\b(gmbh|ag|se|ug|kg|inc|ltd|llc|limited|corp|co|sas|sa|sarl|srl|spa|bv|nv|oy|ab|as|aps|plc)\b\.?"
@@ -68,7 +68,7 @@ def dedupe_existing(db, today):
             kept.append(s)
             continue
         for key in FACT_KEYS:
-            if target[key]["value"] is None and s[key]["value"] is not None:
+            if target.get(key, {}).get("value") is None and s.get(key, {}).get("value") is not None:
                 target[key] = s[key]
         target["website"] = target.get("website") or s.get("website")
         target["sources"] = sorted(set(target["sources"]) | set(s["sources"]))
@@ -110,7 +110,7 @@ def merge(db, checked_entries, today):
 
         changes, material = [], False
         for key in FACT_KEYS:
-            new_fact, old = entry[key], match[key]["value"]
+            new_fact, old = entry[key], match.get(key, {}).get("value")
             if new_fact["value"] is None or new_fact["value"] == old:
                 continue
             if old is None:
@@ -120,7 +120,10 @@ def merge(db, checked_entries, today):
                 changes.append(f"{LABELS[key]}: {old} → {new_fact['value']}")
                 match[key] = new_fact
                 material = True
-            elif key in ("country", "founded"):
+            elif key == "employees":
+                changes.append(f"{LABELS[key]}: {old} → {new_fact['value']}")
+                match[key] = new_fact
+            elif key in ("country", "founded", "parent_company"):
                 # Widerspruch zwischen Quellen: alten Wert behalten, aber protokollieren
                 changes.append(f"{LABELS[key]}: abweichende Quelle ({new_fact['value']}), bisheriger Wert beibehalten")
         if entry.get("website") and not match.get("website"):

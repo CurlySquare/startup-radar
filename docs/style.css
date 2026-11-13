@@ -73,6 +73,9 @@ p { margin: 0 0 1em; }
 .signature { font-style: italic; color: var(--ink-2); }
 .notice { font-size: .9rem; background: var(--ai-soft); border-left: 4px solid var(--ai); padding: 10px 14px; border-radius: 6px; margin: 16px 0 0; }
 
+.def-startup { font-size: .92rem; color: var(--ink-2); background: var(--accent-soft); border-radius: 8px; padding: 10px 14px; max-width: 52em; }
+.check { background: var(--accent-soft); border-radius: 6px; padding: 8px 10px; }
+
 /* Abschnitte */
 .section { padding: 48px 0; }
 .section-alt { background: var(--bg-alt); }

@@ -45,8 +45,10 @@ SAVE_TOOL = {
                         "country": _fact({"type": ["string", "null"], "description": "ISO-Ländercode des Hauptsitzes, z. B. DE"}),
                         "founded": _fact({"type": ["integer", "null"]}),
                         "funding_stage": _fact({"anyOf": [{"type": "string", "enum": FUNDING_STAGES}, {"type": "null"}]}),
+                        "employees": _fact({"type": ["integer", "null"], "description": "Zahl der Beschäftigten laut Quelle, sonst null"}),
+                        "parent_company": _fact({"type": ["string", "null"], "description": "Unternehmen (kein Investor), das das Startup übernommen hat oder mehrheitlich besitzt; null, wenn es keine Hinweise gibt"}),
                     },
-                    "required": ["name", "website", "description", "country", "founded", "funding_stage"],
+                    "required": ["name", "website", "description", "country", "founded", "funding_stage", "employees", "parent_company"],
                     "additionalProperties": False,
                 },
             }
@@ -62,7 +64,13 @@ Regeln, die immer gelten:
 1. Keine Angabe ohne Quelle. Jeder Wert braucht als "source" eine URL, die du in deinen Suchergebnissen gesehen hast und die den Wert tatsächlich belegt.
 2. Was du nicht belegen kannst, setzt du auf null (Wert und Quelle). Niemals schätzen oder aus dem Gedächtnis ergänzen.
 3. Nur öffentliche Unternehmensinformationen. Keine Namen oder Daten von Personen (auch nicht von Gründer:innen).
-4. Nur echte Startups: eigenständige junge Unternehmen (in der Regel nach 2012 gegründet), keine Konzerne, Beratungen oder Agenturen.
+4. Nur Startups nach der EU-Definition für innovative Startups (Empfehlung 2026/720):
+   - weniger als 10 Jahre seit der Gründung,
+   - eigenständig: kein Konzern oder anderes Unternehmen als Mutter (Beteiligungen von Wagniskapitalgebern sind erlaubt),
+   - weniger als 100 Beschäftigte und höchstens 10 Mio. € Umsatz,
+   - mit einem neuen oder deutlich verbesserten Produkt oder Verfahren.
+   Keine Konzerne, Tochterfirmen, Beratungen oder Agenturen.
+   Das Gründungsjahr ist Pflicht: Suche gezielt danach und belege es. Ohne belegtes Gründungsjahr wird ein Startup verworfen.
 5. Beschreibungen sachlich, auf Deutsch, ohne Werbesprache. Sie sagen konkret, was das Startup anbietet und für wen.
 6. Nimm ein Startup nur auf, wenn du sein Angebot konkret beschreiben kannst. Keine Platzhalter wie "Details noch nicht belegt".
 7. Gib immer die offizielle Website an (Startseite, z. B. https://firma.de). Sie ist von Regel 1 ausgenommen, weil das System sie selbst aufruft und prüft. Nur null, wenn du die Adresse wirklich nicht kennst."""

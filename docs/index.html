@@ -35,6 +35,7 @@
         <p class="eyebrow">Arbeitsprobe · Startup-Scouting mit Agentic AI</p>
         <h1>Startup Radar</h1>
         <p class="lead">Ein KI-Agent, der jede Woche Startups in fünf Zukunftsfeldern des Handels recherchiert, jede Angabe mit einer Quelle belegt und nach Reifegrad und strategischem Fit bewertet.</p>
+        <p class="def-startup"><strong>Was hier als Startup gilt:</strong> Unternehmen nach der EU-Definition für innovative Startups (Empfehlung 2026/720). Sie sind jünger als 10 Jahre, eigenständig (keine Konzernmutter), haben weniger als 100 Beschäftigte und höchstens 10 Mio. € Umsatz und bieten ein innovatives Produkt oder Verfahren an.</p>
 
         <div class="stats" aria-live="polite">
           <div class="stat"><span class="stat-num" id="stat-total">–</span><span class="stat-label">Startups in der Datenbank</span></div>
@@ -145,7 +146,7 @@
 
         <ol class="flow">
           <li class="flow-step"><span class="badge badge-ai">KI</span><h3>Recherchieren</h3><p>Claude sucht pro Feld im Web nach aktuellen Startups (höchstens 4 Suchen, 5 Treffer).</p></li>
-          <li class="flow-step"><span class="badge badge-code">Code</span><h3>Quellen prüfen</h3><p>Eine Angabe bleibt nur, wenn ihre Quelle in den echten Suchergebnissen vorkam. Sonst bleibt sie leer.</p></li>
+          <li class="flow-step"><span class="badge badge-code">Code</span><span class="badge badge-ai">KI</span><h3>Prüfen</h3><p>Eine Angabe bleibt nur, wenn ihre Quelle in den echten Suchergebnissen vorkam. Danach folgt die Startup-Prüfung nach EU-Definition. Fehlt dafür ein belegtes Gründungsjahr, sucht die KI gezielt nach.</p></li>
           <li class="flow-step"><span class="badge badge-code">Code</span><h3>Abgleichen</h3><p>Duplikate werden über Domain, Name und gemeinsame Quellen erkannt. Änderungen landen in der Historie.</p></li>
           <li class="flow-step"><span class="badge badge-ai">KI</span><h3>Bewerten</h3><p>Reifegrad und Fit von 1–5 nach festem Raster, nur auf Basis der geprüften Fakten.</p></li>
           <li class="flow-step"><span class="badge badge-code">Code</span><h3>Speichern</h3><p>Die Daten liegen als JSON im Git-Repository. Jede Änderung ist versioniert.</p></li>
@@ -157,6 +158,7 @@
             <h3 class="h4">Qualitätsregeln</h3>
             <ul>
               <li>Keine Angabe ohne Quelle. Was sich nicht belegen lässt, bleibt leer.</li>
+              <li>Nur echte Startups nach EU-Definition. Ohne belegtes Gründungsjahr wird ein Unternehmen nicht aufgenommen. Wer 10 Jahre alt wird, übernommen wird oder auf 100 Beschäftigte wächst, fällt automatisch heraus.</li>
               <li>Nur öffentliche Unternehmensinformationen, keine Daten über Personen.</li>
               <li>Bewertungen sind gekennzeichnete KI-Einschätzungen mit Begründung.</li>
             </ul>

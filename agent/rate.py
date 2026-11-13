@@ -87,6 +87,7 @@ def _facts_for_prompt(entry):
         "land": entry["country"]["value"],
         "gruendungsjahr": entry["founded"]["value"],
         "finanzierungsphase": entry["funding_stage"]["value"],
+        "beschaeftigte": (entry.get("employees") or {}).get("value"),
     }
 
 
