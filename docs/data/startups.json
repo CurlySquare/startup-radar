@@ -482,7 +482,9 @@
       },
       "website": "https://ambiomaterials.com",
       "sources": [
+        "https://bebeez.eu/2026/10/14/finnish-startup-secures-e5-1-million-seed-to-make-recycled-plastics-procurement-more-reliable/",
         "https://europestartupjobs.com/ambio-raises-5-1m-seed-recycled-plastics/",
+        "https://pomegra.io/startups/ambio-raises-5-1m-seed-for-recycled-plastics-in-2026-2026-10-14",
         "https://tech.eu/2026/10/15/from-slush-to-sustainable-materials-ambio-raises-eur51m-for-ai-powered-plastics-procurement",
         "https://www.eu-startups.com/2026/10/helsinkis-ambio-raises-e5-1-million-to-scale-its-ai-powered-recycled-plastics-procurement-platform/",
         "https://www.packagingeurope.com/recycled-polymer-procurement-platform-raises-eur5-1m-in-seed-funding/",
@@ -1575,11 +1577,13 @@
         "source": "https://www.finsmes.com/2026/11/conlio-raises-e6-4m-in-funding.html"
       },
       "funding_stage": {
-        "value": null,
-        "source": null
+        "value": "Seed",
+        "source": "https://pomegra.io/startups/conlio-raises-6-4m-seed-for-freight-finance-ai-in-2026-2026-11-04"
       },
       "website": "https://conlio.com",
       "sources": [
+        "https://pomegra.io/startups/conlio-raises-6-4m-seed-for-freight-finance-ai-in-2026-2026-11-04",
+        "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/",
         "https://www.finsmes.com/2026/11/conlio-raises-e6-4m-in-funding.html"
       ],
       "id": "conlio-com",
@@ -1589,6 +1593,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Finanzierungsphase ergänzt"
         }
       ],
       "maturity": {
@@ -2113,56 +2121,4093 @@
         ],
         "reason": "KI-Roboter für Kommissionierung und Verpackung betreffen konkret den Lagerbetrieb in der Logistik. Der Pilot findet laut Angabe im Logistikzentrum in Pohang statt. Europäische Präsenz, Skalierbarkeit der Hardware und Datenhaltung sind nicht belegt."
       }
+    },
+    {
+      "name": "VisioLab",
+      "field": "retail",
+      "description": {
+        "value": "iPad-basierte Kassensysteme, die per Computer Vision und Edge-AI verpackte und unverpackte Speisen erkennen. Zielgruppe sind Gastronomie- und Foodservice-Betreiber; inklusive Zahlungsabwicklung.",
+        "source": "https://tech.eu/2026/04/21/visiolab-raises-11m-series-a-to-scale-ai-self-checkout-globally/"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://tech.eu/2026/04/21/visiolab-raises-11m-series-a-to-scale-ai-self-checkout-globally/"
+      },
+      "founded": {
+        "value": 2019,
+        "source": "https://tech.eu/2026/04/21/visiolab-raises-11m-series-a-to-scale-ai-self-checkout-globally/"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://tech.eu/2026/04/21/visiolab-raises-11m-series-a-to-scale-ai-self-checkout-globally/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://visiolab.io",
+      "sources": [
+        "https://tech.eu/2026/04/21/visiolab-raises-11m-series-a-to-scale-ai-self-checkout-globally/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2019",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "visiolab-io",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und beschriebenes Produkt mit Zahlungsabwicklung, aber keine Angaben zu Kundenbasis, Umsatz oder Beschäftigten; bei fehlendem Merkmal die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "retail"
+        ],
+        "reason": "Kassenerkennung für verpackte und unverpackte Speisen zielt auf Gastronomie und Foodservice; ein Einsatz an Theken oder Kassen in Filialen wäre nur eine Nische ohne belegten Bezug zum Kernprozess der Handelsketten."
+      }
+    },
+    {
+      "name": "Sensei",
+      "field": "retail",
+      "description": {
+        "value": "Anbieter autonomer Läden und Kassenzonen auf Basis von Computer Vision und KI-Sensoren, bei denen Kunden ohne Kasse einkaufen. Ausgerichtet auf Supermärkte, Convenience- und Grab-and-go-Formate.",
+        "source": "https://dexteragent.ai/companies/sensei-1771815510"
+      },
+      "country": {
+        "value": "PT",
+        "source": "https://tracxn.com/d/companies/sensei/__5XhoVHGVGfygXmoDpne1E7TdujLrJhQaEE5FuvKXbp8"
+      },
+      "founded": {
+        "value": 2017,
+        "source": "https://tracxn.com/d/companies/sensei/__5XhoVHGVGfygXmoDpne1E7TdujLrJhQaEE5FuvKXbp8"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://tech.eu/2024/10/24/sensei-secures-eur15m-to-expand-autonomous-retail-vision/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://sensei.tech",
+      "sources": [
+        "https://dexteragent.ai/companies/sensei-1771815510",
+        "https://tech.eu/2024/10/24/sensei-secures-eur15m-to-expand-autonomous-retail-vision/",
+        "https://tracxn.com/d/companies/sensei/__5XhoVHGVGfygXmoDpne1E7TdujLrJhQaEE5FuvKXbp8"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2017",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "sensei-tech",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und Gründung 2017 sprechen für ein fortgeschrittenes Unternehmen, aber Kundenzahl, Standorte und Beschäftigte fehlen in den Fakten; deshalb die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "retail"
+        ],
+        "reason": "Kassenloses Einkaufen betrifft den Kernprozess Kasse im Supermarkt und Convenience-Format, mit messbaren Hebeln wie Personalkosten und Wartezeit. Es ist in einzelnen Filialen pilotierbar. Die Skalierung auf tausende Filialen ist wegen der Sensorik unklar; EU-Sitz (PT) spricht für Datensouveränität."
+      }
+    },
+    {
+      "name": "Jenz",
+      "field": "retail",
+      "description": {
+        "value": "Verbindet Shop-, Kassen-, Lager-, Buchhaltungs- und Marketingdaten von Händlern; ein KI-Agent erstellt Bedarfsprognosen und testet Preis- und Kampagnenstrategien. Für Retail und E-Commerce.",
+        "source": "https://www.theinterline.com/2026/10/29/jenz-launches-an-agentic-back-office-that-puts-retailers-data-to-work/"
+      },
+      "country": {
+        "value": "NO",
+        "source": "https://www.eu.vc/p/jenz-raises-540k-pre-seed-retail-operations-ai"
+      },
+      "founded": {
+        "value": 2026,
+        "source": "https://www.theinterline.com/2026/10/29/jenz-launches-an-agentic-back-office-that-puts-retailers-data-to-work/"
+      },
+      "funding_stage": {
+        "value": "Pre-Seed",
+        "source": "https://www.eu.vc/p/jenz-raises-540k-pre-seed-retail-operations-ai"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://www.eu.vc/p/jenz-raises-540k-pre-seed-retail-operations-ai",
+        "https://www.theinterline.com/2026/10/29/jenz-launches-an-agentic-back-office-that-puts-retailers-data-to-work/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2026",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "jenz",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Pre-Seed und Gründung 2026; keine Angaben zu Kunden, Umsatz oder Team. Ein Produkt am Markt ist nicht belegt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "retail"
+        ],
+        "reason": "Der KI-Agent für Bedarfsprognosen sowie Preis- und Kampagnentests berührt Warenverfügbarkeit und Marge im Handel, auch im Marktplatz. Offen bleiben die Eignung für sehr große Filialnetze, Datenhaltung und die Abhängigkeit von vielen Datenquellen."
+      }
+    },
+    {
+      "name": "Cota Robotics",
+      "field": "retail",
+      "description": {
+        "value": "Stockholmer Anbieter von Robotics-as-a-Service für den Lebensmittelhandel: Roboter füllen nachts Regale auf, übernehmen Wareneingang und prüfen Preise und Planogramme; Abrechnung nach Arbeitsstunden.",
+        "source": "https://www.veilstrat.com/companies/cota-robotics"
+      },
+      "country": {
+        "value": "SE",
+        "source": "https://pitchbook.com/profiles/company/1480557-34"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://pitchbook.com/profiles/company/1480557-34"
+      },
+      "funding_stage": {
+        "value": "Pre-Seed",
+        "source": "https://www.veilstrat.com/companies/cota-robotics"
+      },
+      "employees": {
+        "value": 8,
+        "source": "https://pitchbook.com/profiles/company/1480557-34"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://cotarobotics.com",
+      "sources": [
+        "https://pitchbook.com/profiles/company/1480557-34",
+        "https://www.veilstrat.com/companies/cota-robotics"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "8 Beschäftigte",
+        "passed": true
+      },
+      "id": "cotarobotics-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Pre-Seed, Gründung 2025, 8 Beschäftigte; ein Abrechnungsmodell ist beschrieben, aber Pilot- oder zahlende Kunden sind nicht belegt."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "logistics",
+          "retail"
+        ],
+        "reason": "Nächtliches Regalauffüllen, Wareneingang sowie Preis- und Planogrammprüfung sind Kernprozesse der Filiale, mit messbaren Hebeln bei Personalkosten und Warenverfügbarkeit. Das Modell mit Abrechnung nach Stunden erlaubt Pilotfilialen. Die Skalierbarkeit der Robotik auf tausende Filialen ist ungeprüft."
+      }
+    },
+    {
+      "name": "Azoma",
+      "field": "retail",
+      "description": {
+        "value": "Plattform für „Agentic Commerce Optimization“: Marken messen und verbessern, wie ihre Produkte von KI-Shopping-Assistenten gefunden und empfohlen werden. Kunden sind Konsumgüterhersteller, auch im Lebensmittelbereich.",
+        "source": "https://www.azoma.ai/insights/azoma-raises-11.2-million-series-a-to-continue-defining-the-agentic-commerce-optimization-category"
+      },
+      "country": {
+        "value": "GB",
+        "source": "https://www.finsmes.com/2026/10/azoma-raises-11-5m-in-series-a-funding.html"
+      },
+      "founded": {
+        "value": 2022,
+        "source": "https://retailtechinnovationhub.com/home/2026/10/22/agentic-commerce-platform-azoma-raises-112-million-in-series-a-round-led-by-puma-growth-partners"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.azoma.ai/insights/azoma-raises-11.2-million-series-a-to-continue-defining-the-agentic-commerce-optimization-category"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://azoma.ai",
+      "sources": [
+        "https://retailtechinnovationhub.com/home/2026/10/22/agentic-commerce-platform-azoma-raises-112-million-in-series-a-round-led-by-puma-growth-partners",
+        "https://www.azoma.ai/insights/azoma-raises-11.2-million-series-a-to-continue-defining-the-agentic-commerce-optimization-category",
+        "https://www.finsmes.com/2026/10/azoma-raises-11-5m-in-series-a-funding.html"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2022",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "azoma-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A, aber keine Angaben zu Kundenzahl, Umsatz oder Beschäftigten; bei fehlenden Merkmalen die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "retail"
+        ],
+        "reason": "Die Plattform richtet sich an Konsumgüterhersteller, die in KI-Shopping-Assistenten sichtbar sein wollen. Für den Handelskonzern sind höchstens Eigenmarken oder der Marktplatz berührt, ein Kernprozess mit messbarem Hebel ist nicht erkennbar."
+      }
+    },
+    {
+      "name": "Blitz",
+      "field": "retail",
+      "description": {
+        "value": "Indisches Fulfilment-Startup für Quick Commerce: Über Dark Stores und Lager ermöglicht es E-Commerce- und D2C-Marken Lieferungen in 10 bzw. 60 Minuten sowie am selben oder nächsten Tag.",
+        "source": "https://www.cxodigitalpulse.com/blitz-raises-rs-28-70-crore-in-pre-series-b-round-at-2-5x-valuation-premium/"
+      },
+      "country": {
+        "value": "IN",
+        "source": "https://india.entrepreneur.com/news-and-trends/ivycap-ventures-leads-inr-51-cr-funding-for-blitz-to/483181"
+      },
+      "founded": {
+        "value": 2020,
+        "source": "https://www.cxodigitalpulse.com/blitz-raises-rs-28-70-crore-in-pre-series-b-round-at-2-5x-valuation-premium/"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.cxodigitalpulse.com/blitz-raises-rs-28-70-crore-in-pre-series-b-round-at-2-5x-valuation-premium/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://india.entrepreneur.com/news-and-trends/ivycap-ventures-leads-inr-51-cr-funding-for-blitz-to/483181",
+        "https://www.cxodigitalpulse.com/blitz-raises-rs-28-70-crore-in-pre-series-b-round-at-2-5x-valuation-premium/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2020",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "blitz",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A, aber nur Angaben zu den Dienstleistungen; Kundenbasis, Umsatz und Beschäftigte fehlen. Die Fakten nennen nur Indien als Markt."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "logistics",
+          "retail"
+        ],
+        "reason": "Fulfilment über Dark Stores für Quick Commerce betrifft grundsätzlich Logistik und Online-Handel. Die Fakten nennen aber nur Indien und D2C-Marken, ein Bezug zu den europäischen Märkten des Konzerns ist nicht belegt."
+      }
+    },
+    {
+      "name": "Pacifico Biolabs",
+      "field": "food",
+      "description": {
+        "value": "Berliner Startup, das Fleischalternativen aus Pilzmyzel (Viando, u. a. Hähnchen-Alternative) in vorhandenen Brauerei-Tanks fermentiert. Zielkunden sind Lebensmittelhersteller, Marken und Gastronomie.",
+        "source": "https://www.vestbee.com/insights/articles/pacifico-biolabs-lands-7-m"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.eu-startups.com/2026/05/pacifico-biolabs-raises-e7-million-series-a-to-turn-idle-german-breweries-into-alternative-protein-factories/"
+      },
+      "founded": {
+        "value": 2022,
+        "source": "https://www.eu-startups.com/2026/05/pacifico-biolabs-raises-e7-million-series-a-to-turn-idle-german-breweries-into-alternative-protein-factories/"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.eu-startups.com/2026/05/pacifico-biolabs-raises-e7-million-series-a-to-turn-idle-german-breweries-into-alternative-protein-factories/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://www.eu-startups.com/2026/05/pacifico-biolabs-raises-e7-million-series-a-to-turn-idle-german-breweries-into-alternative-protein-factories/",
+        "https://www.vestbee.com/insights/articles/pacifico-biolabs-lands-7-m"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2022",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "pacificobiolabs",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und benannte Produkte, aber keine Angaben zu Kunden, Umsatz, Produktionsmengen oder Beschäftigten; bei fehlenden Merkmalen die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food"
+        ],
+        "reason": "Myzel-Fleischalternativen, die in vorhandenen Brauerei-Tanks fermentiert werden, können das Eigenmarken-Portfolio der Lebensmittelproduktion ergänzen. Ein messbarer Hebel und die Skalierung auf viele Standorte sind nicht belegt."
+      }
+    },
+    {
+      "name": "Marble Technologies",
+      "field": "food",
+      "description": {
+        "value": "Entwickelt KI- und Robotiksysteme für Fleischverarbeiter: automatisierte Pack-off-Linien sortieren Fleischstücke, prüfen per Kamera Vakuumverpackungen und leiten Teilstücke weiter.",
+        "source": "https://fundraiseinsider.com/blog/marble-raises-30m-series-a-to-automate-meatpacking/"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://siliconprairienews.com/2026/06/with-30-million-series-a-raise-marble-technologies-is-creating-the-future-of-meatpacking-in-nebraska/"
+      },
+      "founded": {
+        "value": 2020,
+        "source": "https://pitchbook.com/profiles/company/467766-73"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://siliconprairienews.com/2026/06/with-30-million-series-a-raise-marble-technologies-is-creating-the-future-of-meatpacking-in-nebraska/"
+      },
+      "employees": {
+        "value": 36,
+        "source": "https://pitchbook.com/profiles/company/467766-73"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://seemarble.com",
+      "sources": [
+        "https://fundraiseinsider.com/blog/marble-raises-30m-series-a-to-automate-meatpacking/",
+        "https://pitchbook.com/profiles/company/467766-73",
+        "https://siliconprairienews.com/2026/06/with-30-million-series-a-raise-marble-technologies-is-creating-the-future-of-meatpacking-in-nebraska/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2020",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "36 Beschäftigte",
+        "passed": true
+      },
+      "id": "seemarble-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und 36 Beschäftigte, aber keine Angaben zu Referenzkunden oder Umsatz; bei fehlenden Merkmalen die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food"
+        ],
+        "reason": "Automatisierte Pack-off-Linien mit Kameraprüfung von Vakuumverpackungen betreffen die Fleischverarbeitung im Werk, mit Hebel bei Personalkosten und Ausschuss. Ob die Werke des Konzerns Fleisch verarbeiten, geht aus den Fakten nicht hervor, ebenso wenig der Support in Europa und die Datenhaltung."
+      }
+    },
+    {
+      "name": "NanoStruct",
+      "field": "food",
+      "description": {
+        "value": "Entwickelt nanostrukturierte Sensorchips mit Machine Learning, die Krankheitserreger wie Listerien und Salmonellen in Lebensmitteln innerhalb weniger Stunden erkennen. Zielgruppe: Hersteller und Labore.",
+        "source": "https://techfundingnews.com/nanostruct-2-6m-seed-htgf-auxxo-rapid-pathogen-detection-food-safety/"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.htgf.de/en/nanostruct-secures-e2-6m-seed-funding/"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://www.startupreporter.eu/nanostruct-raises-e2-6m-to-detect-listeria-and-salmonella-in-hours-not-days/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.htgf.de/en/nanostruct-secures-e2-6m-seed-funding/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://techfundingnews.com/nanostruct-2-6m-seed-htgf-auxxo-rapid-pathogen-detection-food-safety/",
+        "https://www.htgf.de/en/nanostruct-secures-e2-6m-seed-funding/",
+        "https://www.startupreporter.eu/nanostruct-raises-e2-6m-to-detect-listeria-and-salmonella-in-hours-not-days/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "nanostruct",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Seed-Phase, Gründung 2021; die Beschreibung nennt eine Entwicklung von Sensorchips. Zu Produkt am Markt, Pilot- oder zahlenden Kunden und Beschäftigten liegen keine Angaben vor, daher niedrige Stufe."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "food"
+        ],
+        "reason": "Schnelle Erregererkennung (Listerien, Salmonellen) in der Qualitätssicherung der Eigenmarken-Werke mit messbarem Hebel Sicherheitsniveau; in einzelnen Werken pilotierbar. Zertifizierung und Validierung sind aus den Fakten nicht ersichtlich."
+      }
+    },
+    {
+      "name": "Aflabox",
+      "field": "food",
+      "description": {
+        "value": "Tragbares Gerät mit UV-Bildgebung und KI, das Mykotoxine wie Aflatoxine in Getreide vor Ort erkennt und Kontaminationsrisiken kartiert. Zielgruppe: Landwirtschaft, Müller und Lieferketten in Afrika und Europa.",
+        "source": "https://www.eu-startups.com/2026/08/italys-aflabox-raises-e1-35-million-to-scale-ai-powered-portable-aflatoxin-detection-across-africa-and-europe/"
+      },
+      "country": {
+        "value": "IT",
+        "source": "https://www.eu-startups.com/2026/08/italys-aflabox-raises-e1-35-million-to-scale-ai-powered-portable-aflatoxin-detection-across-africa-and-europe/"
+      },
+      "founded": {
+        "value": 2024,
+        "source": "https://www.eu-startups.com/2026/08/italys-aflabox-raises-e1-35-million-to-scale-ai-powered-portable-aflatoxin-detection-across-africa-and-europe/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.eu-startups.com/2026/08/italys-aflabox-raises-e1-35-million-to-scale-ai-powered-portable-aflatoxin-detection-across-africa-and-europe/"
+      },
+      "employees": {
+        "value": 3,
+        "source": "https://tracxn.com/d/companies/aflabox/__vlhSPDj1-ph6Z4jqRENrBgFHfLETt_KU7LGnsDDxLpU"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://aflabox.ai",
+      "sources": [
+        "https://tracxn.com/d/companies/aflabox/__vlhSPDj1-ph6Z4jqRENrBgFHfLETt_KU7LGnsDDxLpU",
+        "https://www.eu-startups.com/2026/08/italys-aflabox-raises-e1-35-million-to-scale-ai-powered-portable-aflatoxin-detection-across-africa-and-europe/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2024",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "3 Beschäftigte",
+        "passed": true
+      },
+      "id": "aflabox-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Seed-Phase, gegründet 2024, 3 Beschäftigte. Zu Pilotkunden oder Umsatz liegen keine Angaben vor, daher niedrige Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food"
+        ],
+        "reason": "Vor-Ort-Erkennung von Mykotoxinen in Getreide kann die Wareneingangsprüfung in der Lebensmittelproduktion unterstützen. Der Fokus liegt auf Landwirtschaft und Mühlen in Afrika und Europa, nur eine Sparte ist klar erkennbar, die Übertragbarkeit ist unklar."
+      }
+    },
+    {
+      "name": "HyperSpectral",
+      "field": "food",
+      "description": {
+        "value": "Software-Plattform (SpecAI), die Spektraldaten mit KI auswertet. Der Lebensmittel-Workflow scannt zerstörungsfrei und ohne Reagenzien auf Bakterien, Verunreinigungen, Verfälschungen und Defekte.",
+        "source": "https://yespress.io/hyperspectral"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://startupintros.com/orgs/hyperspectral"
+      },
+      "founded": {
+        "value": 2022,
+        "source": "https://yespress.io/hyperspectral"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://startupintros.com/orgs/hyperspectral"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://hyperspectral.ai",
+      "sources": [
+        "https://startupintros.com/orgs/hyperspectral",
+        "https://yespress.io/hyperspectral"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2022",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "hyperspectral-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und eine Software-Plattform (SpecAI) sind belegt. Kundenbasis, Referenzkunden und Umsatz fehlen in den Fakten, daher Stufe 2 statt 3."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "food"
+        ],
+        "reason": "Zerstörungsfreie, reagenzienfreie KI-Prüfung auf Bakterien, Verunreinigungen, Verfälschungen und Defekte trifft die Qualitätssicherung in den Werken, mit Hebel bei Sicherheit und Ausschuss. Als Software gut pilotierbar. Hürde: Sitz in den USA, Datenhaltung und Souveränität sind nicht geklärt."
+      }
+    },
+    {
+      "name": "BZERO",
+      "field": "food",
+      "description": {
+        "value": "Spanisches Biomaterial-Startup mit eigener Thermoplastic-Starch-Technologie: heimkompostierbare Folie ab 7 Mikrometer als Ersatz für LDPE in Beuteln, Etiketten, Obstnetzen und flexiblen Verpackungen.",
+        "source": "https://packagingeurope.com/news/bzero-raises-25-million-in-seed-round-for-home-compostable-film/14524.article"
+      },
+      "country": {
+        "value": "ES",
+        "source": "https://seedcue.webflow.io/post/bzero-raises-eu1-5-million-to-scale-the-worlds-thinnest-high-strength-home-compostable-film"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://seedcue.webflow.io/post/bzero-raises-eu1-5-million-to-scale-the-worlds-thinnest-high-strength-home-compostable-film"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://seedcue.webflow.io/post/bzero-raises-eu1-5-million-to-scale-the-worlds-thinnest-high-strength-home-compostable-film"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://packagingeurope.com/news/bzero-raises-25-million-in-seed-round-for-home-compostable-film/14524.article",
+        "https://seedcue.webflow.io/post/bzero-raises-eu1-5-million-to-scale-the-worlds-thinnest-high-strength-home-compostable-film"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "bzero",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Seed-Phase, Gründung 2021. Die Folie wird technisch beschrieben (ab 7 Mikrometer), aber Kunden, Pilotprojekte und Umsatz sind nicht belegt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food",
+          "retail"
+        ],
+        "reason": "Heimkompostierbare Folie als LDPE-Ersatz für Beutel, Etiketten und Obstnetze betrifft die Eigenmarken-Verpackung und Obst und Gemüse in der Filiale. Messbarer Hebel (z. B. Kunststoffreduktion) und Eignung für Lebensmittelkontakt sind nicht belegt, Auswirkungen auf Recyclingströme sind offen."
+      }
+    },
+    {
+      "name": "Alkelux",
+      "field": "food",
+      "description": {
+        "value": "Biotech-Startup aus Sassari (Italien): antimikrobielles Bio-Additiv aus Lakritz-Reststoffen, das in Lebensmittelverpackungen eingebracht wird und die Haltbarkeit von Obst und Gemüse verlängert.",
+        "source": "https://www.startupbusiness.it/en/alkeluxs-sustainable-materials-are-worth-e970000/168044/"
+      },
+      "country": {
+        "value": "IT",
+        "source": "https://pitchbook.com/profiles/company/703795-96"
+      },
+      "founded": {
+        "value": 2024,
+        "source": "https://www.alkelux.com/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.startupbusiness.it/en/alkeluxs-sustainable-materials-are-worth-e970000/168044/"
+      },
+      "employees": {
+        "value": 4,
+        "source": "https://pitchbook.com/profiles/company/703795-96"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://alkelux.com",
+      "sources": [
+        "https://pitchbook.com/profiles/company/703795-96",
+        "https://www.alkelux.com/",
+        "https://www.startupbusiness.it/en/alkeluxs-sustainable-materials-are-worth-e970000/168044/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2024",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "4 Beschäftigte",
+        "passed": true
+      },
+      "id": "alkelux-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Seed-Phase, gegründet 2024, 4 Beschäftigte. Kunden, Pilotprojekte und Umsatz sind in den Fakten nicht belegt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food",
+          "retail"
+        ],
+        "reason": "Antimikrobielles Additiv in Verpackungen soll die Haltbarkeit von Obst und Gemüse verlängern, mit möglichem Hebel bei Warenverfügbarkeit und Abschriften. Die Wirkung ist nicht beziffert und der Entwicklungsstand ist früh, daher kein Kernprozess-Fit."
+      }
+    },
+    {
+      "name": "B'ZEOS",
+      "field": "food",
+      "description": {
+        "value": "Barcelonaer Startup mit einem Biopolymer auf Algenbasis: heimkompostierbare, lebensmitteltaugliche flexible Folie, auch als Beschichtung nutzbar, plus F&E-Dienstleistungen für Verpackungsmaterialien.",
+        "source": "https://radar.thecircularlab.com/empresa/bzeos/"
+      },
+      "country": {
+        "value": "ES",
+        "source": "https://radar.thecircularlab.com/empresa/bzeos/"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://radar.thecircularlab.com/empresa/bzeos/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://greyb.com/blog/food-packaging-trends/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://bzeos.com",
+      "sources": [
+        "https://greyb.com/blog/food-packaging-trends/",
+        "https://radar.thecircularlab.com/empresa/bzeos/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "bzeos-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, Gründung 2021. Neben dem Biopolymer werden F&E-Dienstleistungen angeboten, das deutet auf erste Kundenprojekte hin. Zahlende Kunden und Umsatz sind nicht belegt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food"
+        ],
+        "reason": "Algenbasierte, lebensmitteltaugliche und heimkompostierbare Folie bzw. Beschichtung ist für die Verpackungswerke der Eigenmarken relevant. Messbarer Hebel, Skalierbarkeit und Barriereeigenschaften sind aus den Fakten nicht ersichtlich."
+      }
+    },
+    {
+      "name": "Greencovery",
+      "field": "food",
+      "description": {
+        "value": "Gewinnt aus Nebenströmen der Kakaoverarbeitung Kakaofaser, Kakaoextrakt und löslichen Kakaofaserstoff als Lebensmittelzutaten. Zielgruppe sind Lebensmittelhersteller; die Produktion in Zaandam wird ausgebaut.",
+        "source": "https://www.sesamers.com/funding/greencovery-raises-1m-cocoa-upcycling/"
+      },
+      "country": {
+        "value": "NL",
+        "source": "https://www.sesamers.com/funding/greencovery-raises-1m-cocoa-upcycling/"
+      },
+      "founded": {
+        "value": 2018,
+        "source": "https://www.sesamers.com/funding/greencovery-raises-1m-cocoa-upcycling/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.sesamers.com/funding/greencovery-raises-1m-cocoa-upcycling/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://greencovery.com",
+      "sources": [
+        "https://www.sesamers.com/funding/greencovery-raises-1m-cocoa-upcycling/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2018",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "greencovery-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, Gründung 2018. Die Produktion in Zaandam wird ausgebaut, aber Kundenbasis, Umsatz und Beschäftigtenzahl fehlen. Daher Stufe 2."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "food"
+        ],
+        "reason": "Kakaofaser und Kakaoextrakt aus Nebenströmen sind Zutaten, die in der Produktion der Eigenmarken Nischen-Rezepturen ergänzen könnten. Ein Kernprozess mit klar messbarem Hebel ist nicht erkennbar."
+      }
+    },
+    {
+      "name": "ValueGrain",
+      "field": "food",
+      "description": {
+        "value": "Verarbeitet Biertreber direkt in der Brauerei zu einer pflanzlichen Lebensmittelzutat für Backwaren, Hybridfleisch und Fleischalternativen. Brauereien erhalten dadurch eine zusätzliche Einnahmequelle.",
+        "source": "https://www.inside.beer/news/detail/germany-krombacher-ceo-bernhard-schadeberg-invests-millions-in-upcycling-startup-valuegrain"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.inside.beer/news/detail/germany-krombacher-ceo-bernhard-schadeberg-invests-millions-in-upcycling-startup-valuegrain"
+      },
+      "founded": {
+        "value": 2024,
+        "source": "https://www.inside.beer/news/detail/germany-krombacher-ceo-bernhard-schadeberg-invests-millions-in-upcycling-startup-valuegrain"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.inside.beer/news/detail/germany-krombacher-ceo-bernhard-schadeberg-invests-millions-in-upcycling-startup-valuegrain"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://www.inside.beer/news/detail/germany-krombacher-ceo-bernhard-schadeberg-invests-millions-in-upcycling-startup-valuegrain"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2024",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "valuegrain",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Seed-Phase, gegründet 2024. Zu Kunden, Brauerei-Pilotpartnern, Umsatz und Beschäftigten liegen keine Angaben vor."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "food"
+        ],
+        "reason": "Zutat aus Biertreber für Backwaren und Fleischalternativen ist eine Nischenanwendung in der Rezepturentwicklung der Eigenmarken. Der Prozess wird direkt in Brauereien umgesetzt, ein Bezug zu Konzernstandorten und ein messbarer Hebel sind nicht belegt."
+      }
+    },
+    {
+      "name": "Revyve",
+      "field": "food",
+      "description": {
+        "value": "Wandelt Brauereihefe aus der Bierherstellung in funktionelle Proteine und Fasern um. Diese ersetzen Ei und Zusatzstoffe in pflanzlichen und tierfreien Produkten von Lebensmittelherstellern.",
+        "source": "https://bebeez.eu/2026/06/03/reinventing-food-waste-10-european-startups-creating-value-from-leftovers/"
+      },
+      "country": {
+        "value": "NL",
+        "source": "https://bebeez.eu/2026/06/03/reinventing-food-waste-10-european-startups-creating-value-from-leftovers/"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://bebeez.eu/2026/06/03/reinventing-food-waste-10-european-startups-creating-value-from-leftovers/"
+      },
+      "funding_stage": {
+        "value": null,
+        "source": null
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://revyve.nl",
+      "sources": [
+        "https://bebeez.eu/2026/06/03/reinventing-food-waste-10-european-startups-creating-value-from-leftovers/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "revyve-nl",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Das Produkt (Hefeproteine und -fasern) ist beschrieben, aber Finanzierungsphase, Kundenbasis und Umsatz fehlen in den Fakten. Deshalb nur Stufe 2."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "food"
+        ],
+        "reason": "Zutat zum Ersatz von Ei und Zusatzstoffen in pflanzlichen Produkten, also eine Nische in der Rezeptur der Eigenmarken-Produktion. Ein Kernprozess mit messbarem Hebel und Pilotpfad ist aus den Fakten nicht erkennbar."
+      }
+    },
+    {
+      "name": "HotGreen Solutions",
+      "field": "food",
+      "description": {
+        "value": "Britisches Startup mit Hochtemperatur-Wärmepumpen, die CO₂-armen Dampf erzeugen und Gaskessel in Brauereien, Brennereien und Molkereien ersetzen sollen. Pilot mit Coca-Cola Europacific Partners.",
+        "source": "https://tech.eu/2025/10/20/hotgreen-solutions-raises-ps12m-for-ultra-efficient-heat-pumps/"
+      },
+      "country": {
+        "value": "GB",
+        "source": "https://www.vestbee.com/insights/articles/hot-green-solutions-raises-1-2-m"
+      },
+      "founded": {
+        "value": 2024,
+        "source": "https://www.vestbee.com/insights/articles/hot-green-solutions-raises-1-2-m"
+      },
+      "funding_stage": {
+        "value": "Pre-Seed",
+        "source": "https://tech.eu/2025/10/20/hotgreen-solutions-raises-ps12m-for-ultra-efficient-heat-pumps/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://tech.eu/2025/10/20/hotgreen-solutions-raises-ps12m-for-ultra-efficient-heat-pumps/",
+        "https://www.vestbee.com/insights/articles/hot-green-solutions-raises-1-2-m"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2024",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "hotgreensolutions",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Pre-Seed und ein genannter Pilot mit einem Getränkehersteller, gegründet 2024. Zahlende Kunden und Umsatz sind nicht belegt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food"
+        ],
+        "reason": "Hochtemperatur-Wärmepumpen für Prozessdampf könnten Gaskessel in Werken für Getränke und Lebensmittel ersetzen. Der Hebel (CO₂, Energiekosten) ist messbar. Es ist nicht belegt, dass der Dampfbedarf in den Konzernwerken passt, und der Nutzen liegt nur in einer Sparte."
+      }
+    },
+    {
+      "name": "Future Greens",
+      "field": "food",
+      "description": {
+        "value": "Startup aus Sheffield mit Bioreaktoren, die Lebensmittel- und Brauereiabfälle (Treber, Hefe, Abwasser) vor Ort in Wärme und Strom umwandeln. Erstes System soll 2026 in einer Brauerei starten.",
+        "source": "https://www.eu-startups.com/2025/12/future-greens-plans-a-2026-rollout-as-it-secures-e569k-to-convert-brewery-and-food-waste-into-on-site-power/"
+      },
+      "country": {
+        "value": "GB",
+        "source": "https://www.eu-startups.com/2025/12/future-greens-plans-a-2026-rollout-as-it-secures-e569k-to-convert-brewery-and-food-waste-into-on-site-power/"
+      },
+      "founded": {
+        "value": 2022,
+        "source": "https://www.eu-startups.com/2025/12/future-greens-plans-a-2026-rollout-as-it-secures-e569k-to-convert-brewery-and-food-waste-into-on-site-power/"
+      },
+      "funding_stage": {
+        "value": null,
+        "source": null
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://www.eu-startups.com/2025/12/future-greens-plans-a-2026-rollout-as-it-secures-e569k-to-convert-brewery-and-food-waste-into-on-site-power/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2022",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "futuregreens",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Das erste System soll erst 2026 in einer Brauerei starten, es gibt also noch kein Produkt am Markt. Die Finanzierungsphase fehlt in den Fakten."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "food"
+        ],
+        "reason": "Vor-Ort-Umwandlung von Brauerei- und Lebensmittelabfällen in Wärme und Strom ist eine Nische der Werksenergie. Ohne Nachweis eines Systems sind Hebel und Übertragbarkeit auf viele Standorte nicht belegt."
+      }
+    },
+    {
+      "name": "Bariflo Cybernetics",
+      "field": "food",
+      "description": {
+        "value": "Indisches Startup, das Sensoren, KI-Software und Automatisierung kombiniert, um Abwasseraufbereitung in Fabriken zu steuern und Energie- und Chemikalienbedarf für die Wasserwiederverwendung zu senken. Pilot mit BPCL geplant.",
+        "source": "https://yourstory.com/2026/11/bariflo-ai-help-factories-treat-wastewater"
+      },
+      "country": {
+        "value": "IN",
+        "source": "https://yourstory.com/2026/11/bariflo-ai-help-factories-treat-wastewater"
+      },
+      "founded": {
+        "value": 2018,
+        "source": "https://yourstory.com/2026/11/bariflo-ai-help-factories-treat-wastewater"
+      },
+      "funding_stage": {
+        "value": "Öffentlich gefördert",
+        "source": "https://yourstory.com/2026/11/bariflo-ai-help-factories-treat-wastewater"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://yourstory.com/2026/11/bariflo-ai-help-factories-treat-wastewater"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2018",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "bariflocybernetics",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Der Pilot ist erst geplant, es sind keine Kunden oder Umsätze belegt. Die Finanzierung ist nur als öffentlich gefördert angegeben, eine Finanzierungsphase fehlt. Daher die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food"
+        ],
+        "reason": "Sensorik und KI zur Steuerung der Abwasseraufbereitung in Fabriken senken Energie- und Chemikalienbedarf und könnten in Werken pilotiert werden. Der Fit liegt nur in einer Sparte. Als Hürden gelten der Sitz in Indien und die fehlende Europa-Referenz."
+      }
+    },
+    {
+      "name": "Danu Robotics",
+      "field": "circular",
+      "description": {
+        "value": "Entwickelt den KI-gesteuerten Sortierroboter H.E.R.O. mit Greifzange für Wertstoffsortieranlagen. Er lässt sich in bestehende Anlagen nachrüsten und trennt Störstoffe von Wertstoffen.",
+        "source": "https://app.dealroom.co/companies/danu_robotics"
+      },
+      "country": {
+        "value": "GB",
+        "source": "https://app.dealroom.co/companies/danu_robotics"
+      },
+      "founded": {
+        "value": 2020,
+        "source": "https://pitchbook.com/profiles/company/516182-59"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://dealroom.co/news/161331-danu-robotics-raises-5m-to-take-its-ai-recycling-robot-to-market/"
+      },
+      "employees": {
+        "value": 14,
+        "source": "https://tracxn.com/d/companies/danu-robotics/__3ZMQlpRgmcTay07aOts4L46Ed24ILTW55-FywoMk9y4"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://danurobotics.com",
+      "sources": [
+        "https://app.dealroom.co/companies/danu_robotics",
+        "https://dealroom.co/news/161331-danu-robotics-raises-5m-to-take-its-ai-recycling-robot-to-market/",
+        "https://pitchbook.com/profiles/company/516182-59",
+        "https://tracxn.com/d/companies/danu-robotics/__3ZMQlpRgmcTay07aOts4L46Ed24ILTW55-FywoMk9y4"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2020",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "14 Beschäftigte",
+        "passed": true
+      },
+      "id": "danurobotics-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, 14 Beschäftigte und ein nachrüstbarer Sortierroboter. Zahlende Kunden und Referenzanlagen sind in den Fakten nicht belegt."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Der KI-Sortierroboter trennt Störstoffe von Wertstoffen in Sortieranlagen, also im Kernprozess der Kreislaufwirtschaft. Hebel sind Sortierqualität, Recyclingquote und Personalkosten. Er ist nachrüstbar und lässt sich an einzelnen Anlagen pilotieren."
+      }
+    },
+    {
+      "name": "reverse.fashion",
+      "field": "circular",
+      "description": {
+        "value": "Berliner Ausgründung der TU Berlin mit KI-gestützter Textilsortierung. Die Software co.sort und die Anlage line.sort erfassen Altkleider nach Zustand, Marke, Größe und Material für Wiederverkauf oder Recycling.",
+        "source": "https://www.startup.eu/investments/reverse-fashion-pre-seed-07-2026"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.startbase.com/news/reverse-fashion-erhaelt-siebenstelliges-htgf-investment-fuer-ki-gestuetzte-textilsortierung"
+      },
+      "founded": {
+        "value": 2024,
+        "source": "https://www.startup.eu/investments/reverse-fashion-pre-seed-07-2026"
+      },
+      "funding_stage": {
+        "value": "Pre-Seed",
+        "source": "https://www.startbase.com/news/reverse-fashion-erhaelt-siebenstelliges-htgf-investment-fuer-ki-gestuetzte-textilsortierung"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://reverse.fashion",
+      "sources": [
+        "https://www.startbase.com/news/reverse-fashion-erhaelt-siebenstelliges-htgf-investment-fuer-ki-gestuetzte-textilsortierung",
+        "https://www.startup.eu/investments/reverse-fashion-pre-seed-07-2026"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2024",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "reverse-fashion",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Software und Anlage sind beschrieben, aber nur Pre-Seed und 2024 gegründet. Kunden, Umsatz und Beschäftigte sind nicht belegt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "circular"
+        ],
+        "reason": "KI-Textilsortierung nach Zustand, Marke und Material für Wiederverkauf oder Recycling passt zur Sortierung in der Kreislaufwirtschaft. Der Fit beschränkt sich auf Textilien. Ein Bezug zu einer zweiten Sparte ist aus den Fakten nicht erkennbar."
+      }
+    },
+    {
+      "name": "Jaipur Robotics",
+      "field": "circular",
+      "description": {
+        "value": "Schweizer Startup mit Deep-Learning-Software, die Materialien in Sortieranlagen (MRF) und Müllverbrennungsanlagen erkennt und trennt. Ziel sind höhere Genauigkeit und Effizienz bei Recycling und Abfallverarbeitung.",
+        "source": "https://www.trysignalbase.com/news/funding/jaipur-robotics-raises-5m-seed-funding"
+      },
+      "country": {
+        "value": "CH",
+        "source": "https://www.trysignalbase.com/news/funding/jaipur-robotics-raises-5m-seed-funding"
+      },
+      "founded": {
+        "value": 2024,
+        "source": "https://www.trysignalbase.com/news/funding/jaipur-robotics-raises-5m-seed-funding"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.trysignalbase.com/news/funding/jaipur-robotics-raises-5m-seed-funding"
+      },
+      "employees": {
+        "value": 6,
+        "source": "https://www.trysignalbase.com/news/funding/jaipur-robotics-raises-5m-seed-funding"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://jaipurrobotics.com",
+      "sources": [
+        "https://www.trysignalbase.com/news/funding/jaipur-robotics-raises-5m-seed-funding"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2024",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "6 Beschäftigte",
+        "passed": true
+      },
+      "id": "jaipurrobotics-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, aber erst 2024 gegründet und nur 6 Beschäftigte. Kunden und Umsatz sind in den Fakten nicht belegt."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Die Deep-Learning-Software erkennt und trennt Materialien in Sortieranlagen und Müllverbrennungsanlagen. Das betrifft den Kernprozess mit Hebeln bei Genauigkeit, Recyclingquote und Effizienz. Als reine Software ist sie gut an einzelnen Anlagen pilotierbar."
+      }
+    },
+    {
+      "name": "WeSort.AI",
+      "field": "circular",
+      "description": {
+        "value": "Würzburger Deep-Tech-Startup mit Sortiersystem aus Spezialkameras, Röntgensensorik und KI. Es erkennt Lithium-Ionen-Akkus und Elektroschrott in gemischten Abfallströmen von Recyclinganlagen.",
+        "source": "https://www.drweb.de/wuerzburger-ki-fischt-lithium-aus-dem-restmuell/"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.startbase.com/news/wesort-ai-erhaelt-10-millionen-euro"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://www.starting-up.de/news/news-investments/10-mio-euro-fuer-wuerzburger-deeptech-start-up-wesortai.html"
+      },
+      "funding_stage": {
+        "value": null,
+        "source": null
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://wesort.ai",
+      "sources": [
+        "https://www.drweb.de/wuerzburger-ki-fischt-lithium-aus-dem-restmuell/",
+        "https://www.startbase.com/news/wesort-ai-erhaelt-10-millionen-euro",
+        "https://www.starting-up.de/news/news-investments/10-mio-euro-fuer-wuerzburger-deeptech-start-up-wesortai.html"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "wesort-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Ein Sortiersystem aus Kameras, Röntgensensorik und KI ist beschrieben. Finanzierungsphase, Kunden und Umsatz fehlen in den Fakten, daher die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Die Erkennung von Lithium-Ionen-Akkus und Elektroschrott in gemischten Abfallströmen betrifft die Sortierung. Hebel sind das Brandrisiko (Sicherheit) und die Recyclingquote. Das System lässt sich in einzelnen Anlagen pilotieren."
+      }
+    },
+    {
+      "name": "Epoch Biodesign",
+      "field": "circular",
+      "description": {
+        "value": "Entwickelt per KI entworfene Enzyme, die Kunststoffe und Textilien wie Nylon 6,6 zu Monomeren abbauen (enzymatisches Recycling). Im März 2026 kam eine Finanzierungsrunde über 12 Mio. USD für eine Demonstrationsanlage hinzu.",
+        "source": "https://dealroom.co/companies/epoch-biodesign/"
+      },
+      "country": {
+        "value": "GB",
+        "source": "https://dealroom.co/companies/epoch-biodesign/"
+      },
+      "founded": {
+        "value": 2019,
+        "source": "https://www.goodwinlaw.com/en/news-and-events/news/2025/03/announcements-technology-epoch-biodesign-series-a-funding"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://seedtable.com/companies/epoch-biodesign"
+      },
+      "employees": {
+        "value": 56,
+        "source": "https://pitchbook.com/profiles/company/439187-59"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://epochbiodesign.com",
+      "sources": [
+        "https://dealroom.co/companies/epoch-biodesign/",
+        "https://pitchbook.com/profiles/company/439187-59",
+        "https://seedtable.com/companies/epoch-biodesign",
+        "https://www.goodwinlaw.com/en/news-and-events/news/2025/03/announcements-technology-epoch-biodesign-series-a-funding"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2019",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "56 Beschäftigte",
+        "passed": true
+      },
+      "id": "epochbiodesign-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Series A mit 12 Mio. USD für eine Demonstrationsanlage, aber kein Produkt am Markt und keine Kunden genannt; fehlende Kundenbasis führt zur niedrigeren Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Enzymatisches Recycling von Kunststoffen und Textilien ist in der Sparte Kreislaufwirtschaft denkbar und könnte die Recyclingquote erhöhen. Die Technologie ist aber erst im Demonstrationsmaßstab, kurzfristig pilotierbar ist sie nicht, und der Nutzen für mehrere Sparten ist nicht belegt."
+      }
+    },
+    {
+      "name": "Circulayo",
+      "field": "circular",
+      "description": {
+        "value": "Britischer Anbieter vernetzter Mehrwegsysteme für Gastronomie, Stadien und Events: Tracking-Plattform für Mehrwegverpackungen und Pfandrückgabe per Karte/Handy (Tap & Return).",
+        "source": "https://dealroom.co/news/158536-circulayo-raises-500-000-to-scale-reusable-packaging-software/"
+      },
+      "country": {
+        "value": "GB",
+        "source": "https://www.cbinsights.com/company/circulayo"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://www.cbinsights.com/company/circulayo"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.cbinsights.com/company/circulayo"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://circulayo.com",
+      "sources": [
+        "https://dealroom.co/news/158536-circulayo-raises-500-000-to-scale-reusable-packaging-software/",
+        "https://www.cbinsights.com/company/circulayo"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "circulayo-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, das Produkt scheint zu existieren. Zahlende Kunden, Umsätze und Teamgröße sind nicht angegeben, deshalb nur Stufe 2."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Tracking von Mehrwegverpackungen und Pfandrückgabe sind auf Gastronomie, Stadien und Events ausgerichtet, also eine Nische ohne klaren Bezug zum Filialgeschäft. Ein Bezug zur Kreislaufwirtschaft besteht, ein Kernprozess wird aber nicht adressiert."
+      }
+    },
+    {
+      "name": "CU Mehrweg",
+      "field": "circular",
+      "description": {
+        "value": "Mannheimer Startup mit standardisiertem Pfand-Mehrwegsystem für Lebensmittelverpackungen im Supermarkt (z. B. Nüsse, Trockenfrüchte); Rückgabe über Pfandautomaten, Pilotprojekte mit Handelsketten und Marken.",
+        "source": "https://www.deutschland-startet.de/geschaftsideen-marz-2026/"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.deutschland-startet.de/geschaftsideen-marz-2026/"
+      },
+      "founded": {
+        "value": 2024,
+        "source": "https://www.deutschland-startet.de/geschaftsideen-marz-2026/"
+      },
+      "funding_stage": {
+        "value": null,
+        "source": null
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://www.deutschland-startet.de/geschaftsideen-marz-2026/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2024",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "cumehrweg",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Pilotprojekte mit Handelsketten und Marken, aber kein belegter regulärer Umsatz. Gründung 2024; Finanzierungsphase und Teamgröße fehlen in den Fakten."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "circular",
+          "food",
+          "retail"
+        ],
+        "reason": "Standardisiertes Pfand-Mehrwegsystem für Lebensmittelverpackungen im Supermarkt, mit Rückgabe über Pfandautomaten. Es betrifft Filiale, Eigenmarkenverpackung und Rücknahme, der Hebel liegt bei Verpackungsmenge und Recyclingquote. Es lässt sich in einzelnen Filialen pilotieren; die Skalierbarkeit auf viele Länder ist nicht belegt, deshalb nicht Stufe 5."
+      }
+    },
+    {
+      "name": "Social Cycle",
+      "field": "circular",
+      "description": {
+        "value": "Wiener Startup mit röhrenförmigem Sammelsystem für Pfandflaschen und -dosen im öffentlichen Raum als günstigere Alternative zu Pfandringen; Zielkunden sind Städte, Gemeinden und Abfallverbände.",
+        "source": "https://brutkasten.com/artikel/social-cycle-ein-wiener-startup-entwickelt-neues-system-zum-pfandflaschensammeln"
+      },
+      "country": {
+        "value": "AT",
+        "source": "https://brutkasten.com/artikel/social-cycle-ein-wiener-startup-entwickelt-neues-system-zum-pfandflaschensammeln"
+      },
+      "founded": {
+        "value": 2026,
+        "source": "https://brutkasten.com/artikel/social-cycle-ein-wiener-startup-entwickelt-neues-system-zum-pfandflaschensammeln"
+      },
+      "funding_stage": {
+        "value": "Bootstrapped",
+        "source": "https://brutkasten.com/artikel/social-cycle-ein-wiener-startup-entwickelt-neues-system-zum-pfandflaschensammeln"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://brutkasten.com/artikel/social-cycle-ein-wiener-startup-entwickelt-neues-system-zum-pfandflaschensammeln"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2026",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "socialcycle",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Gründung 2026, Bootstrapped, weder Kunden noch Pilotprojekte noch ein Produkt am Markt genannt."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Sammelsystem für Pfandflaschen im öffentlichen Raum für Kommunen und Abfallverbände. Das ist eine Nische ohne direkten Bezug zu einem Kernprozess von Handel oder Recyclingsparte, der Hebel ist nicht quantifiziert."
+      }
+    },
+    {
+      "name": "TrashLab",
+      "field": "circular",
+      "description": {
+        "value": "Software für Entsorgungsunternehmen (Hauler): Kundendaten, Disposition, Routenplanung, Abrechnung und Reporting in einer Plattform. Der KI-Agent Haul-E nimmt Anrufe und Aufträge entgegen.",
+        "source": "https://www.morningstar.com/news/business-wire/20261029417588/trashlab-raises-12m-to-scale-the-ai-native-operating-system-for-waste-haulers"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://www.linkedin.com/company/trash-lab"
+      },
+      "founded": {
+        "value": 2022,
+        "source": "https://www.morningstar.com/news/business-wire/20261029417588/trashlab-raises-12m-to-scale-the-ai-native-operating-system-for-waste-haulers"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.thetruckersreport.com/news/trashlab-raises-12-million-expand-ai-waste-haulers/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://trashlab.com",
+      "sources": [
+        "https://www.linkedin.com/company/trash-lab",
+        "https://www.morningstar.com/news/business-wire/20261029417588/trashlab-raises-12m-to-scale-the-ai-native-operating-system-for-waste-haulers",
+        "https://www.thetruckersreport.com/news/trashlab-raises-12-million-expand-ai-waste-haulers/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2022",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "trashlab-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und ein Produkt mit KI-Agent sind belegt. Kunden, Umsätze und Teamgröße fehlen in den Fakten, deshalb Stufe 2."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "circular",
+          "logistics"
+        ],
+        "reason": "Software für Disposition, Routenplanung und Abrechnung betrifft die Entsorgungsprozesse der Kreislaufsparte. Der Nutzen ist plausibel, aber nicht quantifiziert. Der Fokus liegt auf US-Entsorgern, Datenhaltung und Europa-Tauglichkeit sind unklar, daher nur Sparten-Fit."
+      }
+    },
+    {
+      "name": "Hauler Hero",
+      "field": "circular",
+      "description": {
+        "value": "KI-gestützte Software für Entsorgungsunternehmen. Die Plattform deckt Aufträge und Abrechnung ab und verknüpft Bilder von Kameras auf Müllfahrzeugen mit einer Leitstelle, um Abholungen und Rechnungen zu prüfen.",
+        "source": "https://techcrunch.com/2026/02/10/hauler-hero-collects-16m-for-its-ai-waste-management-software/"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://techcrunch.com/2026/02/10/hauler-hero-collects-16m-for-its-ai-waste-management-software/"
+      },
+      "founded": {
+        "value": 2020,
+        "source": "https://techcrunch.com/2026/02/10/hauler-hero-collects-16m-for-its-ai-waste-management-software/"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://techcrunch.com/2026/02/10/hauler-hero-collects-16m-for-its-ai-waste-management-software/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://haulerhero.com",
+      "sources": [
+        "https://techcrunch.com/2026/02/10/hauler-hero-collects-16m-for-its-ai-waste-management-software/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2020",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "haulerhero-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und eine Plattform mit Kamera-Anbindung sind beschrieben. Kunden, Umsätze und Teamgröße fehlen in den Fakten, deshalb Stufe 2."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "circular",
+          "logistics"
+        ],
+        "reason": "Auftrags- und Abrechnungssoftware mit Kameraprüfung von Abholungen kann in der Entsorgungssparte Fehlabrechnungen und Kosten senken. Ein messbarer Beleg fehlt. Das Unternehmen sitzt in den USA, Datenhaltung und Europa-Tauglichkeit sind offen."
+      }
+    },
+    {
+      "name": "Wastrio",
+      "field": "circular",
+      "description": {
+        "value": "Digitale Plattform für Abfallbegleitscheine (Waste Transfer Notes). Sie richtet sich an Containerdienste, Umschlagstationen und Metallrecycler in Großbritannien und ersetzt Papierprozesse.",
+        "source": "https://www.fundingspotter.com/news/wastrio-2026-2"
+      },
+      "country": {
+        "value": "GB",
+        "source": "https://www.fundingspotter.com/news/wastrio-2026-2"
+      },
+      "founded": {
+        "value": 2026,
+        "source": "https://www.fundingspotter.com/news/wastrio-2026-2"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.fundingspotter.com/news/wastrio-2026-2"
+      },
+      "employees": {
+        "value": 2,
+        "source": "https://www.fundingspotter.com/news/wastrio-2026-2"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://www.fundingspotter.com/news/wastrio-2026-2"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2026",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "2 Beschäftigte",
+        "passed": true
+      },
+      "id": "wastrio",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Gründung 2026, Seed, 2 Beschäftigte. Kunden und Umsatz sind nicht belegt, ein Produkt am Markt ist nicht erkennbar."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Digitale Abfallbegleitscheine ersetzen Papierprozesse, aber nur für den britischen Markt und die dortigen Vorschriften. Das ist ein Randbezug zur Dokumentation in der Kreislaufsparte, ohne klaren Kern- oder Mehrländerhebel."
+      }
+    },
+    {
+      "name": "NEU Battery Materials",
+      "field": "circular",
+      "description": {
+        "value": "Singapurer Unternehmen mit patentiertem elektrochemischem Verfahren, das Lithium aus LFP-Altbatterien zurückgewinnt. Zielgruppe: Autohersteller, Zellhersteller und Batterierecycler. Anlage in Tuas (1.300 t/Jahr).",
+        "source": "https://apac.entrepreneur.com/business-news/neu-raises-7-6-mn-to-make-lithium-battery-recycling-pay"
+      },
+      "country": {
+        "value": "SG",
+        "source": "https://pitchbook.com/profiles/company/484885-27"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://www.cbinsights.com/company/neu-battery-materials"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://tracxn.com/d/companies/neu-battery-materials/__n7pnoFJlacYbICWmNEe8ObRc2QSb4OHPbGrr6otTDQk"
+      },
+      "employees": {
+        "value": 19,
+        "source": "https://tracxn.com/d/companies/neu-battery-materials/__n7pnoFJlacYbICWmNEe8ObRc2QSb4OHPbGrr6otTDQk"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://neumaterials.com",
+      "sources": [
+        "https://apac.entrepreneur.com/business-news/neu-raises-7-6-mn-to-make-lithium-battery-recycling-pay",
+        "https://pitchbook.com/profiles/company/484885-27",
+        "https://tracxn.com/d/companies/neu-battery-materials/__n7pnoFJlacYbICWmNEe8ObRc2QSb4OHPbGrr6otTDQk",
+        "https://www.cbinsights.com/company/neu-battery-materials"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "19 Beschäftigte",
+        "passed": true
+      },
+      "id": "neumaterials-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A, 19 Beschäftigte und eine Anlage mit 1.300 t/Jahr, also im Pilot- bis Demonstrationsmaßstab. Zahlende Kunden und Umsätze sind nicht belegt."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Lithiumrückgewinnung aus LFP-Altbatterien richtet sich an Autohersteller, Zellhersteller und Batterierecycler. Das ist ein Nischenmaterialstrom, und ein Bezug zu Handel oder den bestehenden Recyclingprozessen ist aus den Fakten nicht erkennbar. Der Standort ist Singapur."
+      }
+    },
+    {
+      "name": "Syntetica",
+      "field": "circular",
+      "description": {
+        "value": "Französisches Deeptech-Startup mit chemischem Recyclingverfahren, das Nylon 6 und Nylon 6,6 aus gemischten Textilabfällen zurückgewinnt, auch aus Mischgeweben. Partner sind Modemarken wie Etam und Victoria's Secret.",
+        "source": "https://www.adsalecprj.com/en/news/article_details/88869.html"
+      },
+      "country": {
+        "value": "FR",
+        "source": "https://tracxn.com/d/trending-business-models/startups-in-textile-recycling/__Xjm9P3STBqc31JdlJYYeyfNaM44OVof7hByMM09P2DM/companies"
+      },
+      "founded": {
+        "value": 2023,
+        "source": "https://tracxn.com/d/trending-business-models/startups-in-textile-recycling/__Xjm9P3STBqc31JdlJYYeyfNaM44OVof7hByMM09P2DM/companies"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.esgtoday.com/lululemon-backs-textile-recycling-tech-startup-syntetica/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://tracxn.com/d/trending-business-models/startups-in-textile-recycling/__Xjm9P3STBqc31JdlJYYeyfNaM44OVof7hByMM09P2DM/companies",
+        "https://www.adsalecprj.com/en/news/article_details/88869.html",
+        "https://www.esgtoday.com/lululemon-backs-textile-recycling-tech-startup-syntetica/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2023",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "syntetica",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und Partnerschaften mit Modemarken sind belegt, aber keine zahlenden Kunden, kein Umsatz und keine Angaben zu Anlagengröße oder Beschäftigten; bei fehlenden Merkmalen wird die niedrigere Stufe gewählt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Chemisches Recycling von Nylon aus gemischten Textilabfällen passt als Verwertungsweg zur Sparte Kreislaufwirtschaft (Recycling auch für externe Kunden). Der Hebel (Recyclingquote bei Mischtextilien) ist plausibel, aber nicht belegt; Textilien liegen außerhalb der Kernströme Lebensmittel und Verpackung."
+      }
+    },
+    {
+      "name": "Renasens",
+      "field": "circular",
+      "description": {
+        "value": "Schwedisches Deeptech-Startup mit wasserlosem, CO₂-basiertem Verfahren, das gemischte Alttextilien zu Fasern recycelt. Pilotanlage in Borås geplant; Zielgruppe sind europäische Textilhersteller und Marken.",
+        "source": "https://tech.eu/2026/03/25/deeptech-startup-renasens-lands-eur10m-to-scale-textile-recycling-in-europe/"
+      },
+      "country": {
+        "value": "SE",
+        "source": "https://tech.eu/2026/03/25/deeptech-startup-renasens-lands-eur10m-to-scale-textile-recycling-in-europe/"
+      },
+      "founded": {
+        "value": 2022,
+        "source": "https://www.esgtoday.com/textile-recycling-tech-startup-renasens-raises-e10-million/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.esgtoday.com/textile-recycling-tech-startup-renasens-raises-e10-million/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://renasens.com",
+      "sources": [
+        "https://tech.eu/2026/03/25/deeptech-startup-renasens-lands-eur10m-to-scale-textile-recycling-in-europe/",
+        "https://www.esgtoday.com/textile-recycling-tech-startup-renasens-raises-e10-million/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2022",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "renasens-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Seed-Phase, die Pilotanlage in Borås ist erst geplant; es gibt keine Angaben zu Produkt am Markt, Pilot- oder Zahlungskunden, daher Prototyp-Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "circular"
+        ],
+        "reason": "Wasserloses, CO₂-basiertes Faserrecycling aus gemischten Alttextilien ist ein konkreter Anwendungsfall für die Sparte Kreislaufwirtschaft. Der Nutzen ist erst nach Inbetriebnahme der Pilotanlage messbar, Textilien sind kein Kernstrom des Konzerns."
+      }
+    },
+    {
+      "name": "Ganiga",
+      "field": "circular",
+      "description": {
+        "value": "Italienisches Startup mit KI-Kamerasystem HooolyFood, das Lebensmittelabfälle über Mülleimern erkennt, ohne zu wiegen. Zielgruppe sind Caterer und Gastronomie; zusätzlich robotische Sortier-Mülleimer.",
+        "source": "https://growinagri.substack.com/p/daily-agri-updates-october-23-2026"
+      },
+      "country": {
+        "value": "IT",
+        "source": "https://www.ice.it/en/my-home/find-your-italian-partner/company-details/569245/Ganiga&gsessionid=2eOIY5wpHX3dYp7je8aHg7Fi2hJNia_aU2qVpXKByTGi3oZ8cm3BkA"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://www.ice.it/en/my-home/find-your-italian-partner/company-details/569245/Ganiga&gsessionid=2eOIY5wpHX3dYp7je8aHg7Fi2hJNia_aU2qVpXKByTGi3oZ8cm3BkA"
+      },
+      "funding_stage": {
+        "value": null,
+        "source": null
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://ganiga.com",
+      "sources": [
+        "https://growinagri.substack.com/p/daily-agri-updates-october-23-2026",
+        "https://www.ice.it/en/my-home/find-your-italian-partner/company-details/569245/Ganiga&gsessionid=2eOIY5wpHX3dYp7je8aHg7Fi2hJNia_aU2qVpXKByTGi3oZ8cm3BkA"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "ganiga-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Ein Produkt (HooolyFood) ist beschrieben, aber es fehlen Finanzierungsphase, Kundenzahlen und Umsatzangaben; belegt ist daher höchstens die Pilotstufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "circular"
+        ],
+        "reason": "KI-Kamera zur Erfassung von Lebensmittelabfällen ohne Wiegen und robotische Sortier-Mülleimer passen zur Abfallerfassung und Sortierung in der Kreislaufwirtschaft. Zielgruppe sind laut Beschreibung Caterer und Gastronomie; eine Übertragung auf Filialen oder Werke ist nicht belegt."
+      }
+    },
+    {
+      "name": "N&E Innovations",
+      "field": "circular",
+      "description": {
+        "value": "Singapurisches Deeptech-Startup, das aus Agrarabfällen wie Cashew-Schalen den essbaren Antimikrobiotikum-Wirkstoff ViKANG99 gewinnt. Einsatz in Frischhaltefolie, Verpackungen und der Nacherntebehandlung.",
+        "source": "https://www.fruitnet.com/asiafruit/nande-innovations-secures-funding-for-food-waste-tech/273176.article"
+      },
+      "country": {
+        "value": "SG",
+        "source": "https://sg.linkedin.com/company/n-e-innovations-pte-ltd"
+      },
+      "founded": {
+        "value": 2020,
+        "source": "https://sg.linkedin.com/company/n-e-innovations-pte-ltd"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.fruitnet.com/asiafruit/nande-innovations-secures-funding-for-food-waste-tech/273176.article"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://vi-kang.com",
+      "sources": [
+        "https://sg.linkedin.com/company/n-e-innovations-pte-ltd",
+        "https://www.fruitnet.com/asiafruit/nande-innovations-secures-funding-for-food-waste-tech/273176.article"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2020",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "vi-kang-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A ist belegt, aber es fehlen Angaben zu Kunden, Umsatz und Märkten; der Marktstatus des Wirkstoffs ist unklar, daher die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food"
+        ],
+        "reason": "Der essbare antimikrobielle Wirkstoff aus Agrarabfällen ist für Frischhaltefolie und Verpackungen der Eigenmarken-Produktion einsetzbar, Hebel wäre die Haltbarkeit. Zulassung als Lebensmittelkontaktstoff und Wirksamkeit sind in den Fakten nicht belegt; Sitz in Singapur."
+      }
+    },
+    {
+      "name": "Sparxity (ehem. SpiNNcloud)",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Entwickelt Chips und Komplettsysteme für sparse-native KI-Berechnung, vor allem für KI-Inferenz in Rechenzentren und Supercomputern. Kunden sind u. a. Supercomputing-Zentren wie Jülich.",
+        "source": "https://www.finsmes.com/2026/11/sparxity-closes-series-a-funding.html"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.finsmes.com/2026/11/sparxity-closes-series-a-funding.html"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://thenextweb.com/news/dresden-sparxity-series-a-90m"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.eu-startups.com/2026/11/dresden-based-sparxity-raises-e80-million-for-sparse-native-ai-computing1/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://thenextweb.com/news/dresden-sparxity-series-a-90m",
+        "https://www.eu-startups.com/2026/11/dresden-based-sparxity-raises-e80-million-for-sparse-native-ai-computing1/",
+        "https://www.finsmes.com/2026/11/sparxity-closes-series-a-funding.html"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "sparxityehemspinncloud",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 3,
+        "reason": "Series A, Produkte (Chips und Komplettsysteme) und Kunden wie Supercomputing-Zentren (u. a. Jülich) sind belegt; Umsatz, Beschäftigtenzahl und Märkte fehlen, daher keine höhere Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Sparse-native KI-Hardware für Inferenz im Rechenzentrum ist für die Sparte Digital (souveräne Cloud, KI) relevant; der Standort Deutschland ist für die Datensouveränität günstig. Der messbare Hebel (z. B. Energie, Kosten pro Inferenz) ist nicht belegt, der Einsatz ist auf Rechenzentren beschränkt."
+      }
+    },
+    {
+      "name": "Daylight Security",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Managed Detection and Response, bei dem KI-Agenten Bedrohungen erkennen, untersuchen und eindämmen; Sicherheitsingenieure verantworten komplexe Entscheidungen. Plattform „Aura“ für Unternehmen mit eigenem oder ausgelagertem SOC.",
+        "source": "https://siliconangle.com/2026/11/10/ai-driven-managed-security-startup-daylight-raises-80m-on-40-fold-revenue-growth/"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://www.securityweek.com/daylight-lands-80-million-for-ai-powered-security-operations/"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://en.globes.co.il/en/article-israeli-cybersecurity-co-daylight-raises-80m-1001562755"
+      },
+      "funding_stage": {
+        "value": "Series B",
+        "source": "https://www.morningstar.com/news/accesswire/1249257msn/as-ai-threats-surge-daylight-raises-80m-led-by-goldman-sachs-alternatives"
+      },
+      "employees": {
+        "value": 80,
+        "source": "https://en.globes.co.il/en/article-israeli-cybersecurity-co-daylight-raises-80m-1001562755"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://en.globes.co.il/en/article-israeli-cybersecurity-co-daylight-raises-80m-1001562755",
+        "https://siliconangle.com/2026/11/10/ai-driven-managed-security-startup-daylight-raises-80m-on-40-fold-revenue-growth/",
+        "https://www.morningstar.com/news/accesswire/1249257msn/as-ai-threats-surge-daylight-raises-80m-led-by-goldman-sachs-alternatives",
+        "https://www.securityweek.com/daylight-lands-80-million-for-ai-powered-security-operations/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "80 Beschäftigte",
+        "passed": true
+      },
+      "id": "daylightsecurity",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 3,
+        "reason": "Series B und 80 Beschäftigte sind belegt, die Plattform „Aura“ ist beschrieben. Kundenzahlen, Referenzkunden und Märkte fehlen, die Gründung 2025 spricht für frühes Wachstum, daher Marktreife statt Skalierung."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Managed Detection and Response mit KI-Agenten betrifft den Kernprozess Cyber Security (Erkennung und Eindämmung) und ist für eigene Sicherheitsteams wie als Angebot für externe Kunden nutzbar; der Hebel ist das Sicherheitsniveau bzw. die Reaktionszeit. Hürde: US-Anbieter, Datenhaltung und Souveränität müssten geklärt werden, daher nicht Stufe 5."
+      }
+    },
+    {
+      "name": "Hilt",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Sicherheitssoftware, die Datenbewegungen auf Kernel-Ebene in Cloud, Netzwerk und Endgeräten überwacht und per Verhaltensbasislinie Anomalien und Datenabfluss erkennt, auch bei gültigen Zugängen oder KI-Agenten.",
+        "source": "https://www.finsmes.com/2026/10/hilt-raises-usd4-2m-in-seed-funding.html"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://www.finsmes.com/2026/10/hilt-raises-usd4-2m-in-seed-funding.html"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://www.trysignalbase.com/news/funding/hilt-secures-4-2m-seed-funding"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://news.crunchbase.com/cybersecurity/from-ballet-to-breach-prevention-ai-startup-hilt-cielen/"
+      },
+      "employees": {
+        "value": 11,
+        "source": "https://www.tryplox.com/news/hilt-cybersecurity-seed-funding-william-cielen"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://hilt.ai",
+      "sources": [
+        "https://news.crunchbase.com/cybersecurity/from-ballet-to-breach-prevention-ai-startup-hilt-cielen/",
+        "https://www.finsmes.com/2026/10/hilt-raises-usd4-2m-in-seed-funding.html",
+        "https://www.tryplox.com/news/hilt-cybersecurity-seed-funding-william-cielen",
+        "https://www.trysignalbase.com/news/funding/hilt-secures-4-2m-seed-funding"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "11 Beschäftigte",
+        "passed": true
+      },
+      "id": "hilt-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, 11 Beschäftigte und Gründung 2025; Angaben zu Kunden oder Umsatz fehlen, daher höchstens Pilotphase."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Überwachung von Datenbewegungen auf Kernel-Ebene mit Anomalieerkennung gegen Datenabfluss ist ein konkreter Anwendungsfall in der Sparte Digital (Cyber Security). Hürden: US-Anbieter, Zugriff auf Kernel-Ebene, frühe Phase; ein Einsatz in Filialen ist nicht belegt."
+      }
+    },
+    {
+      "name": "Mave",
+      "field": "cloud_ai",
+      "description": {
+        "value": "KI-Plattform, die die Untersuchung von Sicherheitsalarmen über bestehende Unternehmenssysteme hinweg automatisiert, damit Security-Teams Angriffe schneller bewerten und darauf reagieren können.",
+        "source": "https://www.ynetnews.com/business/article/symkvnpngg"
+      },
+      "country": {
+        "value": "IL",
+        "source": "https://www.ynetnews.com/business/article/symkvnpngg"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://www.ynetnews.com/business/article/symkvnpngg"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.ynetnews.com/business/article/symkvnpngg"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://www.ynetnews.com/business/article/symkvnpngg"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "mave",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A, aber Gründung 2025 und keine Angaben zu Kunden, Umsatz oder Beschäftigten; der Marktstatus ist nicht belegt, daher die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Die KI-gestützte Untersuchung von Sicherheitsalarmen über bestehende Systeme entlastet Security-Teams in der Sparte Digital; der Hebel wäre die Bearbeitungszeit je Alarm, ist aber nicht belegt. Hürden: Zugriff auf Unternehmenssysteme, Datenhaltung des israelischen Anbieters und Souveränität offen."
+      }
+    },
+    {
+      "name": "Bay",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Sicherheitsplattform für KI-Agenten in Unternehmen: Sie prüft jede vorgeschlagene Agenten-Aktion im Kontext der gesamten Sitzung, bevor sie ausgeführt wird, und erlaubt, blockiert oder fragt einen Menschen.",
+        "source": "https://thenextweb.com/news/bay-50m-ai-agent-security-stealth-battery-ventures"
+      },
+      "country": {
+        "value": "IL",
+        "source": "https://www.bay.io/blog/bay-emerges-from-stealth-with-50m-after-fortune-100-companies-used-its-platform-to-triple-autonomous-ai-agent-use-2"
+      },
+      "founded": {
+        "value": 2026,
+        "source": "https://www.bay.io/blog/bay-emerges-from-stealth-with-50m-after-fortune-100-companies-used-its-platform-to-triple-autonomous-ai-agent-use-2"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://thenextweb.com/news/bay-50m-ai-agent-security-stealth-battery-ventures"
+      },
+      "employees": {
+        "value": 35,
+        "source": "https://technologies.org/bay-exits-stealth-with-50-million-to-check-every-ai-agent-action-before-it-runs/"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://bay.io",
+      "sources": [
+        "https://technologies.org/bay-exits-stealth-with-50-million-to-check-every-ai-agent-action-before-it-runs/",
+        "https://thenextweb.com/news/bay-50m-ai-agent-security-stealth-battery-ventures",
+        "https://www.bay.io/blog/bay-emerges-from-stealth-with-50m-after-fortune-100-companies-used-its-platform-to-triple-autonomous-ai-agent-use-2"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2026",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "35 Beschäftigte",
+        "passed": true
+      },
+      "id": "bay-io",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und 35 Beschäftigte sprechen für eine fortgeschrittene Finanzierung. Zu Kunden, Umsatz und Marktstatus des Produkts liegen keine Angaben vor, deshalb nur die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Die Laufzeitprüfung von KI-Agenten-Aktionen betrifft Cyber Security und KI in der Digital-Sparte, mit Hebel Sicherheitsniveau. Sie lässt sich gut pilotieren, auch für externe Kunden. Es fehlen Angaben zu Datenhaltung und Souveränität (Sitz IL), und ein Nutzen in mehreren Sparten ist nicht belegt."
+      }
+    },
+    {
+      "name": "Palma AI",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Governance-Plattform für KI-Agenten zur Laufzeit: Eine Kontrollschicht zwischen Agenten und Unternehmenssystemen verwaltet Berechtigungen, MCP-Tools und Audit-Protokolle und läuft auch in kundeneigener Infrastruktur.",
+        "source": "https://beinsure.com/news/palma-ai-raises-1-8-mn-for-enterprise-ai-agent-governance/"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://beinsure.com/news/palma-ai-raises-1-8-mn-for-enterprise-ai-agent-governance/"
+      },
+      "founded": {
+        "value": 2026,
+        "source": "https://beinsure.com/news/palma-ai-raises-1-8-mn-for-enterprise-ai-agent-governance/"
+      },
+      "funding_stage": {
+        "value": "Pre-Seed",
+        "source": "https://aipressroom.com/palma-ai-1m-ai-agents/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://palma.ai",
+      "sources": [
+        "https://aipressroom.com/palma-ai-1m-ai-agents/",
+        "https://beinsure.com/news/palma-ai-raises-1-8-mn-for-enterprise-ai-agent-governance/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2026",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "palma-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Pre-Seed und Gründung 2026. Angaben zu Kunden, Team und Marktstatus fehlen, ein Produkt am Markt ist nicht belegt."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Die Governance-Schicht für KI-Agenten (Berechtigungen, Audit-Protokolle) adressiert Sicherheit und Compliance in der Digital-Sparte. Der Betrieb in kundeneigener Infrastruktur passt zu europäischer Datensouveränität (Sitz DE) und lässt sich klein pilotieren. Ein Nutzen in mehreren Sparten ist nicht belegt."
+      }
+    },
+    {
+      "name": "NeuralTrust",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Sicherheits- und Governance-Plattform für KI-Agenten: Ein Gateway prüft Agenten-Anfragen, eine Laufzeit-Engine stoppt Angriffe, ein Inventar zeigt alle Agenten im Unternehmen. Zielgruppe sind Großunternehmen, Banken und Behörden.",
+        "source": "https://thenextweb.com/news/neuraltrust-20-million-seed-ai-agent-security"
+      },
+      "country": {
+        "value": "ES",
+        "source": "https://dealroom.co/companies/neuraltrust/"
+      },
+      "founded": {
+        "value": 2022,
+        "source": "https://www.todaysstartupnews.com/funding/neuraltrust-raises-20-million-seed-alstin-capital-europe-largest-cybersecurity-ai-agent-security-barcelona"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://thenextweb.com/news/neuraltrust-20-million-seed-ai-agent-security"
+      },
+      "employees": {
+        "value": 32,
+        "source": "https://dealroom.co/companies/neuraltrust/"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://neuraltrust.ai",
+      "sources": [
+        "https://dealroom.co/companies/neuraltrust/",
+        "https://thenextweb.com/news/neuraltrust-20-million-seed-ai-agent-security",
+        "https://www.todaysstartupnews.com/funding/neuraltrust-raises-20-million-seed-alstin-capital-europe-largest-cybersecurity-ai-agent-security-barcelona"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2022",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "32 Beschäftigte",
+        "passed": true
+      },
+      "id": "neuraltrust-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, Gründung 2022 und 32 Beschäftigte. Die Zielgruppe ist benannt, zahlende Kunden oder Referenzen sind aber nicht belegt."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Gateway, Laufzeit-Engine und Agenten-Inventar adressieren Sicherheit und Governance von KI-Agenten in der Digital-Sparte. Die Zielgruppe Großunternehmen, Banken und Behörden passt zu den externen Kunden, und der Sitz in der EU (ES) hilft bei der Souveränität. Eine Pilotierung ist gut möglich, ein Nutzen in mehreren Sparten ist nicht belegt."
+      }
+    },
+    {
+      "name": "Edelbyte",
+      "field": "cloud_ai",
+      "description": {
+        "value": "KI-native Datenplattform mit vereinheitlichter Query-Engine und Query-Federation über mehrere Systeme, ausgelegt auf die Abfragelast von KI-Agenten in Unternehmen.",
+        "source": "https://www.tokenpost.com/news/business/54953"
+      },
+      "country": {
+        "value": null,
+        "source": null
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://www.tokenpost.com/news/business/54953"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.tokenpost.com/news/business/54953"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://www.tokenpost.com/news/business/54953"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "edelbyte",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A, aber Land, Beschäftigtenzahl, Kunden und Marktstatus sind nicht angegeben. Deshalb nur die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Eine KI-native Datenplattform mit Query-Federation hat einen Anwendungsfall in der Digital-Sparte (Daten- und KI-Infrastruktur). Ein messbarer Hebel ist nicht beschrieben, und Sitz und Datenhaltung sind unbekannt, was die Souveränität offen lässt."
+      }
+    },
+    {
+      "name": "Graphon",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Entwickelt persistenten relationalen Speicher (Memory) für KI-Agenten, damit diese über große Mengen an Unternehmensdaten hinweg Zusammenhänge erfassen können. Series A am 10.11.2026.",
+        "source": "https://cryptobriefing.com/graphon-raises-35m-ai-agent-memory/"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://cryptobriefing.com/graphon-raises-35m-ai-agent-memory/"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://cryptobriefing.com/graphon-raises-35m-ai-agent-memory/"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://cryptobriefing.com/graphon-raises-35m-ai-agent-memory/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://cryptobriefing.com/graphon-raises-35m-ai-agent-memory/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "graphon",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A am 10.11.2026, aber das Produkt wird laut Beschreibung noch entwickelt. Kunden, Umsatz und Teamgröße sind nicht angegeben."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Persistenter Speicher für KI-Agenten ist eine Komponente der KI-Infrastruktur in der Digital-Sparte. Der messbare Hebel ist unklar, und der Sitz in den USA sowie die unbekannte Datenhaltung sind eine Hürde für europäische Datensouveränität."
+      }
+    },
+    {
+      "name": "Chift",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Brüsseler Anbieter einer einheitlichen API, über die Softwarefirmen ihre Produkte mit über 120 Finanzsystemen (Buchhaltung, Rechnung, Kasse, E-Commerce, Zahlung) verbinden und Daten austauschen.",
+        "source": "https://tech.eu/2026/09/14/chift-raises-eur105m-series-a-to-scale-financial-connectivity-across-europe"
+      },
+      "country": {
+        "value": "BE",
+        "source": "https://tech.eu/2026/09/14/chift-raises-eur105m-series-a-to-scale-financial-connectivity-across-europe"
+      },
+      "founded": {
+        "value": 2022,
+        "source": "https://tech.eu/2026/09/14/chift-raises-eur105m-series-a-to-scale-financial-connectivity-across-europe"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://tech.eu/2026/09/14/chift-raises-eur105m-series-a-to-scale-financial-connectivity-across-europe"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://chift.eu",
+      "sources": [
+        "https://tech.eu/2026/09/14/chift-raises-eur105m-series-a-to-scale-financial-connectivity-across-europe"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2022",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "chift-eu",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A und Gründung 2022. Die Beschreibung nennt über 120 Integrationen, aber Kundenzahl, Umsatz und Teamgröße fehlen, deshalb nur die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Eine Unified-API für Finanzsysteme, die sich an Softwarehersteller richtet, ist allenfalls für IT-Integration in Unterstützungsfunktionen nützlich. Ein Bezug zu einem Kernprozess einer Sparte oder ein messbarer Hebel ist nicht erkennbar."
+      }
+    },
+    {
+      "name": "Plurai",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Simulationsplattform für KI-Agenten: bildet Unternehmenssysteme als digitalen Zwilling nach, testet Agenten auf Fehlerfälle und trainiert kleine Open-Weight-Modelle nach. Für Firmen mit produktiven Agenten.",
+        "source": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://pitchbook.com/profiles/company/1272489-40"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://www.calcalistech.com/ctechnews/article/skzt6lmagl"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/"
+      },
+      "employees": {
+        "value": 12,
+        "source": "https://www.calcalistech.com/ctechnews/article/skzt6lmagl"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://plurai.ai",
+      "sources": [
+        "https://pitchbook.com/profiles/company/1272489-40",
+        "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+        "https://www.calcalistech.com/ctechnews/article/skzt6lmagl"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "12 Beschäftigte",
+        "passed": true
+      },
+      "id": "plurai-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, Gründung 2025 und 12 Beschäftigte. Zahlende Kunden oder Referenzen sind nicht belegt, die Zielgruppe ist nur beschrieben."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Das Testen und Absichern produktiver KI-Agenten per digitalem Zwilling hat einen Anwendungsfall in der Digital-Sparte (KI-Qualität und Risiko). Der Hebel ist nicht quantifiziert, und der Sitz in den USA sowie die unbekannte Datenhaltung sind eine mögliche Hürde."
+      }
+    },
+    {
+      "name": "TODAY (UseToday ApS)",
+      "field": "cloud_ai",
+      "description": {
+        "value": "KI-Plattform mit Agenten für Finanz- und Versicherungsberater: transkribiert Kundentermine, übernimmt Backoffice-Routineaufgaben, coacht Berater und nimmt eingehende Anrufe an. Fokus auf den DACH-Raum.",
+        "source": "https://www.startup.eu/investments/today-2-8-m-seed-10-2026"
+      },
+      "country": {
+        "value": "DK",
+        "source": "https://www.usetoday.io/blog/today-secures-2-8m-seed-funding/"
+      },
+      "founded": {
+        "value": 2024,
+        "source": "https://www.usetoday.io/blog/today-secures-2-8m-seed-funding/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.usetoday.io/blog/today-secures-2-8m-seed-funding/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://usetoday.io",
+      "sources": [
+        "https://www.startup.eu/investments/today-2-8-m-seed-10-2026",
+        "https://www.usetoday.io/blog/today-secures-2-8m-seed-funding/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2024",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "usetoday-io",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase und Gründung 2024. Das Produkt ist beschrieben, aber Kunden, Umsatz und Teamgröße fehlen."
+      },
+      "fit": {
+        "score": 1,
+        "areas": [],
+        "reason": "Die Agenten sind auf Finanz- und Versicherungsberater im DACH-Raum zugeschnitten. Ein Anwendungsfall in Handel, Produktion, Kreislaufwirtschaft, Digital oder Logistik ist aus den Fakten nicht erkennbar."
+      }
+    },
+    {
+      "name": "Ahron",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Plattform mit KI-Agenten, die HR-Prozesse systemübergreifend automatisieren und bestehende HR-Systeme verbinden. Eine zentrale Steuerungsebene gibt den Agenten Kontext. Für Unternehmen mit HR-Abteilungen.",
+        "source": "https://startupvalley.news/de/ahron-ki-agenten-hr-prozesse/"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://startupvalley.news/de/ahron-ki-agenten-hr-prozesse/"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://startupvalley.news/de/ahron-ki-agenten-hr-prozesse/"
+      },
+      "funding_stage": {
+        "value": null,
+        "source": null
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://startupvalley.news/de/ahron-ki-agenten-hr-prozesse/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "ahron",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Gründung 2025; Finanzierungsphase, Kundenbasis und Teamgröße sind nicht angegeben, ein Produkt mit Kunden am Markt ist nicht belegt. Wegen fehlender Merkmale wird die niedrigere Stufe gewählt."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [],
+        "reason": "HR-Automatisierung ist eine Unterstützungsfunktion ohne Bezug zu einem Kernprozess in Handel, Produktion, Kreislaufwirtschaft, Digital oder Logistik. Ein messbarer Hebel bei Kosten, Verfügbarkeit oder Quoten ist nicht erkennbar."
+      }
+    },
+    {
+      "name": "TensorX",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Souveräne KI-Inferenz-Plattform auf dedizierten NVIDIA-GPUs in Dublin und Helsinki, ohne Datenspeicherung, mit OpenAI-kompatibler API für Entwickler und regulierte Branchen in Europa.",
+        "source": "https://dealroom.co/news/161383-tensorx-raises-10m-to-build-gdpr-hardened-ai-inference-in-europe/"
+      },
+      "country": {
+        "value": "IE",
+        "source": "https://dealroom.co/news/161383-tensorx-raises-10m-to-build-gdpr-hardened-ai-inference-in-europe/"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://app.dealroom.co/news/note/tensorx-raises-10m-to-build-gdpr-hardened-ai-inference-in-europe"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://dealroom.co/news/161383-tensorx-raises-10m-to-build-gdpr-hardened-ai-inference-in-europe/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://tensorx.ai",
+      "sources": [
+        "https://app.dealroom.co/news/note/tensorx-raises-10m-to-build-gdpr-hardened-ai-inference-in-europe",
+        "https://dealroom.co/news/161383-tensorx-raises-10m-to-build-gdpr-hardened-ai-inference-in-europe/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "tensorx-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, Gründung 2025; Plattform mit Standorten in Dublin und Helsinki beschrieben, zahlende Kunden und Teamgröße sind nicht belegt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Souveräne KI-Inferenz in Europa ohne Datenspeicherung ist für die Sparte Digital (KI-/Cloud-Angebot) relevant, etwa als Ergänzung oder Wettbewerbsbeobachtung. Der Anwendungsfall liegt nur in einer Sparte; die Abhängigkeit von NVIDIA-GPUs und der Anbieterreife sind Hürden."
+      }
+    },
+    {
+      "name": "Vensum Power",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Entwickelt softwaredefinierte Leistungswandler, die Verluste bei der Stromumwandlung senken. Einsatz in E-Ladeinfrastruktur und Energiespeichern, als Nächstes in KI-Rechenzentren.",
+        "source": "https://tech.eu/2026/11/06/vensum-power-raises-eur9m-to-cut-power-losses-in-ai-data-centres-ev-charging-and-energy-storage/"
+      },
+      "country": {
+        "value": "FI",
+        "source": "https://startuprise.co.uk/helsinkis-vensum-power-secures-e9-million"
+      },
+      "founded": {
+        "value": 2018,
+        "source": "https://www.vensum.com/about-us/"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://techfundingnews.com/vensum-power-9m-series-a-ai-data-centre-power-converters/"
+      },
+      "employees": {
+        "value": 20,
+        "source": "https://startuprise.co.uk/helsinkis-vensum-power-secures-e9-million"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://vensum.com",
+      "sources": [
+        "https://startuprise.co.uk/helsinkis-vensum-power-secures-e9-million",
+        "https://tech.eu/2026/11/06/vensum-power-raises-eur9m-to-cut-power-losses-in-ai-data-centres-ev-charging-and-energy-storage/",
+        "https://techfundingnews.com/vensum-power-9m-series-a-ai-data-centre-power-converters/",
+        "https://www.vensum.com/about-us/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2018",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "20 Beschäftigte",
+        "passed": true
+      },
+      "id": "vensum-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 3,
+        "reason": "Series A, Gründung 2018, 20 Beschäftigte; Einsatz in E-Ladeinfrastruktur und Energiespeichern genannt. Kundenzahl und Umsatz sind nicht belegt, der Rechenzentrumsmarkt ist erst der nächste Schritt."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Leistungswandler sind eine Komponente; der Rechenzentrumseinsatz (geringere Umwandlungsverluste) ist erst geplant, bestehende Märkte liegen in Ladeinfrastruktur und Speichern. Ein direkter Bezug zu einem Kernprozess ist derzeit nicht belegt."
+      }
+    },
+    {
+      "name": "Emerald AI",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Software, die KI-Rechenzentren zu flexiblen Lasten im Stromnetz macht. KI-Agenten verschieben den Stromverbrauch; Kunden sind Rechenzentrumsbetreiber, KI-Firmen und Netzbetreiber.",
+        "source": "https://dealroom.co/news/146819-emerald-ai-raises-150m-series-a-at-1-05b-to-tame-data-center-power-deman/"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://www.esgtoday.com/data-center-power-solutions-startup-emerald-ai-raises-150-million-at-unicorn-valuation/"
+      },
+      "founded": {
+        "value": 2024,
+        "source": "https://www.esgtoday.com/data-center-power-solutions-startup-emerald-ai-raises-150-million-at-unicorn-valuation/"
+      },
+      "funding_stage": {
+        "value": "Series A",
+        "source": "https://www.emeraldai.co/blog/emerald-ai-raises-150-million-series-a"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://emeraldai.co",
+      "sources": [
+        "https://dealroom.co/news/146819-emerald-ai-raises-150m-series-a-at-1-05b-to-tame-data-center-power-deman/",
+        "https://www.emeraldai.co/blog/emerald-ai-raises-150-million-series-a",
+        "https://www.esgtoday.com/data-center-power-solutions-startup-emerald-ai-raises-150-million-at-unicorn-valuation/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2024",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "emeraldai-co",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Series A, Gründung 2024; Kundengruppen werden genannt, konkrete Kunden, Umsatz und Teamgröße fehlen. Im Zweifel die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Flexibles Lastmanagement für KI-Rechenzentren kann in der Sparte Digital den Strombezug und die Netzanschlussfähigkeit verbessern und lässt sich an einem Standort pilotieren. Hürden sind der US-Sitz und die Abhängigkeit von Netzbetreibern."
+      }
+    },
+    {
+      "name": "Powerlattice",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Entwickelt einen Power-Delivery-Chiplet, der im Prozessor-Package sitzt und den Energiebedarf von KI-Chips nach Herstellerangaben um mehr als die Hälfte senkt. Zielkunden: Chip- und KI-Beschleunigerhersteller.",
+        "source": "https://techcrunch.com/2025/11/17/powerlattice-attracts-investment-from-ex-intel-ceo-pat-gelsinger-for-its-power-saving-chiplet/"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://www.geekwire.com/2026/filing-chip-startup-powerlattice-raises-86m-to-ease-ais-power-crunch/"
+      },
+      "founded": {
+        "value": 2023,
+        "source": "https://www.geekwire.com/2025/powerlattice-a-new-semiconductor-startup-backed-by-former-intel-ceo-raises-25m/"
+      },
+      "funding_stage": {
+        "value": null,
+        "source": null
+      },
+      "employees": {
+        "value": 20,
+        "source": "https://www.geekwire.com/2025/powerlattice-a-new-semiconductor-startup-backed-by-former-intel-ceo-raises-25m/"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://techcrunch.com/2025/11/17/powerlattice-attracts-investment-from-ex-intel-ceo-pat-gelsinger-for-its-power-saving-chiplet/",
+        "https://www.geekwire.com/2025/powerlattice-a-new-semiconductor-startup-backed-by-former-intel-ceo-raises-25m/",
+        "https://www.geekwire.com/2026/filing-chip-startup-powerlattice-raises-86m-to-ease-ais-power-crunch/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2023",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "20 Beschäftigte",
+        "passed": true
+      },
+      "id": "powerlattice",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Das Produkt ist in Entwicklung (Chiplet), ein Marktstart ist nicht belegt; die Finanzierungsphase fehlt, 20 Beschäftigte, Gründung 2023. Effizienzangaben stammen vom Hersteller."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Zielkunden sind Chip- und KI-Beschleunigerhersteller, nicht Rechenzentrumsbetreiber. Ein Nutzen für die Sparte Digital wäre nur indirekt über künftige Hardware möglich und nicht pilotierbar."
+      }
+    },
+    {
+      "name": "Policloud",
+      "field": "cloud_ai",
+      "description": {
+        "value": "Französischer Anbieter souveräner KI-Cloud mit modularen, containerisierten Mikro-Rechenzentren mit wasserloser Kühlung (bis 400 GPUs je Einheit); Rahmenvertrag über 280 Einheiten an 16 Standorten in Europa.",
+        "source": "https://www.datacenterdynamics.com/en/news/policloud-signs-580m-deal-for-european-sovereign-ai-cloud-with-cloudgrid-energy/"
+      },
+      "country": {
+        "value": "FR",
+        "source": "https://www.datacenterdynamics.com/en/news/policloud-signs-580m-deal-for-european-sovereign-ai-cloud-with-cloudgrid-energy/"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://www.datacenterdynamics.com/en/news/policloud-signs-580m-deal-for-european-sovereign-ai-cloud-with-cloudgrid-energy/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.datacenterdynamics.com/en/news/policloud-signs-580m-deal-for-european-sovereign-ai-cloud-with-cloudgrid-energy/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://policloud.com",
+      "sources": [
+        "https://www.datacenterdynamics.com/en/news/policloud-signs-580m-deal-for-european-sovereign-ai-cloud-with-cloudgrid-energy/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "policloud-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, Gründung 2025; ein Rahmenvertrag über 280 Einheiten an 16 Standorten ist genannt, belegter Umsatz, Auslieferung und Teamgröße fehlen. Im Zweifel die niedrigere Stufe."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "cloud_ai"
+        ],
+        "reason": "Souveräne europäische KI-Cloud mit modularen Mikro-Rechenzentren betrifft den Kernprozess Rechenkapazität der Sparte Digital; Hebel sind Kapazitätsaufbau, Kosten und Wasserverbrauch, pilotierbar mit einer Einheit. Bis zur Marktreife des Anbieters bleibt das Lieferrisiko offen."
+      }
+    },
+    {
+      "name": "Tutor Intelligence",
+      "field": "logistics",
+      "description": {
+        "value": "Entwickelt KI-gesteuerte Roboter (Sonny, Cassie) für Lager und Fabriken, die Kartons bewegen, Paletten stapeln und Produkte kommissionieren. Abrechnung pro Stunde oder Pick; Fernbediener unterstützen.",
+        "source": "https://www.inc.com/aaron-mok/this-startup-offers-robot-workers-beginning-at-only-14-an-hour-theres-just-1-catch/91429804"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://www.inc.com/aaron-mok/this-startup-offers-robot-workers-beginning-at-only-14-an-hour-theres-just-1-catch/91429804"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://www.inc.com/aaron-mok/this-startup-offers-robot-workers-beginning-at-only-14-an-hour-theres-just-1-catch/91429804"
+      },
+      "funding_stage": {
+        "value": "Series B",
+        "source": "https://www.inc.com/aaron-mok/this-startup-offers-robot-workers-beginning-at-only-14-an-hour-theres-just-1-catch/91429804"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://tutorintelligence.com",
+      "sources": [
+        "https://www.inc.com/aaron-mok/this-startup-offers-robot-workers-beginning-at-only-14-an-hour-theres-just-1-catch/91429804"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "tutorintelligence-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 3,
+        "reason": "Series B, Gründung 2021; Abrechnung pro Stunde oder Pick deutet auf ein Produkt mit zahlenden Kunden hin. Mehrere Märkte, Referenzkunden und Teamgröße sind nicht belegt."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "food",
+          "logistics"
+        ],
+        "reason": "Kommissionieren, Palettieren und Kartonhandling in Lagern und Fabriken betrifft Kernprozesse der Logistik und der Produktion; Hebel sind Kosten pro Pick und Personalverfügbarkeit, pilotierbar in einem Lager. Offen sind die Fernbedienung (Datenzugriff, US-Anbieter) und die Skalierbarkeit auf viele Standorte."
+      }
+    },
+    {
+      "name": "cargo.one",
+      "field": "logistics",
+      "description": {
+        "value": "Berliner Plattform (KI-natives Betriebssystem) für Luft- und Seefracht: bündelt Raten, Angebotserstellung und E-Booking für Spediteure und Frachtführer, inkl. KI-gestützter Workflows.",
+        "source": "https://venturecapitaltracker.com/startup/cargo-one"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.eu-startups.com/2026/03/german-logistics-tech-firm-cargo-one-adds-cargofive-in-e17-million-backed-multimodal-expansion/"
+      },
+      "founded": {
+        "value": 2017,
+        "source": "https://www.eu-startups.com/directory/cargo-one/"
+      },
+      "funding_stage": {
+        "value": "Series B",
+        "source": "https://seedtable.com/companies/cargoone/funding-rounds/series-b-2026-03"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://cargo.one",
+      "sources": [
+        "https://seedtable.com/companies/cargoone/funding-rounds/series-b-2026-03",
+        "https://venturecapitaltracker.com/startup/cargo-one",
+        "https://www.eu-startups.com/2026/03/german-logistics-tech-firm-cargo-one-adds-cargofive-in-e17-million-backed-multimodal-expansion/",
+        "https://www.eu-startups.com/directory/cargo-one/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2017",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "cargo-one",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 3,
+        "reason": "Series B, Gründung 2017; Plattform mit Raten, Angeboten und E-Booking für Spediteure im Betrieb. Kundenzahl, Märkte und Teamgröße sind nicht angegeben."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "logistics"
+        ],
+        "reason": "Digitale Buchung und Angebotserstellung für Luft- und Seefracht betrifft die Sparte Logistik (Frachteinkauf, Prozesskosten). Die Plattform richtet sich an Spediteure und Frachtführer, der Kernprozess ist nur teilweise betroffen."
+      }
+    },
+    {
+      "name": "Sybilion",
+      "field": "logistics",
+      "description": {
+        "value": "Entscheidungsplattform für Industrieunternehmen: Externe Marktsignale (Rohstoffe, Energie, Handelsströme, Logistik) werden mit Kostenstrukturen und Produktportfolio verknüpft, um Einkauf, Vertrieb und Planung zu unterstützen.",
+        "source": "https://dealroom.co/companies/sybilion/"
+      },
+      "country": {
+        "value": "PT",
+        "source": "https://dealroom.co/companies/sybilion/"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://pulse2.com/sybilion-e3-6-million-raised-to-build-ai-decision-layer-for-industrial-companies/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://tech.eu/2026/03/11/sybilion-secures-42m-to-build-ai-platform-for-industrial-markets/"
+      },
+      "employees": {
+        "value": 30,
+        "source": "https://dealroom.co/companies/sybilion/"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://sybilion.com",
+      "sources": [
+        "https://dealroom.co/companies/sybilion/",
+        "https://pulse2.com/sybilion-e3-6-million-raised-to-build-ai-decision-layer-for-industrial-companies/",
+        "https://tech.eu/2026/03/11/sybilion-secures-42m-to-build-ai-platform-for-industrial-markets/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "30 Beschäftigte",
+        "passed": true
+      },
+      "id": "sybilion-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, 30 Beschäftigte, Gründung 2021; zu Kunden, Referenzen oder Umsatz liegen keine Angaben vor, daher nur Stufe 2."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "food",
+          "logistics"
+        ],
+        "reason": "Marktsignale und Kostenstrukturen können Einkauf und Planung (v. a. Rohstoffe/Energie in der Produktion) unterstützen. Zielgruppe sind Industrieunternehmen, ein messbarer Hebel und die Übertragbarkeit sind aus den Fakten nicht belegt."
+      }
+    },
+    {
+      "name": "Retailgrid",
+      "field": "logistics",
+      "description": {
+        "value": "KI-gestützte Planungsplattform im Tabellenformat für mittelgroße Händler und FMCG-Hersteller. Sie erstellt Preismodelle, Absatzprognosen, Sortimentsempfehlungen und Aktionsanalysen aus ERP-, Shop- und Marktdaten.",
+        "source": "https://tech.eu/2026/05/19/retailgrid-targets-retail-spreadsheets-with-eur358k-pre-seed-round/"
+      },
+      "country": {
+        "value": "FI",
+        "source": "https://tech.eu/2026/05/19/retailgrid-targets-retail-spreadsheets-with-eur358k-pre-seed-round/"
+      },
+      "founded": {
+        "value": 2026,
+        "source": "https://www.preqin.com/data/profile/asset/retailgrid-oy/801460"
+      },
+      "funding_stage": {
+        "value": "Pre-Seed",
+        "source": "https://tech.eu/2026/05/19/retailgrid-targets-retail-spreadsheets-with-eur358k-pre-seed-round/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://retailgrid.io",
+      "sources": [
+        "https://tech.eu/2026/05/19/retailgrid-targets-retail-spreadsheets-with-eur358k-pre-seed-round/",
+        "https://www.preqin.com/data/profile/asset/retailgrid-oy/801460"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2026",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "retailgrid-io",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Gründung 2026, Pre-Seed, keine Angaben zu Beschäftigten, Kunden oder Marktstatus; kein belegtes Produkt am Markt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "retail"
+        ],
+        "reason": "Preismodelle, Absatzprognosen und Sortimentsplanung betreffen den Handel. Die Zielgruppe sind mittelgroße Händler, die Eignung für einen Konzern dieser Größe ist offen; Datenhaltung ist nicht beschrieben."
+      }
+    },
+    {
+      "name": "Finches",
+      "field": "logistics",
+      "description": {
+        "value": "KI-Frühwarnsystem für den Einkauf agrarischer Rohstoffe. Verknüpft Wetter-, Satelliten-, Markt- und Lieferantendaten und warnt Lebensmittel-, Pharma- und Kosmetikhersteller vor Lieferengpässen.",
+        "source": "https://www.eu-startups.com/2026/10/bavarias-female-founded-startup-finches-raises-e2-million-to-bring-ai-early-warnings-to-agricultural-procurement/"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.htgf.de/en/finches-raises-e2m-pre-seed/"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://www.finches.ai/en/about"
+      },
+      "funding_stage": {
+        "value": "Pre-Seed",
+        "source": "https://www.htgf.de/en/finches-raises-e2m-pre-seed/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://finches.ai",
+      "sources": [
+        "https://www.eu-startups.com/2026/10/bavarias-female-founded-startup-finches-raises-e2-million-to-bring-ai-early-warnings-to-agricultural-procurement/",
+        "https://www.finches.ai/en/about",
+        "https://www.htgf.de/en/finches-raises-e2m-pre-seed/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "finches-ai",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Gründung 2025, Pre-Seed; keine Angaben zu Kunden, Team oder Umsatz, daher Idee/Prototyp-Stufe."
+      },
+      "fit": {
+        "score": 4,
+        "areas": [
+          "food"
+        ],
+        "reason": "Frühwarnung vor Lieferengpässen bei agrarischen Rohstoffen betrifft den Rohstoffeinkauf der Lebensmittelproduktion; der Hebel Warenverfügbarkeit ist messbar und lässt sich an einzelnen Rohstoffen pilotieren. Hürde: sehr frühe Phase."
+      }
+    },
+    {
+      "name": "Ottonomy",
+      "field": "logistics",
+      "description": {
+        "value": "Entwickelt den autonomen Lieferroboter Ottobot für Innen- und Außenbereiche, z. B. für Flughäfen, Einzelhandel, Gastronomie und Kliniken. Dazu gehört eine cloudbasierte Flottensteuerung.",
+        "source": "https://www.uncrewed-systems.com/covid-19-lockdowns-and-the-social-distancing-they-brought-were-the-inspiration-for-developing-this-delivery-ugv/"
+      },
+      "country": {
+        "value": "US",
+        "source": "https://tracxn.com/d/companies/ottonomy/__vR5SuS2n6szNruX2fj_Wkk_hEjzpCluZvD0jNjjJ_5M"
+      },
+      "founded": {
+        "value": 2020,
+        "source": "https://tracxn.com/d/companies/ottonomy/__vR5SuS2n6szNruX2fj_Wkk_hEjzpCluZvD0jNjjJ_5M"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://app.fundz.net/fundings/ottonomy-io-funding-round-series-a-35c668"
+      },
+      "employees": {
+        "value": 60,
+        "source": "https://tracxn.com/d/companies/ottonomy/__vR5SuS2n6szNruX2fj_Wkk_hEjzpCluZvD0jNjjJ_5M"
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://ottonomy.io",
+      "sources": [
+        "https://app.fundz.net/fundings/ottonomy-io-funding-round-series-a-35c668",
+        "https://tracxn.com/d/companies/ottonomy/__vR5SuS2n6szNruX2fj_Wkk_hEjzpCluZvD0jNjjJ_5M",
+        "https://www.uncrewed-systems.com/covid-19-lockdowns-and-the-social-distancing-they-brought-were-the-inspiration-for-developing-this-delivery-ugv/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2020",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "60 Beschäftigte",
+        "passed": true
+      },
+      "id": "ottonomy-io",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Seed-Phase, 60 Beschäftigte, Gründung 2020; ein Produkt ist beschrieben, zahlende Kunden oder Referenzen sind nicht belegt."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "logistics",
+          "retail"
+        ],
+        "reason": "Lieferroboter sind in Filialen oder auf Logistikflächen denkbar, ein Kernprozess mit messbarem Hebel ist aber nicht erkennbar. Hürden: US-Anbieter mit cloudbasierter Flottensteuerung, Datensouveränität zu klären."
+      }
+    },
+    {
+      "name": "FRYTE Mobility",
+      "field": "logistics",
+      "description": {
+        "value": "Münchner Softwareplattform für Tour-, Lade- und Energiemanagement von E-Lkw-Flotten. Ladeslots lassen sich vorab verbindlich reservieren; Ladestationsbetreiber erhalten planbare Auslastung.",
+        "source": "https://startupvalley.news/de/fryte-e-lkw-ladeinfrastruktur/"
+      },
+      "country": {
+        "value": "DE",
+        "source": "https://www.electrive.net/2026/09/10/fryte-finanzierung-e-lkw-plattform/"
+      },
+      "founded": {
+        "value": 2025,
+        "source": "https://www.electrive.net/2026/09/10/fryte-finanzierung-e-lkw-plattform/"
+      },
+      "funding_stage": {
+        "value": "Seed",
+        "source": "https://www.verkehrsrundschau.de/nachrichten/transport-logistik/fryte-mobility-erhaelt-3-5-millionen-euro-fuer-e-lkw-plattform-3901261"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": null,
+      "sources": [
+        "https://startupvalley.news/de/fryte-e-lkw-ladeinfrastruktur/",
+        "https://www.electrive.net/2026/09/10/fryte-finanzierung-e-lkw-plattform/",
+        "https://www.verkehrsrundschau.de/nachrichten/transport-logistik/fryte-mobility-erhaelt-3-5-millionen-euro-fuer-e-lkw-plattform-3901261"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2025",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "frytemobility",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 2,
+        "reason": "Gründung 2025, Seed-Phase; Angaben zu Kunden, Umsatz und Teamgröße fehlen, daher nur Pilotphase belegbar."
+      },
+      "fit": {
+        "score": 3,
+        "areas": [
+          "logistics"
+        ],
+        "reason": "Tour-, Lade- und Energiemanagement für E-Lkw-Flotten betrifft die Logistik, Kostenhebel wären Ladeplanung und Auslastung. Nutzen hängt vom Anteil elektrischer Flotten ab und ist aus den Fakten nicht quantifiziert."
+      }
+    },
+    {
+      "name": "Go Eve",
+      "field": "logistics",
+      "description": {
+        "value": "Entwickelt DockChain, ein patentiertes System, mit dem ein DC-Schnelllader mehrere Stellplätze nacheinander bedient. Zielgruppe sind Flottenbetreiber, die Ladekapazität ohne zusätzliche Lader ausbauen wollen.",
+        "source": "https://tech.eu/2026/10/21/go-eve-secures-ps750k-to-advance-its-dockchain-ev-charging-technology"
+      },
+      "country": {
+        "value": "IE",
+        "source": "https://www.ucd.ie/innovation/news-and-events/2025/go-eve-dockchain-certified-north-america/"
+      },
+      "founded": {
+        "value": 2021,
+        "source": "https://www.ucd.ie/innovation/news-and-events/2024/go-eve-announces-european-ce-mark/"
+      },
+      "funding_stage": {
+        "value": "Öffentlich gefördert",
+        "source": "https://www.ucd.ie/innovation/news-and-events/2026/go-eve-secures-funding-to-enhance-dockchain/"
+      },
+      "employees": {
+        "value": null,
+        "source": null
+      },
+      "parent_company": {
+        "value": null,
+        "source": null
+      },
+      "website": "https://goeve.com",
+      "sources": [
+        "https://tech.eu/2026/10/21/go-eve-secures-ps750k-to-advance-its-dockchain-ev-charging-technology",
+        "https://www.ucd.ie/innovation/news-and-events/2024/go-eve-announces-european-ce-mark/",
+        "https://www.ucd.ie/innovation/news-and-events/2025/go-eve-dockchain-certified-north-america/",
+        "https://www.ucd.ie/innovation/news-and-events/2026/go-eve-secures-funding-to-enhance-dockchain/"
+      ],
+      "startup_check": {
+        "rule": "EU-Empfehlung 2026/720 (innovatives Startup)",
+        "checked": "2026-11-13",
+        "age": "gegründet 2021",
+        "independent": "keine Hinweise auf ein Mutterunternehmen",
+        "size": "keine Hinweise auf 100 oder mehr Beschäftigte",
+        "passed": true
+      },
+      "id": "goeve-com",
+      "first_seen": "2026-11-13",
+      "last_updated": "2026-11-13",
+      "history": [
+        {
+          "date": "2026-11-13",
+          "change": "Neu aufgenommen"
+        }
+      ],
+      "maturity": {
+        "score": 1,
+        "reason": "Nur öffentliche Förderung als Finanzierung, keine Angaben zu Beschäftigten, Kunden oder Markteinführung; patentiertes System, kein belegtes Produkt am Markt."
+      },
+      "fit": {
+        "score": 2,
+        "areas": [
+          "logistics"
+        ],
+        "reason": "Schnellladeinfrastruktur für Flottenstellplätze ist eine Unterstützungsfunktion der Logistik ohne direkten Kernprozess. Hardware-Rollout auf viele Standorte ist aufwendig, Nutzen nicht quantifiziert."
+      }
     }
   ],
   "last_run": {
     "date": "2026-11-13",
     "new": [
-      "duvo-ai",
-      "gonina",
-      "edonia-com",
-      "graniteinfra-ai",
-      "cytix",
-      "logistikbude-de",
-      "pybrainai"
+      "visiolab-io",
+      "sensei-tech",
+      "jenz",
+      "cotarobotics-com",
+      "azoma-ai",
+      "blitz",
+      "pacificobiolabs",
+      "seemarble-com",
+      "nanostruct",
+      "aflabox-ai",
+      "hyperspectral-ai",
+      "bzero",
+      "alkelux-com",
+      "bzeos-com",
+      "greencovery-com",
+      "valuegrain",
+      "revyve-nl",
+      "hotgreensolutions",
+      "futuregreens",
+      "bariflocybernetics",
+      "danurobotics-com",
+      "reverse-fashion",
+      "jaipurrobotics-com",
+      "wesort-ai",
+      "epochbiodesign-com",
+      "circulayo-com",
+      "cumehrweg",
+      "socialcycle",
+      "trashlab-com",
+      "haulerhero-com",
+      "wastrio",
+      "neumaterials-com",
+      "syntetica",
+      "renasens-com",
+      "ganiga-com",
+      "vi-kang-com",
+      "sparxityehemspinncloud",
+      "daylightsecurity",
+      "hilt-ai",
+      "mave",
+      "bay-io",
+      "palma-ai",
+      "neuraltrust-ai",
+      "edelbyte",
+      "graphon",
+      "chift-eu",
+      "plurai-ai",
+      "usetoday-io",
+      "ahron",
+      "tensorx-ai",
+      "vensum-com",
+      "emeraldai-co",
+      "powerlattice",
+      "policloud-com",
+      "tutorintelligence-com",
+      "cargo-one",
+      "sybilion-com",
+      "retailgrid-io",
+      "finches-ai",
+      "ottonomy-io",
+      "frytemobility",
+      "goeve-com"
     ],
     "updated": [],
     "filled": [
-      "ambio",
-      "sortrace-com",
-      "fleuretai",
-      "destroai"
+      "conlio-com"
     ],
     "report": [
       {
         "field": "retail",
+        "subtopic": "Self-Checkout und kassenlose Filiale",
+        "searches": 5,
+        "found": 2,
+        "kept": 2
+      },
+      {
+        "field": "retail",
+        "subtopic": "Preis- und Sortimentsoptimierung mit KI",
+        "searches": 5,
+        "found": 1,
+        "kept": 1
+      },
+      {
+        "field": "retail",
+        "subtopic": "Bestands- und Frischemanagement, Vermeidung von Lebensmittelabfall im Handel",
+        "searches": 5,
+        "found": 0,
+        "kept": 0
+      },
+      {
+        "field": "retail",
+        "subtopic": "Retail Media und digitale Werbeflächen in Filialen",
+        "searches": 5,
+        "found": 0,
+        "kept": 0
+      },
+      {
+        "field": "retail",
+        "subtopic": "Filialbetrieb: Personalplanung, Regal-Monitoring, Filialrobotik",
+        "searches": 5,
+        "found": 1,
+        "kept": 1
+      },
+      {
+        "field": "retail",
+        "subtopic": "Online-Marktplatz, Quick Commerce und Kundenbindung",
         "searches": 5,
         "found": 2,
         "kept": 2
       },
       {
         "field": "food",
+        "subtopic": "Alternative Proteine und Präzisionsfermentation",
+        "searches": 5,
+        "found": 1,
+        "kept": 1
+      },
+      {
+        "field": "food",
+        "subtopic": "Automatisierung und Robotik in der Lebensmittelproduktion",
+        "searches": 5,
+        "found": 2,
+        "kept": 2
+      },
+      {
+        "field": "food",
+        "subtopic": "Qualitätskontrolle und Lebensmittelsicherheit mit Sensorik und KI",
+        "searches": 5,
+        "found": 2,
+        "kept": 2
+      },
+      {
+        "field": "food",
+        "subtopic": "Nachhaltige und recycelbare Verpackungen",
+        "searches": 5,
+        "found": 3,
+        "kept": 3
+      },
+      {
+        "field": "food",
+        "subtopic": "Upcycling von Nebenströmen und neue Zutaten",
+        "searches": 5,
+        "found": 3,
+        "kept": 3
+      },
+      {
+        "field": "food",
+        "subtopic": "Energie- und Ressourceneffizienz in Produktionswerken",
+        "searches": 5,
+        "found": 3,
+        "kept": 3
+      },
+      {
+        "field": "circular",
+        "subtopic": "Sortiertechnik und KI-Erkennung von Abfällen",
+        "searches": 5,
+        "found": 4,
+        "kept": 4
+      },
+      {
+        "field": "circular",
+        "subtopic": "Kunststoffrecycling, mechanisch und chemisch",
         "searches": 5,
         "found": 2,
         "kept": 2
       },
       {
         "field": "circular",
+        "subtopic": "Mehrweg-, Pfand- und Rücknahmesysteme",
+        "searches": 5,
+        "found": 3,
+        "kept": 3
+      },
+      {
+        "field": "circular",
+        "subtopic": "Abfall- und Wertstoffdaten, digitale Entsorgungslogistik",
+        "searches": 5,
+        "found": 3,
+        "kept": 3
+      },
+      {
+        "field": "circular",
+        "subtopic": "Textil-, Elektronik- und Batterierecycling",
+        "searches": 5,
+        "found": 3,
+        "kept": 3
+      },
+      {
+        "field": "circular",
+        "subtopic": "Lebensmittelrettung und Abfallvermeidung",
         "searches": 5,
         "found": 2,
         "kept": 2
       },
       {
         "field": "cloud_ai",
+        "subtopic": "Souveräne europäische Cloud und Infrastruktur",
+        "searches": 5,
+        "found": 1,
+        "kept": 1
+      },
+      {
+        "field": "cloud_ai",
+        "subtopic": "Cyber Security: Angriffserkennung, Identitäten, Zero Trust",
         "searches": 5,
         "found": 3,
         "kept": 3
       },
       {
-        "field": "logistics",
+        "field": "cloud_ai",
+        "subtopic": "Sicherheit und Governance für KI und KI-Agenten",
         "searches": 5,
         "found": 3,
         "kept": 3
+      },
+      {
+        "field": "cloud_ai",
+        "subtopic": "Datenplattformen, Datenqualität und Datenaustausch",
+        "searches": 5,
+        "found": 3,
+        "kept": 3
+      },
+      {
+        "field": "cloud_ai",
+        "subtopic": "KI-Agenten für Unternehmensprozesse",
+        "searches": 5,
+        "found": 3,
+        "kept": 3
+      },
+      {
+        "field": "cloud_ai",
+        "subtopic": "Effiziente KI-Infrastruktur: Inferenz, Rechenzentren, Energie",
+        "searches": 5,
+        "found": 5,
+        "kept": 5
+      },
+      {
+        "field": "logistics",
+        "subtopic": "Lagerautomatisierung und Kommissionierrobotik",
+        "searches": 5,
+        "found": 1,
+        "kept": 1
+      },
+      {
+        "field": "logistics",
+        "subtopic": "Transportmanagement, Frachtplattformen und Routenplanung",
+        "searches": 5,
+        "found": 2,
+        "kept": 2
+      },
+      {
+        "field": "logistics",
+        "subtopic": "Bedarfsprognose und Disposition",
+        "searches": 5,
+        "found": 2,
+        "kept": 2
+      },
+      {
+        "field": "logistics",
+        "subtopic": "Transparenz und Risikomanagement in Lieferketten",
+        "searches": 5,
+        "found": 1,
+        "kept": 1
+      },
+      {
+        "field": "logistics",
+        "subtopic": "Letzte Meile und Zustellung, auch autonom",
+        "searches": 5,
+        "found": 1,
+        "kept": 1
+      },
+      {
+        "field": "logistics",
+        "subtopic": "Emissionsarme Logistik: E-Lkw, Laden, Flottenmanagement",
+        "searches": 5,
+        "found": 2,
+        "kept": 2
       }
     ]
   },

@@ -5,58 +5,58 @@
       "week": "KW 46/2026",
       "top5": [
         {
-          "id": "duvo-ai",
-          "why": "KI-Agenten übernehmen Backoffice-Aufgaben wie Lieferantenboni-Abgleich und Frachtprüfung direkt in ERP, Lieferantenportalen und E-Mail. Der Kostenhebel ist messbar und ein Pilot in einzelnen Ländern oder Einkaufsbereichen ist möglich. Offen sind Datenzugriff, Datenhaltung und Kundenbelege (Reifegrad 2)."
+          "id": "daylightsecurity",
+          "why": "Series-B-Runde dieser Woche; KI-Agenten erkennen, untersuchen und enthalten Bedrohungen, Ingenieure entscheiden in komplexen Fällen. Relevant für Cyber Security (Reaktionszeit) bei eigenem wie ausgelagertem SOC; als US-Anbieter sind Datenhaltung und Souveränität vorab zu klären."
         },
         {
-          "id": "logistikbude-de",
-          "why": "Das digitale Ladungsträgermanagement für Paletten, Behälter und Gestelle betrifft einen Kernprozess der Logistik und richtet sich an Handel und Produktion. Ein Pilot an einzelnen Standorten oder Lagern ist denkbar. Es fehlen Belege zu Kunden, Skalierung auf mehrere Länder und Datenhaltung. Das Unternehmen firmiert seit dem Rebranding als Loopario."
+          "id": "tutorintelligence-com",
+          "why": "Roboter für Kommissionieren, Palettieren und Kartonhandling mit Abrechnung pro Stunde oder Pick, also pilotierbar in einem Lager. Hebel sind Kosten pro Pick und Personalverfügbarkeit; offen sind Fernbedienung (Datenzugriff) und Skalierung auf viele Standorte."
         },
         {
-          "id": "cytix",
-          "why": "Das Startup adressiert die Risiken schneller, KI-getriebener Softwareänderungen (Change Governance) und hat damit einen konkreten Bezug zur IT-Sicherheit. Pilotierbarkeit und messbarer Nutzen sind aus den Daten nicht klar belegt. Der Sitz in Großbritannien wirft Fragen zu Datenhaltung und Souveränität auf."
+          "id": "danurobotics-com",
+          "why": "Nachrüstbarer KI-Sortierroboter, der Störstoffe von Wertstoffen trennt und sich an einzelnen Anlagen pilotieren lässt. Hebel sind Sortierqualität, Recyclingquote und Personalkosten; zahlende Kunden und Referenzanlagen sind nicht belegt."
         },
         {
-          "id": "graniteinfra-ai",
-          "why": "Granite bietet containerisierte Rechenzentren mit eigener Orchestrierung für KI-Agenten, als Cloud-Dienst oder im Eigenbetrieb. Das Thema passt zu Cloud und KI. Das Startup ist sehr jung (Seed, 7 Beschäftigte). Offen sind Datenhaltung, Anbieterabhängigkeit und eine mögliche Überschneidung mit der eigenen Cloud."
+          "id": "sensei-tech",
+          "why": "Kassenloses Einkaufen mit Computer Vision für Supermarkt und Convenience, in einzelnen Filialen pilotierbar; Hebel sind Personalkosten und Wartezeit. Der EU-Sitz (PT) spricht für Datensouveränität, die Skalierung auf viele Filialen ist wegen der Sensorik unklar."
         },
         {
-          "id": "gonina",
-          "why": "Die KI-Absatzprognose für Bäckereien und Gastronomie soll Lebensmittelverschwendung senken und könnte für Backstationen in Filialen relevant sein. Laut Quelle läuft ein Pilotprojekt mit der SV Group. Finanzierung, Kunden und Größe des Hebels sind nicht belegt (Reifegrad 1)."
+          "id": "wesort-ai",
+          "why": "Erkennt per Kamera, Röntgensensorik und KI Lithium-Ionen-Akkus und Elektroschrott in gemischten Abfallströmen. Hebel sind Brandrisiko und Recyclingquote; Pilotierung in einzelnen Anlagen möglich, Finanzierungsphase und Kunden sind nicht angegeben."
         }
       ],
       "trends": [
         {
-          "title": "KI übernimmt operative Handels- und Logistikprozesse",
-          "text": "Mehrere Startups setzen KI direkt in operativen Abläufen ein: Duvo mit Agenten für Backoffice-Aufgaben, GoNina mit Absatzprognosen für die Produktionsplanung und PyBrain AI mit Robotern für Kommissionierung und Verpackung. Der Fokus liegt auf konkreten, messbaren Prozessen wie Boni-Abgleich, Frachtprüfung, Verschwendung und Lagerbetrieb.",
+          "title": "Sicherheit und Governance für KI-Agenten",
+          "text": "Mehrere Startups dieser Woche adressieren die Kontrolle produktiver KI-Agenten: Bay prüft jede Agenten-Aktion vor der Ausführung, NeuralTrust bietet Gateway, Laufzeit-Engine und Agenten-Inventar, Palma AI verwaltet Berechtigungen und Audit-Protokolle auch in kundeneigener Infrastruktur. Auch Plurai (Tests per digitalem Zwilling) und Daylight (KI-Agenten im Security-Betrieb) zeigen, dass Agenten zugleich Werkzeug und Schutzobjekt werden.",
           "sources": [
-            "https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/",
-            "https://www.startupticker.ch/en/news/foodsave-startup-gonina-startet-pilotprojekt-mit-der-sv-group",
-            "https://en.wowtale.net/2026/10/14/235496/"
+            "https://thenextweb.com/news/bay-50m-ai-agent-security-stealth-battery-ventures",
+            "https://thenextweb.com/news/neuraltrust-20-million-seed-ai-agent-security",
+            "https://beinsure.com/news/palma-ai-raises-1-8-mn-for-enterprise-ai-agent-governance/"
           ]
         },
         {
-          "title": "Infrastruktur und Absicherung für KI-Agenten",
-          "text": "Granite baut eine Cloud-Infrastruktur speziell für KI-Agenten, Cytix sichert Unternehmen gegen Risiken schneller, KI-getriebener Softwareänderungen ab. Beide Startups wollen die technische Grundlage und die Kontrolle für den breiteren KI-Einsatz liefern. Bei beiden sind Datenhaltung und Souveränität offene Punkte.",
+          "title": "KI-Sortierung in der Kreislaufwirtschaft",
+          "text": "Danu Robotics (nachrüstbarer Sortierroboter), Jaipur Robotics (Deep-Learning-Software für Sortieranlagen), WeSort.AI (Akku- und Elektroschrott-Erkennung) und reverse.fashion (Textilsortierung) setzen auf KI-Erkennung, um Materialströme präziser zu trennen. Zwei der Ansätze sind reine Software bzw. nachrüstbar, was Pilotierungen an einzelnen Anlagen erleichtert.",
           "sources": [
-            "https://tech.eu/2026/09/28/granite-raises-eur4m-to-bring-its-agentic-cloud-infrastructure-to-market/",
-            "https://www.eu-startups.com/2026/08/uk-cybersecurity-startup-cytix-raises-e6-million-series-a-to-tackle-ai-driven-software-change-risks/"
+            "https://dealroom.co/news/161331-danu-robotics-raises-5m-to-take-its-ai-recycling-robot-to-market/",
+            "https://www.trysignalbase.com/news/funding/jaipur-robotics-raises-5m-seed-funding",
+            "https://www.startbase.com/news/wesort-ai-erhaelt-10-millionen-euro"
           ]
         },
         {
-          "title": "Frühe Reife, kaum Kundenbelege",
-          "text": "Alle sieben neuen Startups liegen beim Reifegrad bei 1 oder 2. Auch die Series-A-Unternehmen (Duvo, Loopario, Cytix) haben keine belegten Angaben zu zahlenden Kunden oder Umsatz. Konkrete Praxisbelege gibt es nur in Form von Piloten, etwa bei GoNina und PyBrain AI. Für Pilotgespräche sollten Referenzen daher gezielt abgefragt werden.",
+          "title": "Roboter mit nutzungsbasierter Abrechnung",
+          "text": "Tutor Intelligence (Lager und Fabriken) und Cota Robotics (Lebensmittelhandel) rechnen Roboterleistung nach Stunden bzw. Picks ab, statt Hardware zu verkaufen. Das senkt die Einstiegshürde für Pilotfilialen oder Pilotlager; Skalierbarkeit und Datenzugriff bei Fernbedienung bleiben offen.",
           "sources": [
-            "https://www.startupticker.ch/en/news/foodsave-startup-gonina-startet-pilotprojekt-mit-der-sv-group",
-            "https://en.wowtale.net/2026/10/14/235496/",
-            "https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/"
+            "https://www.inc.com/aaron-mok/this-startup-offers-robot-workers-beginning-at-only-14-an-hour-theres-just-1-catch/91429804",
+            "https://www.veilstrat.com/companies/cota-robotics"
           ]
         }
       ],
       "stats": {
-        "new": 7,
+        "new": 62,
         "updated": 0,
-        "total": 33
+        "total": 95
       }
     }
   ]
