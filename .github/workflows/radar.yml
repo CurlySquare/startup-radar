@@ -11,6 +11,10 @@ on:
       felder:
         description: "alle oder z. B. retail,food"
         default: alle
+      debug:
+        description: "Ausführliches Protokoll (gesehene URLs, Rohdaten)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -35,7 +39,7 @@ jobs:
           # Eingaben über Umgebungsvariablen statt direkt im Befehl (Schutz vor Befehlsinjektion)
           MODUS: ${{ inputs.modus }}
           FELDER: ${{ inputs.felder }}
-          DEBUG: "1"   # vorübergehend: ausführliches Protokoll zur Fehlersuche
+          DEBUG: ${{ inputs.debug }}
         run: python agent/radar.py --modus "$MODUS" --felder "$FELDER"
 
       - name: Ergebnis als Download ablegen

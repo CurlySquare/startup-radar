@@ -58,7 +58,9 @@ Regeln, die immer gelten:
 2. Was du nicht belegen kannst, setzt du auf null (Wert und Quelle). Niemals schätzen oder aus dem Gedächtnis ergänzen.
 3. Nur öffentliche Unternehmensinformationen. Keine Namen oder Daten von Personen (auch nicht von Gründer:innen).
 4. Nur echte Startups: eigenständige junge Unternehmen (in der Regel nach 2012 gegründet), keine Konzerne, Beratungen oder Agenturen.
-5. Beschreibungen sachlich, auf Deutsch, ohne Werbesprache."""
+5. Beschreibungen sachlich, auf Deutsch, ohne Werbesprache. Sie sagen konkret, was das Startup anbietet und für wen.
+6. Nimm ein Startup nur auf, wenn du sein Angebot konkret beschreiben kannst. Keine Platzhalter wie "Details noch nicht belegt".
+7. Gib die offizielle Website an (Startseite, z. B. https://firma.de), wenn sie in Pressemitteilungen oder Suchergebnissen genannt wird. Sie wird automatisch auf Erreichbarkeit geprüft."""
 
 
 def _user_prompt(field_key, known_domains, today):

@@ -47,7 +47,7 @@ def main():
         raw_list, seen_urls, searches = research_field(client, field_key, known_domains)
         kept = 0
         print(f"  Gesehene Ergebnis-URLs: {len(seen_urls)}")
-        if os.environ.get("DEBUG"):
+        if os.environ.get("DEBUG") == "true":
             for u in sorted(seen_urls):
                 print("    URL:", u)
             print("  Rohdaten:", json.dumps(raw_list, ensure_ascii=False)[:6000])
