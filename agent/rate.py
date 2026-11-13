@@ -90,38 +90,44 @@ def _facts_for_prompt(entry):
     }
 
 
-def rate_entries(client, entries):
-    """Bewertet eine Liste von Einträgen. Rückgabe: {id: {"maturity":..., "fit":...}}."""
-    if not entries:
-        return {}
+BATCH_SIZE = 8  # kleinere Pakete: kürzere Antworten, weniger Abbrüche
+
+
+def _rate_batch(client, entries):
     facts = [_facts_for_prompt(e) for e in entries]
     prompt = (
         f"{load_rubric()}\n\n---\n\nBewerte diese {len(facts)} Startups:\n\n"
         + json.dumps(facts, ensure_ascii=False, indent=1)
+        + "\n\nRufe zum Schluss das Werkzeug bewertungen_speichern auf."
     )
     # Hinweis: Das verwendete Modell unterstützt kein erzwungenes Werkzeug
     # (tool_choice). Deshalb: Aufforderung im Prompt und notfalls ein zweiter Versuch.
-    messages = [{"role": "user", "content": prompt + "\n\nRufe zum Schluss das Werkzeug bewertungen_speichern auf."}]
-    response = None
-    for _ in range(2):
+    messages = [{"role": "user", "content": prompt}]
+    for attempt in range(2):
         response = client.messages.create(
-            model=MODEL,
-            max_tokens=12000,
-            system=SYSTEM_PROMPT,
-            tools=[RATE_TOOL],
-            messages=messages,
+            model=MODEL, max_tokens=8000, system=SYSTEM_PROMPT, tools=[RATE_TOOL], messages=messages,
         )
-        if any(b.type == "tool_use" for b in response.content):
-            break
+        calls = [b for b in response.content if b.type == "tool_use"]
+        if calls:
+            return calls[0].input.get("ratings", [])
+        print(f"  (Bewertung ohne Ergebnis, Abbruchgrund: {response.stop_reason}, Versuch {attempt + 1})")
         messages.append({"role": "assistant", "content": response.content})
         messages.append({"role": "user", "content": "Bitte speichere die Bewertungen jetzt mit dem Werkzeug bewertungen_speichern."})
+    return []
+
+
+def rate_entries(client, entries):
+    """Bewertet Einträge in Paketen. Rückgabe: {id: {"maturity":..., "fit":...}}."""
     ratings = {}
-    for block in response.content:
-        if block.type == "tool_use":
-            for r in block.input.get("ratings", []):
-                areas = sorted(set(r["fit"]["areas"]))
+    todo = list(entries)
+    for _round in range(2):  # zweite Runde nur für Einträge ohne Bewertung
+        for i in range(0, len(todo), BATCH_SIZE):
+            for r in _rate_batch(client, todo[i:i + BATCH_SIZE]):
                 ratings[r["id"]] = {
                     "maturity": {"score": r["maturity"]["score"], "reason": r["maturity"]["reason"]},
-                    "fit": {"score": r["fit"]["score"], "areas": areas, "reason": r["fit"]["reason"]},
+                    "fit": {"score": r["fit"]["score"], "areas": sorted(set(r["fit"]["areas"])), "reason": r["fit"]["reason"]},
                 }
+        todo = [e for e in todo if e["id"] not in ratings]
+        if not todo:
+            break
     return ratings

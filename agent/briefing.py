@@ -128,7 +128,7 @@ def make_briefing(client, week_entries, total, today):
         "week": f"KW {week}/{year}",
         "top5": top5,
         "trends": trends,
-        "stats": {"new": sum(1 for e in week_entries if len(e["history"]) == 1),
-                  "updated": sum(1 for e in week_entries if len(e["history"]) > 1),
+        "stats": {"new": sum(1 for e in week_entries if e["first_seen"] == today),
+                  "updated": sum(1 for e in week_entries if e["first_seen"] != today),
                   "total": total},
     }

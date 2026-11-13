@@ -45,10 +45,15 @@ def find_match(entry, startups):
 def merge(db, checked_entries, today):
     """Führt geprüfte Einträge in die Datenbank ein.
 
-    Rückgabe: (Liste neuer Einträge, Liste aktualisierter Einträge)
+    Rückgabe: (neue Einträge, wesentlich geänderte Einträge, nur ergänzte Einträge)
+
+    Wesentlich = neue Finanzierungsphase (echte Neuigkeit, fließt ins Briefing).
+    Ergänzt   = bisher leere Angaben werden gefüllt (Datenpflege, kein Briefing).
+    Die Beschreibung wird nur ersetzt, wenn bisher keine vorhanden war. Sonst würde
+    jede neue Formulierung des Modells als "Änderung" zählen.
     """
     startups = db["startups"]
-    new, updated = [], []
+    new, updated, filled = [], [], []
 
     for entry in checked_entries:
         match = find_match(entry, startups)
@@ -64,26 +69,36 @@ def merge(db, checked_entries, today):
             new.append(entry)
             continue
 
-        changes = []
+        changes, material = [], False
         for key in FACT_KEYS:
-            new_fact = entry[key]
-            if new_fact["value"] is not None and new_fact["value"] != match[key]["value"]:
-                old = match[key]["value"]
-                changes.append(f"{LABELS[key]}: {old if old is not None else '–'} → {new_fact['value']}"
-                               if key != "description" else "Beschreibung aktualisiert")
+            new_fact, old = entry[key], match[key]["value"]
+            if new_fact["value"] is None or new_fact["value"] == old:
+                continue
+            if old is None:
+                changes.append(f"{LABELS[key]} ergänzt")
                 match[key] = new_fact
+            elif key == "funding_stage":
+                changes.append(f"{LABELS[key]}: {old} → {new_fact['value']}")
+                match[key] = new_fact
+                material = True
+            elif key in ("country", "founded"):
+                # Widerspruch zwischen Quellen: alten Wert behalten, aber protokollieren
+                changes.append(f"{LABELS[key]}: abweichende Quelle ({new_fact['value']}), bisheriger Wert beibehalten")
         if entry.get("website") and not match.get("website"):
             match["website"] = entry["website"]
             changes.append("Website ergänzt")
         new_sources = set(entry["sources"]) - set(match["sources"])
         match["sources"] = sorted(set(match["sources"]) | set(entry["sources"]))
 
+        if changes or new_sources:
+            match["last_updated"] = today
         if changes:
-            match["last_updated"] = today
             match["history"].append({"date": today, "change": "; ".join(changes)})
-            if match not in updated and match not in new:
+            target = updated if material else filled
+            if match not in new and match not in updated and match not in filled:
+                target.append(match)
+            elif material and match in filled:
+                filled.remove(match)
                 updated.append(match)
-        elif new_sources:
-            match["last_updated"] = today
 
-    return new, updated
+    return new, updated, filled

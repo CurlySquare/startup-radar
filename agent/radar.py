@@ -77,11 +77,13 @@ def main():
         report.append({"field": field_key, "searches": searches, "found": len(raw_list), "kept": kept})
 
     # --- 3: abgleichen ---
-    new, updated = merge(db, checked, today)
-    print(f"\n=== Abgleich ===\n  neu: {len(new)} | aktualisiert: {len(updated)} | "
-          f"Duplikate/ohne Änderung: {len(checked) - len(new) - len(updated)}")
+    new, updated, filled = merge(db, checked, today)
+    print(f"\n=== Abgleich ===\n  neu: {len(new)} | neue Finanzierungsphase: {len(updated)} | "
+          f"Angaben ergänzt: {len(filled)} | "
+          f"ohne Änderung: {len(checked) - len(new) - len(updated) - len(filled)}")
 
-    # --- 4: bewerten (nur neue und geänderte Einträge) ---
+    # --- 4: bewerten (neue Einträge und solche mit neuer Finanzierungsphase) ---
+    print("\n=== Bewertung ===")
     to_rate = new + updated
     ratings = rate_entries(client, to_rate)
     for e in to_rate:
@@ -104,7 +106,8 @@ def main():
     db["updated"] = today
     week_entries = [e for e in new + updated if e.get("fit")]
     db["last_run"] = {"date": today, "new": [e["id"] for e in new if e.get("fit")],
-                      "updated": [e["id"] for e in updated], "report": report}
+                      "updated": [e["id"] for e in updated], "filled": [e["id"] for e in filled],
+                      "report": report}
 
     # --- 6: Briefing ---
     print("\n=== Briefing ===")
