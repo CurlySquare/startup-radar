@@ -5,58 +5,58 @@
       "week": "KW 46/2026",
       "top5": [
         {
-          "id": "hadrian-io",
-          "why": "Neu aufgenommen: Offensive-Security-Plattform mit agentischer KI, im Oktober 2026 wurden 35,68 Mio. € Wachstumskapital eingesammelt. Automatisierte Angriffstests lassen sich laut Bewertung an einzelnen Systemen pilotieren; das Sitzland ist nicht angegeben, die Vereinbarkeit mit europäischer Datensouveränität daher offen."
+          "id": "duvo-ai",
+          "why": "KI-Agenten übernehmen Backoffice-Aufgaben wie Lieferantenboni-Abgleich und Frachtprüfung direkt in ERP, Lieferantenportalen und E-Mail. Der Kostenhebel ist messbar und ein Pilot in einzelnen Ländern oder Einkaufsbereichen ist möglich. Offen sind Datenzugriff, Datenhaltung und Kundenbelege (Reifegrad 2)."
         },
         {
-          "id": "cycloid-io",
-          "why": "Neu aufgenommen: Der Pariser Anbieter liefert laut Meldung vom September 2026 das Entwicklerportal für den 180-Mio.-€-Rahmenvertrag der EU-Kommission für souveräne Cloud-Dienste. Französische Herkunft und EU-Referenz passen zum Thema Datensouveränität; Finanzierungsphase und Kundenzahl fehlen."
+          "id": "logistikbude-de",
+          "why": "Das digitale Ladungsträgermanagement für Paletten, Behälter und Gestelle betrifft einen Kernprozess der Logistik und richtet sich an Handel und Produktion. Ein Pilot an einzelnen Standorten oder Lagern ist denkbar. Es fehlen Belege zu Kunden, Skalierung auf mehrere Länder und Datenhaltung. Das Unternehmen firmiert seit dem Rebranding als Loopario."
         },
         {
-          "id": "ultrarobotics",
-          "why": "Neu aufgenommen: Series A über 50 Mio. US-Dollar im Oktober 2026 für Roboter, die das Verpacken von E-Commerce-Bestellungen automatisieren. Das Leasing-Modell erlaubt Pilotierung in einzelnen Fulfillment-Zentren; Hürden sind der US-Sitz und die begrenzte Zahl geeigneter Standorte."
+          "id": "cytix",
+          "why": "Das Startup adressiert die Risiken schneller, KI-getriebener Softwareänderungen (Change Governance) und hat damit einen konkreten Bezug zur IT-Sicherheit. Pilotierbarkeit und messbarer Nutzen sind aus den Daten nicht klar belegt. Der Sitz in Großbritannien wirft Fragen zu Datenhaltung und Souveränität auf."
         },
         {
-          "id": "polysense-ai",
-          "why": "Neu aufgenommen: Inline-Qualitätskontrolle und Prozesssteuerung für Lebensmittelhersteller mit Sitz in Belgien (Seed). Der Hebel ist messbar (Ausschuss, Fremdkörper, Qualität) und in einzelnen Werken pilotierbar; zahlende Kunden sind nicht belegt."
+          "id": "graniteinfra-ai",
+          "why": "Granite bietet containerisierte Rechenzentren mit eigener Orchestrierung für KI-Agenten, als Cloud-Dienst oder im Eigenbetrieb. Das Thema passt zu Cloud und KI. Das Startup ist sehr jung (Seed, 7 Beschäftigte). Offen sind Datenhaltung, Anbieterabhängigkeit und eine mögliche Überschneidung mit der eigenen Cloud."
         },
         {
-          "id": "afresh-com",
-          "why": "Neu aufgenommen: KI-Plattform gegen Frischeabfall, von der Frischebestellung bis zur Lieferkettenabstimmung. Der Hebel ist messbar (Abfall, Warenverfügbarkeit) und in einzelnen Märkten pilotierbar; vor einem Rollout ist wegen des US-Sitzes der Datenstandort zu klären."
+          "id": "gonina",
+          "why": "Die KI-Absatzprognose für Bäckereien und Gastronomie soll Lebensmittelverschwendung senken und könnte für Backstationen in Filialen relevant sein. Laut Quelle läuft ein Pilotprojekt mit der SV Group. Finanzierung, Kunden und Größe des Hebels sind nicht belegt (Reifegrad 1)."
         }
       ],
       "trends": [
         {
-          "title": "Robotik in Logistik und Zustellung",
-          "text": "Mehrere Startups bringen Robotik und Autonomie in Logistikprozesse: Ultra Robotics automatisiert das Verpacken von E-Commerce-Bestellungen, Humble Robotics entwickelt autonome Güterlastwagen, PORT will auf seinem Kuriernetz Lieferroboter aufbauen. Die Finanzierungen sind groß (50 Mio. US-Dollar, 51 Mio. US-Dollar, 14,5 Mio. €), der Einsatzstand reicht aber vom Leasing im Markt bis zu bloßer Planung.",
+          "title": "KI übernimmt operative Handels- und Logistikprozesse",
+          "text": "Mehrere Startups setzen KI direkt in operativen Abläufen ein: Duvo mit Agenten für Backoffice-Aufgaben, GoNina mit Absatzprognosen für die Produktionsplanung und PyBrain AI mit Robotern für Kommissionierung und Verpackung. Der Fokus liegt auf konkreten, messbaren Prozessen wie Boni-Abgleich, Frachtprüfung, Verschwendung und Lagerbetrieb.",
           "sources": [
-            "https://www.finsmes.com/2026/10/ultra-robotics-raises-50m-in-series-a-funding.html",
-            "https://techstartups.com/2026/11/06/startup-funding-news-today-november-6-2026-zipline-harbinger-humble-robotics-kalepa-ocient-more/",
-            "https://pomegra.io/startups/port-raises-14-5m-for-delivery-robots-in-2026-2026-11-11"
+            "https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/",
+            "https://www.startupticker.ch/en/news/foodsave-startup-gonina-startet-pilotprojekt-mit-der-sv-group",
+            "https://en.wowtale.net/2026/10/14/235496/"
           ]
         },
         {
-          "title": "Agentische KI in IT und Sicherheit",
-          "text": "Hadrian (automatisierte Angriffstests), Klarent (agentenbasierte Softwaretests) und AI Score (Steuerung von KI-Agenten in Unternehmen) setzen auf agentische KI für IT-Aufgaben. Alle drei haben im September oder Oktober 2026 Finanzierung erhalten. Die Anwendungen reichen von Sicherheit über Qualitätssicherung bis zur Governance von KI.",
+          "title": "Infrastruktur und Absicherung für KI-Agenten",
+          "text": "Granite baut eine Cloud-Infrastruktur speziell für KI-Agenten, Cytix sichert Unternehmen gegen Risiken schneller, KI-getriebener Softwareänderungen ab. Beide Startups wollen die technische Grundlage und die Kontrolle für den breiteren KI-Einsatz liefern. Bei beiden sind Datenhaltung und Souveränität offene Punkte.",
           "sources": [
-            "https://www.eu-startups.com/2026/10/10-european-startups-fighting-the-next-generation-of-ai-cyber-threats/",
-            "https://www.eu-startups.com/2026/10/zurichs-klarent-raises-e7-13-million-to-scale-its-agentic-software-testing-platform-and-expand-into-the-us/",
-            "https://www.eu-startups.com/2026/09/londons-ai-score-raises-e4-6-million-to-help-businesses-keep-ai-agents-under-control/"
+            "https://tech.eu/2026/09/28/granite-raises-eur4m-to-bring-its-agentic-cloud-infrastructure-to-market/",
+            "https://www.eu-startups.com/2026/08/uk-cybersecurity-startup-cytix-raises-e6-million-series-a-to-tackle-ai-driven-software-change-risks/"
           ]
         },
         {
-          "title": "KI für Qualität in der Lebensmittelproduktion",
-          "text": "Polysense und Backbone, beide aus Belgien, setzen KI in der Qualitätssicherung von Lebensmittelherstellern ein. Polysense kontrolliert inline auf der Produktionslinie und steuert Maschinenparameter, Backbone gleicht Qualitätsdaten mit Standards wie IFS, BRCGS und FSSC 22000 ab. Beide sind früh finanziert (Seed bzw. Pre-Seed), Kunden sind nicht belegt.",
+          "title": "Frühe Reife, kaum Kundenbelege",
+          "text": "Alle sieben neuen Startups liegen beim Reifegrad bei 1 oder 2. Auch die Series-A-Unternehmen (Duvo, Loopario, Cytix) haben keine belegten Angaben zu zahlenden Kunden oder Umsatz. Konkrete Praxisbelege gibt es nur in Form von Piloten, etwa bei GoNina und PyBrain AI. Für Pilotgespräche sollten Referenzen daher gezielt abgefragt werden.",
           "sources": [
-            "https://tech.eu/2026/07/08/polysense-raises-107m-to-scale-ai-quality-control-for-food-manufacturers/",
-            "https://tech.eu/2026/09/03/backbone-raises-eur4m-for-automated-food-quality-and-compliance/"
+            "https://www.startupticker.ch/en/news/foodsave-startup-gonina-startet-pilotprojekt-mit-der-sv-group",
+            "https://en.wowtale.net/2026/10/14/235496/",
+            "https://tech.eu/2026/10/14/from-rohlik-to-enterprise-ai-tomas-cuprs-duvo-raises-32m-series-a/"
           ]
         }
       ],
       "stats": {
-        "new": 13,
+        "new": 7,
         "updated": 0,
-        "total": 37
+        "total": 33
       }
     }
   ]
