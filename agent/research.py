@@ -44,7 +44,7 @@ SAVE_TOOL = {
                         "description": _fact({"type": ["string", "null"], "description": "1–2 Sätze auf Deutsch, max. 220 Zeichen"}),
                         "country": _fact({"type": ["string", "null"], "description": "ISO-Ländercode des Hauptsitzes, z. B. DE"}),
                         "founded": _fact({"type": ["integer", "null"]}),
-                        "funding_stage": _fact({"type": ["string", "null"], "enum": FUNDING_STAGES + [None]}),
+                        "funding_stage": _fact({"anyOf": [{"type": "string", "enum": FUNDING_STAGES}, {"type": "null"}]}),
                     },
                     "required": ["name", "website", "description", "country", "founded", "funding_stage"],
                     "additionalProperties": False,
