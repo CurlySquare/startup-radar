@@ -40,7 +40,7 @@ SAVE_TOOL = {
                     "type": "object",
                     "properties": {
                         "name": {"type": "string"},
-                        "website": {"type": ["string", "null"], "description": "Offizielle Website des Startups"},
+                        "website": {"type": ["string", "null"], "description": "Offizielle Startseite, z. B. https://firma.de (wird automatisch geprüft, keine Quelle nötig)"},
                         "description": _fact({"type": ["string", "null"], "description": "1–2 Sätze auf Deutsch, max. 220 Zeichen"}),
                         "country": _fact({"type": ["string", "null"], "description": "ISO-Ländercode des Hauptsitzes, z. B. DE"}),
                         "founded": _fact({"type": ["integer", "null"]}),
@@ -65,7 +65,7 @@ Regeln, die immer gelten:
 4. Nur echte Startups: eigenständige junge Unternehmen (in der Regel nach 2012 gegründet), keine Konzerne, Beratungen oder Agenturen.
 5. Beschreibungen sachlich, auf Deutsch, ohne Werbesprache. Sie sagen konkret, was das Startup anbietet und für wen.
 6. Nimm ein Startup nur auf, wenn du sein Angebot konkret beschreiben kannst. Keine Platzhalter wie "Details noch nicht belegt".
-7. Gib die offizielle Website an (Startseite, z. B. https://firma.de), wenn sie in Pressemitteilungen oder Suchergebnissen genannt wird. Sie wird automatisch auf Erreichbarkeit geprüft."""
+7. Gib immer die offizielle Website an (Startseite, z. B. https://firma.de). Sie ist von Regel 1 ausgenommen, weil das System sie selbst aufruft und prüft. Nur null, wenn du die Adresse wirklich nicht kennst."""
 
 
 def _user_prompt(field_key, known_domains, today):
