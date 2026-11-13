@@ -91,19 +91,14 @@ def research_field(client, field_key, known_domains):
     today = datetime.date.today().isoformat()
     messages = [{"role": "user", "content": _user_prompt(field_key, known_domains, today)}]
     seen_urls, searches, result = set(), 0, None
-    force_save = False
 
     for _ in range(6):  # Sicherheitsgrenze gegen Endlosschleifen
-        kwargs = {}
-        if force_save:
-            kwargs["tool_choice"] = {"type": "tool", "name": SAVE_TOOL["name"]}
         response = client.messages.create(
             model=MODEL,
             max_tokens=8000,
             system=SYSTEM_PROMPT,
             tools=[WEB_SEARCH, SAVE_TOOL],
             messages=messages,
-            **kwargs,
         )
 
         for block in response.content:
@@ -124,8 +119,8 @@ def research_field(client, field_key, known_domains):
         if response.stop_reason == "pause_turn":
             continue  # lange Suche wurde pausiert: einfach fortsetzen
         # Claude hat geantwortet, ohne zu speichern: freundlich zum Speichern auffordern
-        messages.append({"role": "user", "content": "Bitte speichere jetzt deine Ergebnisse mit dem Werkzeug startups_speichern."})
-        force_save = True
+        # (Erzwingen per tool_choice unterstützt das Modell nicht, daher als Bitte.)
+        messages.append({"role": "user", "content": "Bitte speichere jetzt deine Ergebnisse mit dem Werkzeug startups_speichern. Keine weiteren Suchen."})
 
     startups = (result or {}).get("startups", [])[:MAX_STARTUPS_PER_FIELD]
     return startups, seen_urls, searches

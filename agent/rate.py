@@ -99,14 +99,22 @@ def rate_entries(client, entries):
         f"{load_rubric()}\n\n---\n\nBewerte diese {len(facts)} Startups:\n\n"
         + json.dumps(facts, ensure_ascii=False, indent=1)
     )
-    response = client.messages.create(
-        model=MODEL,
-        max_tokens=12000,
-        system=SYSTEM_PROMPT,
-        tools=[RATE_TOOL],
-        tool_choice={"type": "tool", "name": RATE_TOOL["name"]},
-        messages=[{"role": "user", "content": prompt}],
-    )
+    # Hinweis: Das verwendete Modell unterstützt kein erzwungenes Werkzeug
+    # (tool_choice). Deshalb: Aufforderung im Prompt und notfalls ein zweiter Versuch.
+    messages = [{"role": "user", "content": prompt + "\n\nRufe zum Schluss das Werkzeug bewertungen_speichern auf."}]
+    response = None
+    for _ in range(2):
+        response = client.messages.create(
+            model=MODEL,
+            max_tokens=12000,
+            system=SYSTEM_PROMPT,
+            tools=[RATE_TOOL],
+            messages=messages,
+        )
+        if any(b.type == "tool_use" for b in response.content):
+            break
+        messages.append({"role": "assistant", "content": response.content})
+        messages.append({"role": "user", "content": "Bitte speichere die Bewertungen jetzt mit dem Werkzeug bewertungen_speichern."})
     ratings = {}
     for block in response.content:
         if block.type == "tool_use":
