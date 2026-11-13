@@ -3,13 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Startup Radar</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 4rem auto; padding: 0 1rem; color: #222; }
-  </style>
+  <!-- Gleicher Pfad auf GitHub Pages und unter kijanvakilzadeh.com: so funktionieren alle relativen Links auch ohne Schrägstrich am Ende -->
+  <base href="/startup-radar/">
+  <title>Startup Radar – KI-Agent für Startup-Scouting | Kijan Vakilzadeh</title>
+  <meta name="description" content="Ein KI-Agent, der jede Woche Startups in Handel, Logistik, Kreislaufwirtschaft, Food-Tech und Cloud/KI recherchiert, mit Quellen belegt und bewertet.">
+  <link rel="canonical" href="https://kijanvakilzadeh.com/startup-radar/">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%230f5f5c' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%230f5f5c' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%230f5f5c'/%3E%3C/svg%3E">
 </head>
 <body>
-  <h1>Startup Radar</h1>
-  <p>Diese Seite ist im Aufbau.</p>
+  <a class="skip" href="#datenbank">Zur Datenbank springen</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="Startup Radar, zum Seitenanfang">
+        <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="16" cy="16" r="7" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="16" cy="16" r="2.5" fill="currentColor"/></svg>
+        Startup Radar
+      </a>
+      <nav aria-label="Abschnitte">
+        <a href="#datenbank">Datenbank</a>
+        <a href="#briefing">Briefing</a>
+        <a href="#agent">Ablauf</a>
+        <a href="#making-of">Making-of</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 1. Einstieg -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Arbeitsprobe · Startup-Scouting mit Agentic AI</p>
+        <h1>Startup Radar</h1>
+        <p class="lead">Ein KI-Agent, der jede Woche Startups in fünf Zukunftsfeldern des Handels recherchiert, jede Angabe mit einer Quelle belegt und nach Reifegrad und strategischem Fit bewertet.</p>
+
+        <div class="stats" aria-live="polite">
+          <div class="stat"><span class="stat-num" id="stat-total">–</span><span class="stat-label">Startups in der Datenbank</span></div>
+          <div class="stat"><span class="stat-num">5</span><span class="stat-label">Felder</span></div>
+          <div class="stat"><span class="stat-num" id="stat-updated">–</span><span class="stat-label">letzte Aktualisierung</span></div>
+          <div class="stat"><span class="stat-num" id="stat-next">–</span><span class="stat-label">nächster automatischer Lauf</span></div>
+        </div>
+
+        <div class="intro-grid">
+          <div>
+            <h2 class="h3">Was Sie hier sehen</h2>
+            <ul class="checklist">
+              <li><a href="#datenbank"><strong>Startup-Datenbank</strong></a>: filterbar und sortierbar. Jede Angabe ist mit ihrer Quelle verlinkt.</li>
+              <li><a href="#briefing"><strong>Wochen-Briefing</strong></a>: die Top 5 und die Trends der Woche, jeden Montag automatisch erstellt.</li>
+              <li><a href="#making-of"><strong>Making-of</strong></a>: wie der Agent entstanden ist, mit allen Prompts, Entscheidungen und Fehlern.</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="h3">Warum ich ihn gebaut habe</h2>
+            <p>Startup-Scouting braucht Struktur: eine saubere Datenbank, nachvollziehbare Bewertungen und ein regelmäßiges Trend-Monitoring. Mit dem Radar zeige ich, wie sich das mit Agentic AI umsetzen lässt. Er zeigt auch, wo Kontrolle durch Code und Mensch nötig bleibt.</p>
+            <p class="signature">Kijan Vakilzadeh</p>
+          </div>
+        </div>
+
+        <p class="notice"><strong>Hinweis:</strong> Die Inhalte sind KI-generiert und nicht vollständig manuell geprüft. <a href="#transparenz">Mehr zur Transparenz</a></p>
+      </div>
+    </section>
+
+    <!-- 2. Datenbank -->
+    <section id="datenbank" class="section">
+      <div class="wrap">
+        <h2>Startup-Datenbank</h2>
+        <p class="section-lead">Tippen Sie auf einen Eintrag, um Details, Quellen und die Begründungen der Bewertung zu sehen. Ein „–“ heißt: nicht belegt. Diese Angabe wird bewusst nicht geschätzt.</p>
+
+        <div class="controls" role="search">
+          <label class="ctl ctl-search">
+            <span>Suche</span>
+            <input id="q" type="search" placeholder="Name oder Stichwort, z. B. Recycling" autocomplete="off">
+          </label>
+          <label class="ctl">
+            <span>Feld</span>
+            <select id="f-field"><option value="">Alle Felder</option></select>
+          </label>
+          <label class="ctl">
+            <span>Reifegrad</span>
+            <select id="f-maturity">
+              <option value="0">alle</option><option value="2">ab 2</option><option value="3">ab 3</option><option value="4">ab 4</option><option value="5">5</option>
+            </select>
+          </label>
+          <label class="ctl">
+            <span>Strategischer Fit</span>
+            <select id="f-fit">
+              <option value="0">alle</option><option value="2">ab 2</option><option value="3">ab 3</option><option value="4">ab 4</option><option value="5">5</option>
+            </select>
+          </label>
+          <label class="ctl">
+            <span>Sortierung</span>
+            <select id="sort">
+              <option value="fit">Fit</option>
+              <option value="maturity">Reifegrad</option>
+              <option value="recent">Zuletzt aktualisiert</option>
+              <option value="name">Name A–Z</option>
+            </select>
+          </label>
+          <button id="reset" class="btn-link" type="button">Filter zurücksetzen</button>
+        </div>
+
+        <p class="result-count" id="count" aria-live="polite"></p>
+
+        <div class="db-head" aria-hidden="true">
+          <span>Startup</span><span>Feld</span><span>Land</span><span>Phase</span><span>Reifegrad</span><span>Fit</span>
+        </div>
+        <div id="list" class="db-list"></div>
+
+        <details class="legend">
+          <summary>Bewertungsraster anzeigen</summary>
+          <div class="legend-grid">
+            <div>
+              <h3 class="h4">Reifegrad</h3>
+              <ol id="legend-maturity"></ol>
+            </div>
+            <div>
+              <h3 class="h4">Strategischer Fit</h3>
+              <p class="small">Bezugspunkt ist ein großer europäischer Handels- und Digitalkonzern mit fünf Sparten: Lebensmittelhandel, eigene Produktion, Kreislaufwirtschaft, Cloud und Security sowie Logistik als Querschnittsfunktion.</p>
+              <ol id="legend-fit"></ol>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 3. Briefing -->
+    <section id="briefing" class="section section-alt">
+      <div class="wrap">
+        <h2>Wochen-Briefing</h2>
+        <div id="briefing-current"><p class="muted">Briefing wird geladen …</p></div>
+        <div id="briefing-archive"></div>
+      </div>
+    </section>
+
+    <!-- 4. So funktioniert der Agent -->
+    <section id="agent" class="section">
+      <div class="wrap">
+        <h2>So funktioniert der Agent</h2>
+        <p class="section-lead">Nur die Recherche ist agentisch, also offen und vom Sprachmodell gesteuert. Prüfen, Abgleichen und Speichern erledigt fester Code. So viel Autonomie wie nötig, so viel Kontrolle wie möglich.</p>
+
+        <ol class="flow">
+          <li class="flow-step"><span class="badge badge-ai">KI</span><h3>Recherchieren</h3><p>Claude sucht pro Feld im Web nach aktuellen Startups (höchstens 4 Suchen, 5 Treffer).</p></li>
+          <li class="flow-step"><span class="badge badge-code">Code</span><h3>Quellen prüfen</h3><p>Eine Angabe bleibt nur, wenn ihre Quelle in den echten Suchergebnissen vorkam. Sonst bleibt sie leer.</p></li>
+          <li class="flow-step"><span class="badge badge-code">Code</span><h3>Abgleichen</h3><p>Duplikate werden über Domain, Name und gemeinsame Quellen erkannt. Änderungen landen in der Historie.</p></li>
+          <li class="flow-step"><span class="badge badge-ai">KI</span><h3>Bewerten</h3><p>Reifegrad und Fit von 1–5 nach festem Raster, nur auf Basis der geprüften Fakten.</p></li>
+          <li class="flow-step"><span class="badge badge-code">Code</span><h3>Speichern</h3><p>Die Daten liegen als JSON im Git-Repository. Jede Änderung ist versioniert.</p></li>
+          <li class="flow-step"><span class="badge badge-code">Code</span><span class="badge badge-ai">KI</span><h3>Briefing</h3><p>Die Rangfolge der Top 5 berechnet der Code nach einer Regel. Begründungen und Trends schreibt die KI.</p></li>
+        </ol>
+
+        <div class="tech">
+          <div>
+            <h3 class="h4">Qualitätsregeln</h3>
+            <ul>
+              <li>Keine Angabe ohne Quelle. Was sich nicht belegen lässt, bleibt leer.</li>
+              <li>Nur öffentliche Unternehmensinformationen, keine Daten über Personen.</li>
+              <li>Bewertungen sind gekennzeichnete KI-Einschätzungen mit Begründung.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="h4">Technik</h3>
+            <ul>
+              <li>Python mit der Claude API (Anthropic) und integrierter Websuche</li>
+              <li>Automatischer Lauf jeden Montag über GitHub Actions</li>
+              <li>Statische Website ohne Server, ohne Cookies und ohne externe Skripte</li>
+              <li><a href="https://github.com/CurlySquare/startup-radar" rel="noopener">Quellcode auf GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Making-of -->
+    <section id="making-of" class="section section-alt">
+      <div class="wrap">
+        <h2>Making-of</h2>
+        <p class="section-lead">Das Build-Log in chronologischer Reihenfolge. Gebaut habe ich den Radar im Dialog mit Claude als KI-Entwicklungspartner. Hier stehen die tatsächlich verwendeten Prompts, die wichtigsten Entscheidungen, die Probleme und was ich daraus gelernt habe.</p>
+        <div id="makingof-list"><p class="muted">Wird geladen …</p></div>
+      </div>
+    </section>
+
+    <!-- 6. Transparenz -->
+    <section id="transparenz" class="section">
+      <div class="wrap narrow">
+        <h2>Transparenzhinweis</h2>
+        <p><strong>Mit KI-Unterstützung gebaut.</strong> Code, Texte und Struktur sind im Dialog mit Claude (Anthropic) entstanden. Ziele, Entscheidungen und die Prüfung der Ergebnisse lagen bei mir.</p>
+        <p><strong>Inhalte sind KI-generiert und nicht vollständig manuell geprüft.</strong> Die Datenbank und die Briefings erstellt ein KI-Agent automatisch. Jede Faktenangabe ist mit ihrer Quelle verlinkt. Bitte prüfen Sie wichtige Angaben dort. Bewertungen sind Einschätzungen des Modells, keine Empfehlungen.</p>
+        <p><strong>Daten:</strong> Verarbeitet werden nur öffentliche Unternehmensinformationen, keine personenbezogenen Daten. Diese Seite setzt keine Cookies und lädt keine Skripte oder Schriften von Drittanbietern.</p>
+        <p><strong>Unabhängigkeit:</strong> Ein privates Projekt ohne geschäftliche Verbindung zu den aufgeführten Startups.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Kijan Vakilzadeh</span>
+      <a href="https://kijanvakilzadeh.com/">Startseite</a>
+      <a href="https://github.com/CurlySquare/startup-radar" rel="noopener">Code auf GitHub</a>
+      <span class="muted" id="footer-stand"></span>
+    </div>
+  </footer>
+
+  <script src="vendor/marked.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
