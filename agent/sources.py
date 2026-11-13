@@ -5,6 +5,7 @@ aber dieser Code: Die URL muss in den Suchergebnissen des aktuellen Laufs
 vorgekommen sein. Erfundene oder falsch abgeschriebene Links fallen so heraus.
 """
 import datetime
+import json
 import re
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
@@ -63,17 +64,32 @@ def _fact_ok(key, value):
     return True
 
 
+def _as_dict(obj):
+    """Das Modell liefert verschachtelte Objekte gelegentlich als JSON-Text.
+    Diese Funktion macht daraus wieder ein Objekt; alles andere gilt als leer."""
+    if isinstance(obj, dict):
+        return obj
+    if isinstance(obj, str):
+        try:
+            parsed = json.loads(obj)
+            return parsed if isinstance(parsed, dict) else {}
+        except json.JSONDecodeError:
+            return {"value": obj, "source": None}  # Wert ohne Quelle -> wird entfernt
+    return {}
+
+
 def check_startup(raw, seen_urls, field_key):
     """Prüft einen vom Modell gelieferten Eintrag.
 
     Rückgabe: (geprüfter Eintrag oder None, Protokoll der entfernten Angaben)
     """
     removed = []
+    raw = _as_dict(raw)
     name = (raw.get("name") or "").strip()
     entry = {"name": name, "field": field_key}
 
     for key in ("description", "country", "founded", "funding_stage"):
-        fact = raw.get(key) or {}
+        fact = _as_dict(raw.get(key))
         value, source = fact.get("value"), fact.get("source")
         if _fact_ok(key, value) and normalize_url(source) in seen_urls:
             entry[key] = {"value": value, "source": source}
