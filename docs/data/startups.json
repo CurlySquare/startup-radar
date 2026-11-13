@@ -5,7 +5,7 @@
       "name": "Thri5",
       "field": "retail",
       "description": {
-        "value": "KI-Technologie für den Einzelhandel, die das Geschehen in der Filiale mit der zentralen Planung verknüpft. Wild Fork Foods setzt sie in seinem Filialnetz in den USA und Kanada ein.",
+        "value": "KI-Plattform für den Einzelhandel, die Abläufe auf der Fläche mit der zentralen Planung verbindet. Wild Fork Foods setzt sie in seinem Filialnetz in den USA und Kanada ein.",
         "source": "https://retailtechinnovationhub.com/home/2026/9/21/ai-retail-technology-startup-thri5-builds-on-wild-fork-foods-pilot-as-it-lands-54-million-in-seed-funding"
       },
       "country": {
@@ -31,6 +31,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert"
         }
       ],
       "maturity": {
@@ -49,7 +53,7 @@
       "name": "Freshflow",
       "field": "retail",
       "description": {
-        "value": "KI-Prognose- und Auto-Dispositionslösung für Frischware im Lebensmittelhandel. Im Einsatz u. a. bei L. Stroetmann; Ausbau auf Milch, Fleisch und Backwaren geplant.",
+        "value": "Berliner KI-Startup mit Prognose- und Auto-Dispo-Lösung für Frischware im Lebensmittelhandel. Im Einsatz u. a. bei L. Stroetmann. Series A im Juni 2026 unter Führung von Reimann Investors.",
         "source": "https://www.lebensmittelzeitung.net/tech-logistik/nachrichten/frischware-freshflow-sammelt-frisches-kapital-ein-191394"
       },
       "country": {
@@ -64,7 +68,7 @@
         "value": "Series A",
         "source": "https://www.lebensmittelzeitung.net/tech-logistik/nachrichten/frischware-freshflow-sammelt-frisches-kapital-ein-191394"
       },
-      "website": null,
+      "website": "https://freshflow.ai",
       "sources": [
         "https://www.lebensmittelzeitung.net/tech-logistik/nachrichten/frischware-freshflow-sammelt-frisches-kapital-ein-191394"
       ],
@@ -75,6 +79,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert; Website ergänzt"
         }
       ],
       "maturity": {
@@ -139,7 +147,7 @@
       "name": "Vori",
       "field": "retail",
       "description": {
-        "value": "KI-natives Betriebssystem für unabhängige und regionale Supermärkte: Checkout, Zahlungen, Preisgestaltung, Bestellung, Bestandsführung und Loyalty in einer Plattform.",
+        "value": "KI-natives Betriebssystem für unabhängige und regionale Lebensmittelhändler in den USA. Es deckt Checkout, Zahlungen, Preise, Bestellung, Bestand und Kundenbindung ab. Series B (22 Mio. USD) im Mai 2026.",
         "source": "https://retailtechinnovationhub.com/home/2026/5/6/grocery-technology-startup-vori-secures-22-million-series-b-for-autonomous-supermarkets-push"
       },
       "country": {
@@ -154,7 +162,7 @@
         "value": "Series B",
         "source": "https://retailtechinnovationhub.com/home/2026/5/6/grocery-technology-startup-vori-secures-22-million-series-b-for-autonomous-supermarkets-push"
       },
-      "website": null,
+      "website": "https://vori.com",
       "sources": [
         "https://retailtechinnovationhub.com/home/2026/5/6/grocery-technology-startup-vori-secures-22-million-series-b-for-autonomous-supermarkets-push",
         "https://www.ycombinator.com/companies/industry/retail"
@@ -166,6 +174,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert; Website ergänzt"
         }
       ],
       "maturity": {
@@ -184,7 +196,7 @@
       "name": "Tristar AI",
       "field": "food",
       "description": {
-        "value": "KI-basierte Bildinspektion für Produktionslinien: erkennt Defekte in Echtzeit und bindet sich in vorhandene Kameras, SPS, MES und ERP ein. Kunden u. a. Verpackungs- und Folienhersteller.",
+        "value": "KI-gestützte Bildinspektion für Fertigungslinien: erkennt Defekte in Echtzeit, alarmiert Bediener und bietet Qualitätsteams Transparenz über Linien und Werke. Kunden u. a. Verpackungshersteller.",
         "source": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html"
       },
       "country": {
@@ -210,6 +222,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert"
         }
       ],
       "maturity": {
@@ -228,7 +244,7 @@
       "name": "Magical Mushroom Company",
       "field": "food",
       "description": {
-        "value": "Britisches Unternehmen, das nachhaltige Verpackungen auf pflanzlicher Basis (Pilzmaterial) entwickelt. Zuletzt Finanzierungsrunde über 3,4 Mio. Euro.",
+        "value": "Britisches Unternehmen für nachhaltige, pflanzenbasierte Verpackungen aus Pilzmaterial als Alternative zu Kunststoffverpackungen; hat 3,4 Mio. € Finanzierung erhalten.",
         "source": "https://www.eu-startups.com/tag/sustainable-packaging/"
       },
       "country": {
@@ -254,6 +270,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert"
         }
       ],
       "maturity": {
@@ -316,7 +336,7 @@
       "name": "Ferm Labs",
       "field": "food",
       "description": {
-        "value": "Schweizerisch-italienisches Startup mit Bioprozess-Plattform für salzfreie, Clean-Label-Geschmacksverstärker für industrielle Lebensmittelhersteller. Runde über 3 Mio. Euro.",
+        "value": "Schweizerisch-italienisches Startup mit Bioprozess-Plattform zur Herstellung salzfreier, Clean-Label-Geschmacksverstärker für industrielle Lebensmittelhersteller; 3 Mio. € Finanzierungsrunde im September 2026.",
         "source": "https://www.startupticker.ch/en/news?tag=Food"
       },
       "country": {
@@ -342,6 +362,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert"
         }
       ],
       "maturity": {
@@ -404,7 +428,7 @@
       "name": "Ambio",
       "field": "circular",
       "description": {
-        "value": "KI-basierte Beschaffungsplattform für Recyclingkunststoffe: von der Materialsuche bis zur langfristigen Lieferung, mit Fokus auf Qualitätskontrolle und Lieferzuverlässigkeit für Industriekunden.",
+        "value": "KI-gestützte Beschaffungsplattform für Recyclingkunststoffe: von der Materialsuche bis zur Liefervereinbarung, mit Qualitätskontrolle und Versorgungssicherheit für Industriekunden.",
         "source": "https://www.trendingtopics.eu/ambio-finnish-plastic-recycling-startup-raises-e5-1-million/"
       },
       "country": {
@@ -432,6 +456,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert"
         }
       ],
       "maturity": {
@@ -450,8 +478,8 @@
       "name": "Sortrace",
       "field": "circular",
       "description": {
-        "value": "KI-Kamerasysteme an Müllfahrzeugen analysieren Haushaltsabfall beim Leeren der Tonnen und zeigen Fehlsortierungen nach Route und Bezirk. Zielkunden: Kommunen und Entsorgungsunternehmen.",
-        "source": "https://app.dealroom.co/news/note/sortrace-raises-800k-to-turn-waste-trucks-into-ai-sorting-data"
+        "value": "KI-Kameras an Müllfahrzeugen analysieren beim Leeren der Tonnen den Haushaltsabfall und zeigen Kommunen und Entsorgern Fehlsortierungen. Neu: Finanzierungsrunde über ca. 800.000 US-Dollar (Nov. 2026).",
+        "source": "https://tech.eu/2026/11/02/sortrace-lands-800k-to-improve-waste-sorting-with-ai-powered-analysis"
       },
       "country": {
         "value": "SE",
@@ -468,6 +496,7 @@
       "website": "https://sortrace.com",
       "sources": [
         "https://app.dealroom.co/news/note/sortrace-raises-800k-to-turn-waste-trucks-into-ai-sorting-data",
+        "https://arcticstartup.com/sortrace-raises-800k/",
         "https://tech.eu/2026/11/02/sortrace-lands-800k-to-improve-waste-sorting-with-ai-powered-analysis",
         "https://www.vestbee.com/insights/articles/sortrace-raises-800k"
       ],
@@ -478,6 +507,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert"
         }
       ],
       "maturity": {
@@ -496,7 +529,7 @@
       "name": "Circulayo",
       "field": "circular",
       "description": {
-        "value": "Entwickelt vernetzte Mehrwegsysteme (Tap & Return) für Verpackungsrückgabe in der Gastronomie, u. a. in Stadien, Arenen und Eventlocations, um Einweg-Plastikbecher zu ersetzen.",
+        "value": "Software und vernetzte Mehrwegsysteme (Tap & Return) für die Rückgabe von Getränke- und Speisebehältern in Stadien, Arenen und Veranstaltungsorten.",
         "source": "https://dealroom.co/news/158536-circulayo-raises-500-000-to-scale-reusable-packaging-software/"
       },
       "country": {
@@ -522,6 +555,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert"
         }
       ],
       "maturity": {
@@ -540,7 +577,7 @@
       "name": "Reuse",
       "field": "circular",
       "description": {
-        "value": "Plattform für Logistik wiederverwendbarer Verpackungen (Kreislaufverpackung). Das Unternehmen aus Santiago de Chile hat eine Series A über 21 Mio. US-Dollar abgeschlossen.",
+        "value": "Plattform für zirkuläre Verpackungslogistik (Mehrwegverpackungen). Series A über 21 Mio. US-Dollar im Oktober 2026, angeführt von At One Ventures.",
         "source": "https://venture5.com/vc-deals/reuse-raises-21m-series-a/"
       },
       "country": {
@@ -566,6 +603,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert"
         }
       ],
       "maturity": {
@@ -585,7 +626,7 @@
       "name": "Recykal",
       "field": "circular",
       "description": {
-        "value": "Technologieplattform für Abfallmanagement und Recycling aus Hyderabad, die mit rund 650 Marken zusammenarbeitet, darunter Hindustan Unilever und Samsung.",
+        "value": "Technologieplattform für Abfallmanagement und Recycling. Arbeitet mit rund 650 Marken zusammen, darunter Hindustan Unilever und Samsung. Strategische Investition im November 2026.",
         "source": "https://startuptalky.com/news/daily-indian-funding-roundup-key-news-12-november-2026/"
       },
       "country": {
@@ -600,7 +641,7 @@
         "value": null,
         "source": null
       },
-      "website": null,
+      "website": "https://recykal.com",
       "sources": [
         "https://startuptalky.com/news/daily-indian-funding-roundup-key-news-12-november-2026/"
       ],
@@ -611,6 +652,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert; Website ergänzt"
         }
       ],
       "maturity": {
@@ -761,7 +806,7 @@
       "name": "Fleuret AI",
       "field": "cloud_ai",
       "description": {
-        "value": "Französisches Cybersecurity-Startup aus Paris, das Penetrationstests mit KI-Agenten automatisiert. Es schloss im Oktober 2026 eine Pre-Seed-Runde über 4 Mio. Euro ab.",
+        "value": "Französisches Cybersecurity-Startup, das Penetrationstests mit KI-Agenten automatisiert. Im Oktober 2026 schloss es eine Pre-Seed-Runde über 4 Mio. € ab.",
         "source": "https://www.eu-startups.com/2026/10/10-european-startups-fighting-the-next-generation-of-ai-cyber-threats/"
       },
       "country": {
@@ -769,8 +814,8 @@
         "source": "https://www.eu-startups.com/2026/10/10-european-startups-fighting-the-next-generation-of-ai-cyber-threats/"
       },
       "founded": {
-        "value": null,
-        "source": null
+        "value": 2026,
+        "source": "https://www.eu-startups.com/2026/10/10-european-startups-fighting-the-next-generation-of-ai-cyber-threats/"
       },
       "funding_stage": {
         "value": "Pre-Seed",
@@ -787,6 +832,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert; Gründungsjahr: – → 2026"
         }
       ],
       "maturity": {
@@ -805,7 +854,7 @@
       "name": "Clastix",
       "field": "cloud_ai",
       "description": {
-        "value": "Softwareanbieter aus Neapel für Kubernetes-Infrastruktur, mit der Organisationen Anwendungen in eigenen Umgebungen betreiben und Kontrolle über Hardware und Daten behalten.",
+        "value": "Softwareanbieter aus Neapel für Kubernetes-Infrastruktur. Organisationen verwalten Anwendungen in eigenen Umgebungen und behalten Kontrolle über Hardware und Daten. Seed-Runde über 2,9 Mio. € im September 2026.",
         "source": "https://www.eu-startups.com/2026/10/aws-wants-to-prove-its-cloud-can-survive-without-the-us-european-startups-are-already-there/"
       },
       "country": {
@@ -820,7 +869,7 @@
         "value": "Seed",
         "source": "https://www.eu-startups.com/2026/10/aws-wants-to-prove-its-cloud-can-survive-without-the-us-european-startups-are-already-there/"
       },
-      "website": null,
+      "website": "https://clastix.io",
       "sources": [
         "https://www.eu-startups.com/2026/10/aws-wants-to-prove-its-cloud-can-survive-without-the-us-european-startups-are-already-there/"
       ],
@@ -831,6 +880,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert; Website ergänzt"
         }
       ],
       "maturity": {
@@ -849,7 +902,7 @@
       "name": "Procuros",
       "field": "logistics",
       "description": {
-        "value": "KI-native Plattform zur Vernetzung von B2B-Handelslieferketten zwischen Herstellern, Händlern und Lieferanten. Im Oktober 2026 Series A über 20 Mio. Euro, Expansion in Europa und die USA geplant.",
+        "value": "KI-native Plattform zur Vernetzung von B2B-Handelslieferketten: Hersteller, Großhändler und Händler tauschen Bestell-, Liefer- und Rechnungsdaten automatisiert aus. Series A über 20 Mio. Euro im Oktober 2026.",
         "source": "https://logistik-heute.de/en/news/start-ups-procuros-raises-20-million-euros-series-funding-round-287665.html"
       },
       "country": {
@@ -864,7 +917,7 @@
         "value": "Series A",
         "source": "https://logistik-heute.de/en/news/start-ups-procuros-raises-20-million-euros-series-funding-round-287665.html"
       },
-      "website": null,
+      "website": "https://procuros.io",
       "sources": [
         "https://logistik-heute.de/en/news/start-ups-procuros-raises-20-million-euros-series-funding-round-287665.html"
       ],
@@ -875,6 +928,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert; Website ergänzt"
         }
       ],
       "maturity": {
@@ -894,7 +951,7 @@
       "name": "Ultra",
       "field": "logistics",
       "description": {
-        "value": "Entwickelt stationäre Zweiarm-Roboter (OP1 Operator) für Verpacken, Sortieren und Kitting in Lagern; Vermietung der Roboter per Monatsgebühr. Im Oktober 2026 Series A über 50 Mio. US-Dollar.",
+        "value": "Stationäre Roboter mit zwei Armen für Verpacken, Sortieren und Kommissionieren in Lagern, die per Robots-as-a-Service an Logistik- und Fulfillment-Standorte in den USA vermietet werden. Series A über 50 Mio. USD im Oktober 2026.",
         "source": "https://robotico.market/news/ultra-raises-50-million-to-scale-ai-powered-warehouse-robots"
       },
       "country": {
@@ -911,7 +968,9 @@
       },
       "website": null,
       "sources": [
-        "https://robotico.market/news/ultra-raises-50-million-to-scale-ai-powered-warehouse-robots"
+        "https://dealroom.co/news/161151-ultra-raises-50m-series-a-to-scale-its-robots-as-a-service-warehouse-bus/",
+        "https://robotico.market/news/ultra-raises-50-million-to-scale-ai-powered-warehouse-robots",
+        "https://www.finsmes.com/2026/10/ultra-robotics-raises-50m-in-series-a-funding.html"
       ],
       "id": "ultra",
       "first_seen": "2026-11-13",
@@ -920,6 +979,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert"
         }
       ],
       "maturity": {
@@ -1027,23 +1090,24 @@
       "name": "sennder",
       "field": "logistics",
       "description": {
-        "value": "Berliner Logistikunternehmen mit eigener Technologieplattform (sennOS) für den europäischen Straßengüterverkehr. Im November 2026 Finanzierungspaket über 228 Mio. Euro aus Eigen- und Fremdkapital.",
-        "source": "https://www.startbase.com/news/sennder-will-mit-228-millionen-euro-weiter-wachsen"
+        "value": "Digitale Straßengüterverkehrs-Plattform (sennOS) für den europäischen Transport. Im November 2026 Finanzierungspaket über 228 Mio. Euro aus Eigen- und Fremdkapital, u. a. für KI-Agenten und Netzwerkausbau.",
+        "source": "https://www.sesamers.com/funding/sennder-raises-228m-equity-debt-road-freight/"
       },
       "country": {
         "value": "DE",
         "source": "https://www.startbase.com/news/sennder-will-mit-228-millionen-euro-weiter-wachsen"
       },
       "founded": {
-        "value": null,
-        "source": null
+        "value": 2015,
+        "source": "https://www.sesamers.com/funding/sennder-raises-228m-equity-debt-road-freight/"
       },
       "funding_stage": {
         "value": null,
         "source": null
       },
-      "website": null,
+      "website": "https://sennder.com",
       "sources": [
+        "https://www.sesamers.com/funding/sennder-raises-228m-equity-debt-road-freight/",
         "https://www.startbase.com/news/sennder-will-mit-228-millionen-euro-weiter-wachsen"
       ],
       "id": "sennder",
@@ -1053,6 +1117,10 @@
         {
           "date": "2026-11-13",
           "change": "Neu aufgenommen"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Beschreibung aktualisiert; Gründungsjahr: – → 2015; Website ergänzt"
         }
       ],
       "maturity": {
@@ -1070,33 +1138,25 @@
   ],
   "last_run": {
     "date": "2026-11-13",
-    "new": [
+    "new": [],
+    "updated": [
       "thri5",
       "freshflow",
-      "foodforecast",
       "vori",
       "tristar-ai",
       "magicalmushroomcompany",
-      "paleo",
       "fermlabs",
-      "sentianova",
       "ambio",
-      "sortrace-com",
       "circulayo",
       "reuse",
       "recykal",
-      "nebuly",
-      "querio",
-      "agentf",
+      "sortrace-com",
       "fleuretai",
       "clastix",
       "procuros",
       "ultra",
-      "atomic-supply",
-      "destroai",
       "sennder"
     ],
-    "updated": [],
     "report": [
       {
         "field": "retail",

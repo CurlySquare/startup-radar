@@ -1,3 +1,64 @@
 {
-  "briefings": []
+  "briefings": [
+    {
+      "date": "2026-11-13",
+      "week": "KW 46/2026",
+      "top5": [
+        {
+          "id": "sennder",
+          "why": "Finanzierungspaket über 228 Mio. Euro aus Eigen- und Fremdkapital, u. a. für KI-Agenten und den Netzwerkausbau der Straßengüterverkehrs-Plattform. Der Fit ist hoch (Frachtkosten, Auslastung, pilotierbar auf einzelnen Relationen); die Abhängigkeit von einem externen Frachtanbieter bleibt zu prüfen."
+        },
+        {
+          "id": "freshflow",
+          "why": "Series A im Juni 2026 unter Führung von Reimann Investors; die Lösung für Prognose und automatische Disposition von Frischware ist bereits bei L. Stroetmann im Einsatz. Hebel bei Warenverfügbarkeit und Abschriften, pilotierbar in einzelnen Filialen."
+        },
+        {
+          "id": "tristar-ai",
+          "why": "Echtzeit-Bildinspektion zur Defekterkennung an Fertigungslinien ist bei Verpackungs- und Folienherstellern im Einsatz. Hebel bei Ausschuss und Qualität, pilotierbar in einzelnen Werken; die Datenhaltung des US-Anbieters ist noch ungeklärt."
+        },
+        {
+          "id": "procuros",
+          "why": "Series A über 20 Mio. Euro im Oktober 2026, Expansion nach Europa und in die USA geplant. Die automatisierte Vernetzung von Hersteller-, Großhandels- und Händlerdaten betrifft die Lieferantenanbindung und ist mit einzelnen Lieferanten oder Ländern pilotierbar."
+        },
+        {
+          "id": "sortrace-com",
+          "why": "Neue Finanzierungsrunde über ca. 800.000 US-Dollar (Pre-Seed, November 2026) für KI-Kameras an Müllfahrzeugen, die Fehlsortierungen nach Route und Bezirk sichtbar machen. Früher Reifegrad, Pilotkunden sind nicht genannt; pilotierbar auf einzelnen Routen."
+        }
+      ],
+      "trends": [
+        {
+          "title": "KI steuert operative Handels- und Lieferkettenprozesse",
+          "text": "Mehrere Startups dieser Woche setzen KI als Steuerungsebene für Kernabläufe ein: Freshflow (automatische Disposition von Frischware), Thri5 (Verbindung von Filialgeschehen und zentraler Planung), Vori (Betriebssystem für Lebensmittelhändler), Procuros (automatisierter Austausch von Bestell-, Liefer- und Rechnungsdaten) und sennder (KI-Agenten im Straßengüterverkehr). Der Schwerpunkt liegt auf Disposition, Planung und Datenaustausch statt auf Einzellösungen.",
+          "sources": [
+            "https://www.lebensmittelzeitung.net/tech-logistik/nachrichten/frischware-freshflow-sammelt-frisches-kapital-ein-191394",
+            "https://logistik-heute.de/en/news/start-ups-procuros-raises-20-million-euros-series-funding-round-287665.html",
+            "https://retailtechinnovationhub.com/home/2026/9/21/ai-retail-technology-startup-thri5-builds-on-wild-fork-foods-pilot-as-it-lands-54-million-in-seed-funding"
+          ]
+        },
+        {
+          "title": "Kreislaufwirtschaft: Daten, Beschaffung und Mehrweg",
+          "text": "In der Kreislaufwirtschaft finden sich Ansätze entlang der gesamten Kette: Sortrace analysiert Fehlsortierungen in der Sammlung, Ambio bietet eine KI-Beschaffungsplattform für Recyclingkunststoffe, Reuse und Circulayo adressieren Mehrwegverpackungen und Recykal Abfallmanagement. Die Reife ist überwiegend früh (Pre-Seed bis Series A), nur Reuse und Recykal zeigen größere Runden bzw. Kundenzahlen.",
+          "sources": [
+            "https://tech.eu/2026/11/02/sortrace-lands-800k-to-improve-waste-sorting-with-ai-powered-analysis",
+            "https://www.packagingeurope.com/recycled-polymer-procurement-platform-raises-eur5-1m-in-seed-funding/",
+            "https://venture5.com/vc-deals/reuse-raises-21m-series-a/"
+          ]
+        },
+        {
+          "title": "Kameras und Robotik machen physische Abläufe messbar",
+          "text": "Tristar AI (Bildinspektion an Fertigungslinien), Sortrace (Kameras an Müllfahrzeugen) und Ultra (Zweiarm-Roboter für Lager, per Robots-as-a-Service vermietet) bringen KI in physische Prozesse. Gemeinsam ist, dass sie bestehende Abläufe ohne Komplettumbau ergänzen und sich an einzelnen Werken, Routen oder Standorten pilotieren lassen. Offen bleiben bei den US-Anbietern Datenhaltung und europäische Verfügbarkeit.",
+          "sources": [
+            "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+            "https://arcticstartup.com/sortrace-raises-800k/",
+            "https://www.finsmes.com/2026/10/ultra-robotics-raises-50m-in-series-a-funding.html"
+          ]
+        }
+      ],
+      "stats": {
+        "new": 0,
+        "updated": 16,
+        "total": 24
+      }
+    }
+  ]
 }
