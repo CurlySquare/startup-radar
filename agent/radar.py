@@ -49,7 +49,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--modus", choices=["testlauf", "vollstaendig"], default="testlauf")
     parser.add_argument("--felder", default="alle", help="z. B. retail,food oder alle")
-    parser.add_argument("--themen", choices=["woche", "alle"], default="woche",
+    parser.add_argument("--themen", choices=["woche", "alle", "keine"], default="woche",
                         help="woche = ein Unterthema pro Feld (Rotation), alle = alle Unterthemen (Auffüllen)")
     args = parser.parse_args()
 
@@ -68,7 +68,10 @@ def main():
     tasks = []
     for field_key in fields:
         subs = FIELDS[field_key]["subtopics"]
-        chosen = subs if args.themen == "alle" else [subs[week % len(subs)]]
+        if args.themen == "keine":   # nur Bestand prüfen (z. B. nach einer Regeländerung)
+            chosen = []
+        else:
+            chosen = subs if args.themen == "alle" else [subs[week % len(subs)]]
         tasks += [(field_key, t) for t in chosen]
 
     for field_key, subtopic in tasks:
@@ -107,8 +110,10 @@ def main():
         print(f"  {before - len(checked)} bereits ausgeschlossene Kandidaten übersprungen")
     for i, c in enumerate(checked):
         c["id"] = f"kandidat-{i + 1}"  # vorläufige ID für die Nachrecherche
-    gaps = [c for c in checked if c["founded"]["value"] is None] + \
-           [s_ for s_ in db["startups"] if s_["founded"]["value"] is None or "startup_check" not in s_]
+    def missing(e):
+        return e["founded"]["value"] is None or e["country"]["value"] is None
+    gaps = [c for c in checked if missing(c)] + \
+           [s_ for s_ in db["startups"] if missing(s_) or "startup_check" not in s_]
     print(f"  Nachrecherche für {len(gaps)} Einträge …")
     verify_entries(client, gaps)
 
@@ -119,7 +124,7 @@ def main():
         if ok:
             eligible.append(c)
         else:
-            print(f"  ✘ {c['name']}: kein Startup nach EU-Definition ({result['age']}; {result['independent']}; {result['size']})")
+            print(f"  ✘ {c['name']}: nicht aufgenommen ({result['age']}; {result['region']}; {result['independent']}; {result['size']})")
             if hard:
                 db["excluded"].append({"name": c["name"], "website": c.get("website"), "sources": c["sources"],
                                        "reason": result, "hard": True, "date": today})
@@ -137,7 +142,7 @@ def main():
         if ok:
             kept.append(s_)
         else:
-            print(f"  ✘ Aus dem Radar entfernt: {s_['name']} ({result['age']}; {result['independent']}; {result['size']})")
+            print(f"  ✘ Aus dem Radar entfernt: {s_['name']} ({result['age']}; {result['region']}; {result['independent']}; {result['size']})")
             db["excluded"].append({"name": s_["name"], "website": s_.get("website"), "sources": s_["sources"],
                                    "reason": result, "hard": hard, "date": today})
             for lst in (new, updated, filled):
@@ -171,6 +176,9 @@ def main():
     # --- 5: speichern ---
     db["updated"] = today
     week_entries = [e for e in new + updated if e.get("fit")]
+    if args.themen == "keine":
+        # Nach einer Regeländerung: Briefing des Tages aus dem verbleibenden Bestand neu erstellen
+        week_entries = [e for e in db["startups"] if e.get("first_seen") == today and e.get("fit")]
     db["last_run"] = {"date": today, "new": [e["id"] for e in new if e.get("fit")],
                       "updated": [e["id"] for e in updated], "filled": [e["id"] for e in filled],
                       "report": report}

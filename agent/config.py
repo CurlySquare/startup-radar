@@ -101,3 +101,12 @@ STARTUP_MAX_EMPLOYEES = 100     # weniger als 100 Beschäftigte
 # Nachrecherche fehlender Kriterien (Gründungsjahr usw.)
 VERIFY_BATCH_SIZE = 4
 MAX_SEARCHES_PER_VERIFY = 5
+
+# Nur Startups mit Hauptsitz in Europa (Fokus auf europäische Souveränität):
+# EU-27, EWR/EFTA (NO, IS, LI, CH) und Vereinigtes Königreich (GB).
+EUROPE_COUNTRIES = {
+    "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
+    "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE",   # EU-27
+    "NO", "IS", "LI", "CH",                                                   # EWR / EFTA
+    "GB",                                                                     # Vereinigtes Königreich
+}

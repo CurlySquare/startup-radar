@@ -35,10 +35,11 @@ def _tool(ids):
                         "properties": {
                             "id": {"type": "string", "enum": ids},
                             "founded": _fact({"type": ["integer", "null"]}),
+                            "country": _fact({"type": ["string", "null"], "description": "ISO-Ländercode des Hauptsitzes, z. B. DE"}),
                             "employees": _fact({"type": ["integer", "null"]}),
                             "parent_company": _fact({"type": ["string", "null"]}),
                         },
-                        "required": ["id", "founded", "employees", "parent_company"],
+                        "required": ["id", "founded", "country", "employees", "parent_company"],
                         "additionalProperties": False,
                     },
                 }
@@ -50,7 +51,7 @@ def _tool(ids):
 
 
 SYSTEM_PROMPT = """Du prüfst Unternehmensangaben für eine Startup-Datenbank.
-Finde für jedes Unternehmen: Gründungsjahr, Zahl der Beschäftigten und ob ein anderes Unternehmen (kein Investor) es übernommen hat oder mehrheitlich besitzt.
+Finde für jedes Unternehmen: Gründungsjahr, Land des Hauptsitzes (ISO-Code), Zahl der Beschäftigten und ob ein anderes Unternehmen (kein Investor) es übernommen hat oder mehrheitlich besitzt.
 Regeln: Jede Angabe braucht als "source" eine URL aus deinen Suchergebnissen, die den Wert belegt. Was du nicht belegen kannst, setzt du auf null. Niemals schätzen. Keine Daten über Personen."""
 
 
@@ -88,7 +89,7 @@ def verify_entries(client, entries):
             e = by_id.get(r["id"])
             if not e:
                 continue
-            for key in ("founded", "employees", "parent_company"):
+            for key in ("founded", "country", "employees", "parent_company"):
                 fact = check_fact(key, r.get(key), seen)
                 if fact and (e.get(key) or {}).get("value") is None:
                     e[key] = fact

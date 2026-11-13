@@ -70,6 +70,7 @@ Regeln, die immer gelten:
    - weniger als 100 Beschäftigte und höchstens 10 Mio. € Umsatz,
    - mit einem neuen oder deutlich verbesserten Produkt oder Verfahren.
    Keine Konzerne, Tochterfirmen, Beratungen oder Agenturen.
+   Zusätzlich: nur Startups mit Hauptsitz in Europa (EU, EWR, Schweiz, Vereinigtes Königreich). Das Land des Hauptsitzes ist Pflicht und muss belegt sein.
    Das Gründungsjahr ist Pflicht: Suche gezielt danach und belege es. Ohne belegtes Gründungsjahr wird ein Startup verworfen.
 5. Beschreibungen sachlich, auf Deutsch, ohne Werbesprache. Sie sagen konkret, was das Startup anbietet und für wen.
 6. Nimm ein Startup nur auf, wenn du sein Angebot konkret beschreiben kannst. Keine Platzhalter wie "Details noch nicht belegt".
@@ -85,7 +86,7 @@ Recherchiere bis zu {MAX_STARTUPS_PER_FIELD} relevante Startups im Feld "{field[
 Unterthema dieser Suche: {subtopic}.
 (Das Feld umfasst allgemein: {field['focus']}.)
 
-Bevorzuge Startups mit aktuellen Meldungen (Finanzierungsrunde, Produktstart, Pilotprojekt mit Händlern oder Herstellern, Auszeichnung) aus den letzten acht Wochen. Europa hat Vorrang, weltweit ist erlaubt.
+Bevorzuge Startups mit aktuellen Meldungen (Finanzierungsrunde, Produktstart, Pilotprojekt mit Händlern oder Herstellern, Auszeichnung) aus den letzten acht Wochen. Nur Startups mit Hauptsitz in Europa.
 
 Bereits bekannt (Namen bzw. Domains): {known}
 Suche bevorzugt nach Startups, die hier noch nicht stehen. Bekannte nur aufnehmen, wenn du neue, belegte Informationen gefunden hast.

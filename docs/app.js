@@ -116,7 +116,7 @@
       </dl>
       ${s.startup_check ? `<h4>Startup-Prüfung</h4>
       <p class="small check">Nach EU-Definition (Empfehlung 2026/720) ✓<br>
-        Alter: ${esc(s.startup_check.age)} · Eigenständigkeit: ${esc(s.startup_check.independent)} · Größe: ${esc(s.startup_check.size)}</p>` : ""}
+        Alter: ${esc(s.startup_check.age)} · ${esc(s.startup_check.region || "")} · Eigenständigkeit: ${esc(s.startup_check.independent)} · Größe: ${esc(s.startup_check.size)}</p>` : ""}
       <h4>Alle Quellen</h4>
       <ul class="sources">${sources}</ul>
     </div>

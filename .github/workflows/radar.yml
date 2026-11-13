@@ -16,9 +16,9 @@ on:
         description: "alle oder z. B. retail,food"
         default: alle
       themen:
-        description: "woche = ein Unterthema pro Feld, alle = alle Unterthemen (einmaliges Auffüllen)"
+        description: "woche = ein Unterthema pro Feld, alle = alle Unterthemen (Auffüllen), keine = nur Bestand prüfen"
         type: choice
-        options: [woche, alle]
+        options: [woche, alle, keine]
         default: woche
       debug:
         description: "Ausführliches Protokoll (gesehene URLs, Rohdaten)"

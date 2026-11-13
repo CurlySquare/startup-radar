@@ -8,7 +8,7 @@ Diese Datei ist die verbindliche Grundlage für den Agenten und die Website.
 2. **Quellen müssen echt sein.** Eine URL zählt nur, wenn sie in den Suchergebnissen des aktuellen Laufs vorkam. Das prüft der Code, nicht das Modell.
 3. **Bewertungen sind Einschätzungen, keine Fakten.** Reifegrad und Fit werden als KI-Einschätzung mit Begründung gekennzeichnet.
 4. **Keine personenbezogenen Daten.** Keine Namen von Gründer:innen oder Mitarbeitenden, nur öffentliche Unternehmensinformationen.
-5. **Nur echte Startups** nach der EU-Empfehlung 2026/720 („innovatives Startup“): jünger als 10 Jahre (Gründungsjahr muss belegt sein), eigenständig (kein Mutterunternehmen; Wagniskapital ist erlaubt), weniger als 100 Beschäftigte und höchstens 10 Mio. € Umsatz, innovatives Angebot. Umsetzung und Grenzen: siehe `agent/eligibility.py`. Wer die Kriterien später nicht mehr erfüllt, wird aus dem Radar entfernt und unter `excluded` mit Grund protokolliert.
+5. **Nur echte Startups** nach der EU-Empfehlung 2026/720 („innovatives Startup“): jünger als 10 Jahre (Gründungsjahr muss belegt sein), eigenständig (kein Mutterunternehmen; Wagniskapital ist erlaubt), weniger als 100 Beschäftigte und höchstens 10 Mio. € Umsatz, innovatives Angebot. Zusätzlich: **Hauptsitz in Europa** (EU-27, EWR/EFTA inkl. Schweiz, Vereinigtes Königreich), weil der Bezugskonzern auf europäische Souveränität setzt; das Land muss belegt sein. Umsetzung und Grenzen: siehe `agent/eligibility.py`. Wer die Kriterien später nicht mehr erfüllt, wird aus dem Radar entfernt und unter `excluded` mit Grund protokolliert.
 6. **Ein Startup = ein Eintrag.** Erkennungsmerkmal ist die Domain der Website (z. B. `beispiel.de`), ersatzweise der bereinigte Name.
 
 ## Dateien
