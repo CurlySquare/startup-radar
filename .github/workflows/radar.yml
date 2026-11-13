@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       modus:
-        description: "testlauf = nichts speichern"
+        description: "testlauf = nichts speichern, vollstaendig = Datenbank aktualisieren"
         type: choice
-        options: [testlauf]
+        options: [testlauf, vollstaendig]
         default: testlauf
       felder:
         description: "alle oder z. B. retail,food"
@@ -17,7 +17,7 @@ on:
         default: false
 
 permissions:
-  contents: read
+  contents: write   # nötig, um die aktualisierten Daten ins Repo zu schreiben
 
 jobs:
   radar:
@@ -41,6 +41,19 @@ jobs:
           FELDER: ${{ inputs.felder }}
           DEBUG: ${{ inputs.debug }}
         run: python agent/radar.py --modus "$MODUS" --felder "$FELDER"
+
+      - name: Daten speichern (nur im Modus vollstaendig)
+        if: inputs.modus == 'vollstaendig'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen an den Daten."
+          else
+            git commit -m "Radar-Lauf $(date +%Y-%m-%d): Daten aktualisiert"
+            git push
+          fi
 
       - name: Ergebnis als Download ablegen
         if: always()

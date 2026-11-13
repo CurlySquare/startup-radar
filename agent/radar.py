@@ -1,23 +1,27 @@
 """Startup Radar – Hauptprogramm.
 
-Ablauf (wird Schritt für Schritt ausgebaut):
-  1. recherchieren   (research.py)   ✔
-  2. Quellen prüfen  (sources.py)    ✔
-  3. bewerten        – folgt
-  4. abgleichen      – folgt
-  5. speichern       – folgt
+Ablauf:
+  1. recherchieren   (research.py)  Websuche pro Feld
+  2. Quellen prüfen  (sources.py)   nur belegte Angaben bleiben
+  3. abgleichen      (merge.py)     Duplikate erkennen, Einträge aktualisieren
+  4. bewerten        (rate.py)      Reifegrad + Fit für neue/geänderte Einträge
+  5. speichern                      docs/data/startups.json
   6. Briefing        – folgt
 
-Aufruf:  python agent/radar.py --modus testlauf [--felder retail,food]
-Im Testlauf wird nichts in die Datenbank geschrieben, nur nach out/ und ins Protokoll.
+Aufruf:
+  python agent/radar.py --modus testlauf      (nichts wird gespeichert)
+  python agent/radar.py --modus vollstaendig  (Datenbank wird aktualisiert)
 """
 import argparse
+import datetime
 import json
 import os
 
 import anthropic
 
 from config import FIELDS
+from merge import merge
+from rate import rate_entries
 from research import research_field
 from sources import check_startup, domain_of
 
@@ -29,49 +33,83 @@ def load_db():
         return json.load(f)
 
 
+def save_db(db):
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(db, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--modus", choices=["testlauf"], default="testlauf")
+    parser.add_argument("--modus", choices=["testlauf", "vollstaendig"], default="testlauf")
     parser.add_argument("--felder", default="alle", help="z. B. retail,food oder alle")
     args = parser.parse_args()
 
+    today = datetime.date.today().isoformat()
     fields = list(FIELDS) if args.felder == "alle" else [f.strip() for f in args.felder.split(",")]
     db = load_db()
     known_domains = {domain_of(s.get("website")) for s in db["startups"] if s.get("website")}
-
     client = anthropic.Anthropic()  # liest ANTHROPIC_API_KEY aus der Umgebung
-    results, report = [], []
 
+    # --- 1 + 2: recherchieren und Quellen prüfen ---
+    checked, report = [], []
     for field_key in fields:
         print(f"\n=== Feld: {FIELDS[field_key]['label']} ===")
         raw_list, seen_urls, searches = research_field(client, field_key, known_domains)
-        kept = 0
         print(f"  Gesehene Ergebnis-URLs: {len(seen_urls)}")
         if os.environ.get("DEBUG") == "true":
             for u in sorted(seen_urls):
                 print("    URL:", u)
             print("  Rohdaten:", json.dumps(raw_list, ensure_ascii=False)[:6000])
+        kept = 0
         for raw in raw_list:
             entry, removed = check_startup(raw, seen_urls, field_key)
             if entry:
                 kept += 1
-                results.append(entry)
+                checked.append(entry)
                 note = f" (entfernt, da unbelegt: {', '.join(removed)})" if removed else ""
                 print(f"  ✔ {entry['name']}{note}")
             else:
-                print(f"  ✘ {raw.get('name', '?') if isinstance(raw, dict) else '?'} verworfen: keine belegte Beschreibung; {'; '.join(removed)}")
-        report.append({"field": field_key, "searches": searches, "found": len(raw_list),
-                       "kept": kept, "result_urls": len(seen_urls)})
-        print(f"  Suchen: {searches} | gefunden: {len(raw_list)} | übernommen: {kept}")
+                name = raw.get("name", "?") if isinstance(raw, dict) else "?"
+                print(f"  ✘ {name} verworfen: keine belegte Beschreibung; {'; '.join(removed)}")
+        report.append({"field": field_key, "searches": searches, "found": len(raw_list), "kept": kept})
 
-    os.makedirs("out", exist_ok=True)
-    with open("out/recherche.json", "w", encoding="utf-8") as f:
-        json.dump({"report": report, "startups": results}, f, ensure_ascii=False, indent=2)
+    # --- 3: abgleichen ---
+    new, updated = merge(db, checked, today)
+    print(f"\n=== Abgleich ===\n  neu: {len(new)} | aktualisiert: {len(updated)} | "
+          f"Duplikate/ohne Änderung: {len(checked) - len(new) - len(updated)}")
 
-    print("\n=== Zusammenfassung ===")
-    for r in report:
-        print(f"{r['field']:<10} Suchen {r['searches']}  gefunden {r['found']}  übernommen {r['kept']}")
-    print(f"Gesamt übernommen: {len(results)}")
+    # --- 4: bewerten (nur neue und geänderte Einträge) ---
+    to_rate = new + updated
+    ratings = rate_entries(client, to_rate)
+    for e in to_rate:
+        r = ratings.get(e["id"])
+        if not r:
+            print(f"  ! Keine Bewertung erhalten für {e['name']}")
+            continue
+        old_fit = (e.get("fit") or {}).get("score")
+        old_mat = (e.get("maturity") or {}).get("score")
+        e["maturity"], e["fit"] = r["maturity"], r["fit"]
+        if e in updated and (old_fit, old_mat) != (r["fit"]["score"], r["maturity"]["score"]):
+            e["history"].append({"date": today, "change":
+                f"Bewertung: Reifegrad {old_mat} → {r['maturity']['score']}, Fit {old_fit} → {r['fit']['score']}"})
+        print(f"  {e['name']:<28} Reifegrad {r['maturity']['score']}  Fit {r['fit']['score']}  {r['fit']['areas']}")
+
+    # Einträge, die (z. B. wegen eines Fehlers) keine Bewertung haben, nicht veröffentlichen
+    db["startups"] = [s for s in db["startups"] if s.get("fit") and s.get("maturity")]
+
+    # --- 5: speichern ---
+    db["updated"] = today
+    db["last_run"] = {"date": today, "new": [e["id"] for e in new if e.get("fit")],
+                      "updated": [e["id"] for e in updated], "report": report}
+    if args.modus == "vollstaendig":
+        save_db(db)
+        print(f"\nGespeichert: {len(db['startups'])} Startups in {DATA_FILE}")
+    else:
+        print("\nTestlauf: nichts gespeichert.")
+        os.makedirs("out", exist_ok=True)
+        with open("out/startups_vorschau.json", "w", encoding="utf-8") as f:
+            json.dump(db, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
