@@ -19,6 +19,7 @@ def _fact(value_schema):
             "source": {"type": ["string", "null"], "description": "URL aus den Suchergebnissen, die den Wert belegt"},
         },
         "required": ["value", "source"],
+        "additionalProperties": False,
     }
 
 
@@ -27,12 +28,14 @@ WEB_SEARCH = {"type": "web_search_20250305", "name": "web_search", "max_uses": M
 SAVE_TOOL = {
     "name": "startups_speichern",
     "description": "Speichert die recherchierten Startups. Rufe dieses Werkzeug genau einmal am Ende auf.",
+    # strict: Die API garantiert, dass die Eingabe exakt dem Schema entspricht
+    # (z. B. Angaben als Objekt, nicht als Text). Siehe Making-of: Problem "verschluckte Quellen".
+    "strict": True,
     "input_schema": {
         "type": "object",
         "properties": {
             "startups": {
                 "type": "array",
-                "maxItems": MAX_STARTUPS_PER_FIELD,
                 "items": {
                     "type": "object",
                     "properties": {
@@ -44,10 +47,12 @@ SAVE_TOOL = {
                         "funding_stage": _fact({"type": ["string", "null"], "enum": FUNDING_STAGES + [None]}),
                     },
                     "required": ["name", "website", "description", "country", "founded", "funding_stage"],
+                    "additionalProperties": False,
                 },
             }
         },
         "required": ["startups"],
+        "additionalProperties": False,
     },
 }
 
@@ -122,4 +127,5 @@ def research_field(client, field_key, known_domains):
         messages.append({"role": "user", "content": "Bitte speichere jetzt deine Ergebnisse mit dem Werkzeug startups_speichern."})
         force_save = True
 
-    return (result or {}).get("startups", []), seen_urls, searches
+    startups = (result or {}).get("startups", [])[:MAX_STARTUPS_PER_FIELD]
+    return startups, seen_urls, searches

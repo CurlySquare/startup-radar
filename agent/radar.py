@@ -59,7 +59,7 @@ def main():
                 note = f" (entfernt, da unbelegt: {', '.join(removed)})" if removed else ""
                 print(f"  ✔ {entry['name']}{note}")
             else:
-                print(f"  ✘ {raw.get('name', '?')} verworfen: keine belegte Beschreibung")
+                print(f"  ✘ {raw.get('name', '?') if isinstance(raw, dict) else '?'} verworfen: keine belegte Beschreibung; {'; '.join(removed)}")
         report.append({"field": field_key, "searches": searches, "found": len(raw_list),
                        "kept": kept, "result_urls": len(seen_urls)})
         print(f"  Suchen: {searches} | gefunden: {len(raw_list)} | übernommen: {kept}")

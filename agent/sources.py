@@ -96,7 +96,8 @@ def check_startup(raw, seen_urls, field_key):
         else:
             entry[key] = {"value": None, "source": None}
             if value not in (None, ""):
-                removed.append(key)
+                why = "Format" if not _fact_ok(key, value) else f"Quelle nicht in Suchergebnissen: {source}"
+                removed.append(f"{key} ({why})")
 
     website = normalize_url(raw.get("website"))
     if website and website_reachable(website):
