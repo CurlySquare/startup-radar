@@ -6,7 +6,7 @@ Ablauf:
   3. abgleichen      (merge.py)     Duplikate erkennen, Einträge aktualisieren
   4. bewerten        (rate.py)      Reifegrad + Fit für neue/geänderte Einträge
   5. speichern                      docs/data/startups.json
-  6. Briefing        – folgt
+  6. Briefing        (briefing.py)  Top 5 + Trends der Woche
 
 Aufruf:
   python agent/radar.py --modus testlauf      (nichts wird gespeichert)
@@ -19,6 +19,7 @@ import os
 
 import anthropic
 
+from briefing import make_briefing
 from config import FIELDS
 from merge import merge
 from rate import rate_entries
@@ -26,6 +27,7 @@ from research import research_field
 from sources import check_startup, domain_of
 
 DATA_FILE = "docs/data/startups.json"
+BRIEFING_FILE = "docs/data/briefings.json"
 
 
 def load_db():
@@ -33,9 +35,9 @@ def load_db():
         return json.load(f)
 
 
-def save_db(db):
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(db, f, ensure_ascii=False, indent=2)
+def save_json(path, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
 
@@ -100,17 +102,35 @@ def main():
 
     # --- 5: speichern ---
     db["updated"] = today
+    week_entries = [e for e in new + updated if e.get("fit")]
     db["last_run"] = {"date": today, "new": [e["id"] for e in new if e.get("fit")],
                       "updated": [e["id"] for e in updated], "report": report}
+
+    # --- 6: Briefing ---
+    print("\n=== Briefing ===")
+    briefing = make_briefing(client, week_entries, len(db["startups"]), today)
+    if briefing:
+        names = {s["id"]: s["name"] for s in db["startups"]}
+        for i, t in enumerate(briefing["top5"], 1):
+            print(f"  {i}. {names[t['id']]}: {t['why']}")
+        for t in briefing["trends"]:
+            print(f"  Trend: {t['title']}")
+    else:
+        print("  Keine neuen oder geänderten Startups – kein Briefing.")
+
     if args.modus == "vollstaendig":
-        save_db(db)
-        print(f"\nGespeichert: {len(db['startups'])} Startups in {DATA_FILE}")
+        save_json(DATA_FILE, db)
+        if briefing:
+            with open(BRIEFING_FILE, encoding="utf-8") as f:
+                archive = json.load(f)
+            # Bei mehreren Läufen am selben Tag gilt der letzte
+            archive["briefings"] = [briefing] + [b for b in archive["briefings"] if b["date"] != today]
+            save_json(BRIEFING_FILE, archive)
+        print(f"\nGespeichert: {len(db['startups'])} Startups, Briefing: {'ja' if briefing else 'nein'}")
     else:
         print("\nTestlauf: nichts gespeichert.")
         os.makedirs("out", exist_ok=True)
-        with open("out/startups_vorschau.json", "w", encoding="utf-8") as f:
-            json.dump(db, f, ensure_ascii=False, indent=2)
-
+        save_json("out/vorschau.json", {"startups": db, "briefing": briefing})
 
 if __name__ == "__main__":
     main()
