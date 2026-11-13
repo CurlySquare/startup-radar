@@ -5,58 +5,59 @@
       "week": "KW 46/2026",
       "top5": [
         {
-          "id": "daylightsecurity",
-          "why": "Series-B-Runde dieser Woche; KI-Agenten erkennen, untersuchen und enthalten Bedrohungen, Ingenieure entscheiden in komplexen Fällen. Relevant für Cyber Security (Reaktionszeit) bei eigenem wie ausgelagertem SOC; als US-Anbieter sind Datenhaltung und Souveränität vorab zu klären."
+          "id": "foodforecast",
+          "why": "Series A und laufende Expansion in weitere europäische Länder; Prognosen für ultrafrische Lebensmittel setzen bei Verfügbarkeit und Ausschuss an und wären je Land oder Werk pilotierbar. Konkrete Kunden und ein Einsatz in der Produktion sind bislang nicht belegt."
         },
         {
-          "id": "tutorintelligence-com",
-          "why": "Roboter für Kommissionieren, Palettieren und Kartonhandling mit Abrechnung pro Stunde oder Pick, also pilotierbar in einem Lager. Hebel sind Kosten pro Pick und Personalverfügbarkeit; offen sind Fernbedienung (Datenzugriff) und Skalierung auf viele Standorte."
+          "id": "procuros",
+          "why": "Series A über 20 Mio. Euro im Oktober 2026, Expansion nach Europa und in die USA geplant. Die Plattform vernetzt Hersteller, Großhändler und Händler und betrifft damit die Lieferantenanbindung. Kunden- und Nutzerzahlen werden nicht genannt."
         },
         {
-          "id": "danurobotics-com",
-          "why": "Nachrüstbarer KI-Sortierroboter, der Störstoffe von Wertstoffen trennt und sich an einzelnen Anlagen pilotieren lässt. Hebel sind Sortierqualität, Recyclingquote und Personalkosten; zahlende Kunden und Referenzanlagen sind nicht belegt."
+          "id": "freshflow",
+          "why": "Prognose und Auto-Dispo für Frischware sind bereits bei L. Stroetmann im Einsatz, Series A im Juni 2026. Hebel sind Warenverfügbarkeit und Abschriften, pilotierbar in einzelnen Filialen."
         },
         {
-          "id": "sensei-tech",
-          "why": "Kassenloses Einkaufen mit Computer Vision für Supermarkt und Convenience, in einzelnen Filialen pilotierbar; Hebel sind Personalkosten und Wartezeit. Der EU-Sitz (PT) spricht für Datensouveränität, die Skalierung auf viele Filialen ist wegen der Sensorik unklar."
+          "id": "fleuretai",
+          "why": "Pre-Seed-Runde über 4 Mio. € im Oktober 2026 für automatisierte Penetrationstests mit KI-Agenten, pilotierbar an einzelnen Systemen. Kunden oder Pilotbetrieb werden nicht genannt, die Reife des Anbieters ist offen."
         },
         {
-          "id": "wesort-ai",
-          "why": "Erkennt per Kamera, Röntgensensorik und KI Lithium-Ionen-Akkus und Elektroschrott in gemischten Abfallströmen. Hebel sind Brandrisiko und Recyclingquote; Pilotierung in einzelnen Anlagen möglich, Finanzierungsphase und Kunden sind nicht angegeben."
+          "id": "sortrace-com",
+          "why": "Neue Finanzierungsrunde über ca. 800.000 US-Dollar (Nov. 2026): Kameras an Müllfahrzeugen zeigen Fehlsortierungen nach Route und Bezirk, ein Hebel für Recyclingquote und Sortierqualität. Pre-Seed, Pilotkunden und Zahlen werden nicht genannt."
         }
       ],
       "trends": [
         {
-          "title": "Sicherheit und Governance für KI-Agenten",
-          "text": "Mehrere Startups dieser Woche adressieren die Kontrolle produktiver KI-Agenten: Bay prüft jede Agenten-Aktion vor der Ausführung, NeuralTrust bietet Gateway, Laufzeit-Engine und Agenten-Inventar, Palma AI verwaltet Berechtigungen und Audit-Protokolle auch in kundeneigener Infrastruktur. Auch Plurai (Tests per digitalem Zwilling) und Daylight (KI-Agenten im Security-Betrieb) zeigen, dass Agenten zugleich Werkzeug und Schutzobjekt werden.",
+          "title": "Governance und Sicherheit für KI-Agenten",
+          "text": "Mehrere neue Startups adressieren Kontrolle und Absicherung von KI-Agenten im Unternehmen: Palma AI (Berechtigungen und Audit-Protokolle, auch in kundeneigener Infrastruktur), NeuralTrust (Gateway, Laufzeit-Engine, Agenten-Inventar) und AI Score (sichere Einführung und Steuerung). Cytix (Change Governance bei KI-getriebenen Softwareänderungen) und Fleuret AI (Penetrationstests mit KI-Agenten) kommen aus dem Sicherheitsumfeld hinzu. Die meisten Anbieter sind in Pre-Seed- oder Seed-Phase; zahlende Kunden sind bei keinem belegt.",
           "sources": [
-            "https://thenextweb.com/news/bay-50m-ai-agent-security-stealth-battery-ventures",
             "https://thenextweb.com/news/neuraltrust-20-million-seed-ai-agent-security",
-            "https://beinsure.com/news/palma-ai-raises-1-8-mn-for-enterprise-ai-agent-governance/"
+            "https://beinsure.com/news/palma-ai-raises-1-8-mn-for-enterprise-ai-agent-governance/",
+            "https://www.eu-startups.com/2026/09/londons-ai-score-raises-e4-6-million-to-help-businesses-keep-ai-agents-under-control/"
+          ]
+        },
+        {
+          "title": "Prognosen für Frische und Absatz",
+          "text": "Freshflow und foodforecast setzen KI-Prognosen für frische Lebensmittel ein, GoNina für die Produktionsplanung in Bäckereien und Gastronomie (über 150 Faktoren wie Wetter und Feiertage). Jenz geht mit Bedarfsprognosen und Preis- und Kampagnentests einen Schritt weiter. Gemeinsames Ziel sind weniger Verschwendung und bessere Verfügbarkeit. Reif ist davon nur Freshflow mit einem genannten Händler im Einsatz; die übrigen sind früher oder ohne belegte Kunden.",
+          "sources": [
+            "https://www.lebensmittelzeitung.net/tech-logistik/nachrichten/frischware-freshflow-sammelt-frisches-kapital-ein-191394",
+            "https://www.deutsche-startups.de/2026/03/12/foodforecast-und-lebensmittel-bleiben-frisch/",
+            "https://www.eu.vc/p/jenz-raises-540k-pre-seed-retail-operations-ai"
           ]
         },
         {
           "title": "KI-Sortierung in der Kreislaufwirtschaft",
-          "text": "Danu Robotics (nachrüstbarer Sortierroboter), Jaipur Robotics (Deep-Learning-Software für Sortieranlagen), WeSort.AI (Akku- und Elektroschrott-Erkennung) und reverse.fashion (Textilsortierung) setzen auf KI-Erkennung, um Materialströme präziser zu trennen. Zwei der Ansätze sind reine Software bzw. nachrüstbar, was Pilotierungen an einzelnen Anlagen erleichtert.",
+          "text": "Sortrace, Danu Robotics, Jaipur Robotics, WeSort.AI und reverse.fashion setzen Kameras, Sensorik und KI an verschiedenen Stellen der Sortierung ein: bei der Sammlung, in Wertstoffanlagen, bei Lithium-Ionen-Akkus und bei Textilien. Die Hebel sind Sortierqualität und Recyclingquote, die Lösungen sind meist an einzelnen Routen oder Anlagen pilotierbar. Fast alle Anbieter sind Pre-Seed oder Seed, Kunden sind nicht belegt.",
           "sources": [
-            "https://dealroom.co/news/161331-danu-robotics-raises-5m-to-take-its-ai-recycling-robot-to-market/",
+            "https://tech.eu/2026/11/02/sortrace-lands-800k-to-improve-waste-sorting-with-ai-powered-analysis",
             "https://www.trysignalbase.com/news/funding/jaipur-robotics-raises-5m-seed-funding",
-            "https://www.startbase.com/news/wesort-ai-erhaelt-10-millionen-euro"
-          ]
-        },
-        {
-          "title": "Roboter mit nutzungsbasierter Abrechnung",
-          "text": "Tutor Intelligence (Lager und Fabriken) und Cota Robotics (Lebensmittelhandel) rechnen Roboterleistung nach Stunden bzw. Picks ab, statt Hardware zu verkaufen. Das senkt die Einstiegshürde für Pilotfilialen oder Pilotlager; Skalierbarkeit und Datenzugriff bei Fernbedienung bleiben offen.",
-          "sources": [
-            "https://www.inc.com/aaron-mok/this-startup-offers-robot-workers-beginning-at-only-14-an-hour-theres-just-1-catch/91429804",
-            "https://www.veilstrat.com/companies/cota-robotics"
+            "https://www.starting-up.de/news/news-investments/10-mio-euro-fuer-wuerzburger-deeptech-start-up-wesortai.html"
           ]
         }
       ],
       "stats": {
-        "new": 62,
+        "new": 69,
         "updated": 0,
-        "total": 95
+        "total": 69
       }
     }
   ]
