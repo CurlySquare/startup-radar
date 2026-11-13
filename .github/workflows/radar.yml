@@ -1,0 +1,46 @@
+name: Startup Radar
+
+on:
+  workflow_dispatch:
+    inputs:
+      modus:
+        description: "testlauf = nichts speichern"
+        type: choice
+        options: [testlauf]
+        default: testlauf
+      felder:
+        description: "alle oder z. B. retail,food"
+        default: alle
+
+permissions:
+  contents: read
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Abhängigkeiten installieren
+        run: pip install -r agent/requirements.txt
+
+      - name: Agent ausführen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Eingaben über Umgebungsvariablen statt direkt im Befehl (Schutz vor Befehlsinjektion)
+          MODUS: ${{ inputs.modus }}
+          FELDER: ${{ inputs.felder }}
+        run: python agent/radar.py --modus "$MODUS" --felder "$FELDER"
+
+      - name: Ergebnis als Download ablegen
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ergebnis
+          path: out/
+          if-no-files-found: ignore
