@@ -24,7 +24,6 @@
         <a href="#datenbank">Datenbank</a>
         <a href="#briefing">Briefing</a>
         <a href="#agent">Ablauf</a>
-        <a href="#making-of">Making-of</a>
       </nav>
     </div>
   </header>
@@ -50,12 +49,12 @@
             <ul class="checklist">
               <li><a href="#datenbank"><strong>Startup-Datenbank</strong></a>: filterbar und sortierbar. Jede Angabe ist mit ihrer Quelle verlinkt.</li>
               <li><a href="#briefing"><strong>Wochen-Briefing</strong></a>: die Top 5 und die Trends der Woche, jeden Montag automatisch erstellt.</li>
-              <li><a href="#making-of"><strong>Making-of</strong></a>: wie der Agent entstanden ist, mit allen Prompts, Entscheidungen und Fehlern.</li>
+              <li><a href="#agent"><strong>Ablauf</strong></a>: wie der Agent recherchiert, prüft und bewertet, und wo Code statt KI entscheidet.</li>
             </ul>
           </div>
           <div>
             <h2 class="h3">Warum ich ihn gebaut habe</h2>
-            <p>Ich habe den Startup Radar mit Agentic AI gebaut, als Arbeitsprobe für meine Bewerbung im Bereich Innovation &amp; Startups. Er zeigt im Kleinen, worauf es dort im Großen ankommt: Startups systematisch finden, Angaben belegen, nachvollziehbar bewerten und Trends erkennen. Und er zeigt, wo Kontrolle durch Code und Mensch nötig bleibt.</p>
+            <p>Ich habe den Startup Radar mit Agentic AI gebaut, als Arbeitsprobe für meine Bewerbung im Bereich Innovation &amp; Startups.</p>
             <p class="signature">Kijan Vakilzadeh</p>
           </div>
         </div>
@@ -68,7 +67,7 @@
     <section id="datenbank" class="section">
       <div class="wrap">
         <h2>Startup-Datenbank</h2>
-        <p class="section-lead">Tippen Sie auf einen Eintrag, um Details, Quellen und die Begründungen der Bewertung zu sehen. Ein „–“ heißt: nicht belegt. Diese Angabe wird bewusst nicht geschätzt.</p>
+        <p class="section-lead">Tippen Sie auf einen Eintrag, um Details, Quellen und die Begründungen der Bewertung zu sehen. Ein „–“ heißt: nicht belegt. Diese Angabe wird bewusst nicht geschätzt. <a href="#bewertung">Wie Reifegrad und Fit definiert sind</a></p>
 
         <div class="controls" role="search">
           <label class="ctl ctl-search">
@@ -110,20 +109,22 @@
         </div>
         <div id="list" class="db-list"></div>
 
-        <details class="legend">
-          <summary>Bewertungsraster anzeigen</summary>
-          <div class="legend-grid">
-            <div>
-              <h3 class="h4">Reifegrad</h3>
-              <ol id="legend-maturity"></ol>
+        <div class="definitions" id="bewertung">
+          <h3>So ist die Bewertung definiert</h3>
+          <p class="small">Beide Werte sind Einschätzungen der KI. Sie beruhen nur auf den belegten Fakten und folgen einem festen Raster. Fehlen Angaben, wird die niedrigere Stufe gewählt.</p>
+          <div class="def-grid">
+            <div class="def-card">
+              <h4>Reifegrad</h4>
+              <p>Wie weit ist das Startup auf dem Weg von der Idee zum etablierten Geschäft? Grundlage sind drei Merkmale: <strong>Marktstatus des Produkts, Kundenbasis und Finanzierungsphase</strong>. Der Reifegrad sagt nichts über die Erfolgsaussichten aus.</p>
+              <ol id="legend-maturity" class="def-list"></ol>
             </div>
-            <div>
-              <h3 class="h4">Strategischer Fit</h3>
-              <p class="small">Bezugspunkt ist ein großer europäischer Handels- und Digitalkonzern mit fünf Sparten: Lebensmittelhandel, eigene Produktion, Kreislaufwirtschaft, Cloud und Security sowie Logistik als Querschnittsfunktion.</p>
-              <ol id="legend-fit"></ol>
+            <div class="def-card">
+              <h4>Strategischer Fit</h4>
+              <p>Wie groß ist der mögliche Nutzen für einen großen europäischen Handels- und Digitalkonzern? Der Konzern hat fünf Sparten: Lebensmittelhandel, eigene Produktion, Kreislaufwirtschaft, Cloud &amp; Security und Logistik. Grundlage sind vier Merkmale: <strong>betroffene Sparten, Bezug zu einem Kernprozess, messbarer Nutzen sowie Pilotierbarkeit und Skalierbarkeit</strong>. Der Fit sagt nichts über die Qualität des Startups an sich aus.</p>
+              <ol id="legend-fit" class="def-list fit"></ol>
             </div>
           </div>
-        </details>
+        </div>
       </div>
     </section>
 
@@ -173,16 +174,7 @@
       </div>
     </section>
 
-    <!-- 5. Making-of -->
-    <section id="making-of" class="section section-alt">
-      <div class="wrap">
-        <h2>Making-of</h2>
-        <p class="section-lead">Das Build-Log in chronologischer Reihenfolge. Gebaut habe ich den Radar im Dialog mit Claude als KI-Entwicklungspartner. Hier stehen die tatsächlich verwendeten Prompts, die wichtigsten Entscheidungen, die Probleme und was ich daraus gelernt habe.</p>
-        <div id="makingof-list"><p class="muted">Wird geladen …</p></div>
-      </div>
-    </section>
-
-    <!-- 6. Transparenz -->
+    <!-- 5. Transparenz -->
     <section id="transparenz" class="section">
       <div class="wrap narrow">
         <h2>Transparenzhinweis</h2>
@@ -203,7 +195,6 @@
     </div>
   </footer>
 
-  <script src="vendor/marked.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -62,15 +62,19 @@ Feste Stufenbeschreibungen sorgen dafür, dass Bewertungen über Wochen vergleic
 
 ### Reifegrad (1–5)
 
-| Stufe | Beschreibung |
-|---|---|
-| 1 | Idee oder Prototyp, noch kein Produkt am Markt |
-| 2 | Erstes Produkt, Pilotkunden oder Testbetrieb |
-| 3 | Produkt am Markt mit zahlenden Kunden, frühes Wachstum |
-| 4 | Skalierung: mehrere Märkte oder große Kunden, deutliche Finanzierung |
-| 5 | Etabliert: breiter Kundenstamm, späte Phase, übernommen oder börsennotiert |
+**Definition:** Der Reifegrad beschreibt, wie weit ein Startup auf dem Weg von der Idee zum etablierten Geschäft ist. Grundlage sind drei belegbare Merkmale: Marktstatus des Produkts, Kundenbasis und Finanzierungsphase. Fehlt ein Merkmal, wird die niedrigere Stufe gewählt. Der Reifegrad sagt nichts über die Erfolgsaussichten aus.
+
+| Stufe | Bezeichnung | Kriterium | Typische Finanzierungsphase |
+|---|---|---|---|
+| 1 | Idee / Prototyp | Kein Produkt am Markt; Technologie oder Prototyp in Entwicklung | Pre-Seed |
+| 2 | Pilotphase | Erstes Produkt, Pilot- oder Testkunden, noch kein belegter regulärer Umsatz | Pre-Seed / Seed |
+| 3 | Marktreife | Produkt am Markt mit zahlenden Kunden, frühes Wachstum | Seed / Series A |
+| 4 | Skalierung | Mehrere Märkte oder große Referenzkunden, Ausbau von Team und Vertrieb | Series B / C |
+| 5 | Etabliert | Breiter Kundenstamm in mehreren Ländern, erprobtes Geschäftsmodell | Series C+ |
 
 ### Strategischer Fit (1–5)
+
+**Definition:** Der strategische Fit beschreibt, wie groß der mögliche Nutzen eines Startups für den Bezugskonzern ist. Grundlage sind vier Merkmale: (1) Welche Sparten profitieren? (2) Ist ein Kernprozess betroffen? (3) Ist der Nutzen messbar, etwa bei Kosten, Warenverfügbarkeit, Recyclingquote oder Sicherheit? (4) Lässt sich die Lösung klein pilotieren und auf viele Standorte übertragen? Der Fit sagt nichts über die Qualität des Startups an sich aus.
 
 #### Bezugsprofil
 

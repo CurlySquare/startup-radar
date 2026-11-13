@@ -1,5 +1,5 @@
 /* Startup Radar – Frontend
- * Liest die JSON-Dateien des Agenten und baut daraus Datenbank, Briefing und Making-of.
+ * Liest die JSON-Dateien des Agenten und baut daraus Datenbank und Briefing.
  * Sicherheit: Alle Inhalte stammen aus dem Web (über das Sprachmodell). Deshalb wird
  * jeder Text escaped und jeder Link auf http(s) geprüft, bevor er in die Seite kommt.
  */
@@ -13,21 +13,21 @@
     cloud_ai: "Cloud / Cyber Security / Data & AI",
     logistics: "Logistik & Supply Chain",
   };
-  const MATURITY = ["", "Idee / Prototyp", "Pilotkunden", "Zahlende Kunden", "Skalierung", "Etabliert"];
+  const MATURITY = ["", "Idee / Prototyp", "Pilotphase", "Marktreife", "Skalierung", "Etabliert"];
   const FIT = ["", "Kein Bezug", "Randbezug", "Sparten-Fit", "Kernprozess-Fit", "Konzern-Fit"];
   const MATURITY_LONG = [
-    "Idee oder Prototyp, noch kein Produkt am Markt",
-    "Erstes Produkt, Pilotkunden oder Testbetrieb",
-    "Produkt am Markt mit zahlenden Kunden, frühes Wachstum",
-    "Skalierung: mehrere Märkte oder große Kunden, deutliche Finanzierung",
-    "Etabliert: breiter Kundenstamm, späte Phase, übernommen oder börsennotiert",
+    "Kein Produkt am Markt; Technologie oder Prototyp in Entwicklung (typisch Pre-Seed)",
+    "Erstes Produkt, Pilot- oder Testkunden, noch kein belegter regulärer Umsatz (typisch Pre-Seed/Seed)",
+    "Produkt am Markt mit zahlenden Kunden, frühes Wachstum (typisch Seed/Series A)",
+    "Mehrere Märkte oder große Referenzkunden, Ausbau von Team und Vertrieb (typisch Series B/C)",
+    "Breiter Kundenstamm in mehreren Ländern, erprobtes Geschäftsmodell (typisch Series C+)",
   ];
   const FIT_LONG = [
-    "Kein Bezug: kein Anwendungsfall in einer der fünf Sparten",
-    "Randbezug: Unterstützungsfunktion oder Nische, kein Kernprozess",
-    "Sparten-Fit: konkreter Anwendungsfall in genau einer Sparte",
-    "Kernprozess-Fit: messbarer Hebel in einem Kernprozess, kurzfristig pilotierbar",
-    "Konzern-Fit: Nutzen in mindestens zwei Sparten, skalierbar auf tausende Standorte, vereinbar mit europäischer Datensouveränität",
+    "Kein Anwendungsfall in einer der fünf Sparten erkennbar",
+    "Nur Unterstützungsfunktion (z. B. Personal, allgemeines Marketing) oder Nische, kein Kernprozess",
+    "Konkreter Anwendungsfall in genau einer Sparte, z. B. in Filiale, Werk, Sortieranlage, Rechenzentrum oder Lager",
+    "Kernprozess einer Sparte mit messbarem Nutzen (Kosten, Warenverfügbarkeit, Recyclingquote, Sicherheit), kurzfristig pilotierbar",
+    "Nutzen in mindestens zwei Sparten oder als gemeinsame Plattform, skalierbar auf tausende Standorte, vereinbar mit europäischer Datensouveränität",
   ];
   const AREA_SHORT = { retail: "Handel", food: "Produktion", circular: "Kreislaufwirtschaft", cloud_ai: "Digital", logistics: "Logistik" };
 
@@ -179,8 +179,8 @@
       $(id).addEventListener(id === "q" ? "input" : "change", applyFilters));
     $("reset").addEventListener("click", resetFilters);
     $("list").addEventListener("click", (e) => { if (e.target.matches("[data-reset]")) resetFilters(); });
-    $("legend-maturity").innerHTML = MATURITY_LONG.map((t) => `<li>${esc(t)}</li>`).join("");
-    $("legend-fit").innerHTML = FIT_LONG.map((t) => `<li>${esc(t)}</li>`).join("");
+    $("legend-maturity").innerHTML = MATURITY_LONG.map((t, i) => `<li><strong>${i + 1} · ${esc(MATURITY[i + 1])}:</strong> ${esc(t)}</li>`).join("");
+    $("legend-fit").innerHTML = FIT_LONG.map((t, i) => `<li><strong>${i + 1} · ${esc(FIT[i + 1])}:</strong> ${esc(t)}</li>`).join("");
   }
 
   // ---------- Briefing ----------
@@ -226,27 +226,6 @@
     }
   }
 
-  // ---------- Making-of ----------
-  async function setupMakingOf() {
-    const idx = await getJson("making-of/index.json");
-    $("makingof-list").innerHTML = idx.entries.map((e, i) => `
-      <details class="mo" data-file="${esc(e.file)}">
-        <summary>${esc(e.title)} <span>${fmtDate(e.date)}</span></summary>
-        <div class="mo-body"><p class="muted">Wird geladen …</p></div>
-      </details>`).join("");
-    document.querySelectorAll(".mo").forEach((el) => {
-      el.addEventListener("toggle", async () => {
-        if (!el.open || el.dataset.loaded) return;
-        el.dataset.loaded = "1";
-        const res = await fetch("making-of/" + el.dataset.file, { cache: "no-cache" });
-        const md = await res.text();
-        // Die Making-of-Texte schreibe ich selbst (vertrauenswürdig); Links öffnen in neuem Tab.
-        el.querySelector(".mo-body").innerHTML = window.marked.parse(md);
-        el.querySelectorAll(".mo-body a").forEach((a) => { a.target = "_blank"; a.rel = "noopener noreferrer"; });
-      });
-    });
-  }
-
   // ---------- Start ----------
   async function init() {
     setupControls();
@@ -268,7 +247,6 @@
       $("list").innerHTML = '<p class="empty">Die Daten konnten nicht geladen werden. Bitte später erneut versuchen.</p>';
       console.error(e);
     }
-    setupMakingOf().catch((e) => { $("makingof-list").innerHTML = '<p class="muted">Making-of konnte nicht geladen werden.</p>'; console.error(e); });
   }
 
   document.addEventListener("DOMContentLoaded", init);

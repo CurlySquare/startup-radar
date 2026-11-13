@@ -29,7 +29,7 @@ SAVE_TOOL = {
     "name": "startups_speichern",
     "description": "Speichert die recherchierten Startups. Rufe dieses Werkzeug genau einmal am Ende auf.",
     # strict: Die API garantiert, dass die Eingabe exakt dem Schema entspricht
-    # (z. B. Angaben als Objekt, nicht als Text). Siehe Making-of: Problem "verschluckte Quellen".
+    # (z. B. Angaben als Objekt, nicht als Text).
     "strict": True,
     "input_schema": {
         "type": "object",
