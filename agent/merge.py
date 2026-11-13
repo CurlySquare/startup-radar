@@ -31,15 +31,54 @@ def make_id(entry, existing_ids):
     return candidate
 
 
+def is_same(a, b):
+    """Gleiche Firma? Drei Regeln, die nacheinander geprüft werden:
+    1. gleiche Website-Domain
+    2. gleicher bereinigter Name ("Beispiel GmbH" = "Beispiel")
+    3. ein Name beginnt mit dem anderen ("Ultra" / "Ultra Robotics") UND beide
+       Einträge teilen mindestens eine Quell-URL (dieselbe Meldung).
+       Regel 3 allein über den Namen wäre zu unscharf ("Nova" / "Novartis").
+    """
+    da, db_ = domain_of(a.get("website")), domain_of(b.get("website"))
+    if da and db_:
+        return da == db_  # beide Domains bekannt: die Domain entscheidet
+    na, nb = normalize_name(a["name"]), normalize_name(b["name"])
+    if na and na == nb:
+        return True
+    if na and nb and (na.startswith(nb) or nb.startswith(na)):
+        return bool(set(a.get("sources", [])) & set(b.get("sources", [])))
+    return False
+
+
 def find_match(entry, startups):
-    dom = domain_of(entry.get("website"))
-    name = normalize_name(entry["name"])
     for s in startups:
-        if dom and dom == domain_of(s.get("website")):
-            return s
-        if name and name == normalize_name(s["name"]):
+        if is_same(entry, s):
             return s
     return None
+
+
+def dedupe_existing(db, today):
+    """Räumt Duplikate auf, die schon in der Datenbank stehen (z. B. aus früheren
+    Läufen mit schwächeren Regeln). Der ältere Eintrag bleibt, der jüngere wird
+    hineingeführt. Rückgabe: Liste der zusammengeführten Namen."""
+    kept, merged = [], []
+    for s in sorted(db["startups"], key=lambda x: x["first_seen"]):
+        target = next((k for k in kept if is_same(s, k)), None)
+        if target is None:
+            kept.append(s)
+            continue
+        for key in FACT_KEYS:
+            if target[key]["value"] is None and s[key]["value"] is not None:
+                target[key] = s[key]
+        target["website"] = target.get("website") or s.get("website")
+        target["sources"] = sorted(set(target["sources"]) | set(s["sources"]))
+        # alte id merken, damit Verweise (z. B. in älteren Briefings) weiter funktionieren
+        target["aliases"] = sorted(set(target.get("aliases", [])) | {s["id"]} | set(s.get("aliases", [])))
+        target["history"].append({"date": today, "change": f"Duplikat zusammengeführt: {s['name']}"})
+        target["last_updated"] = today
+        merged.append(f"{s['name']} → {target['name']}")
+    db["startups"] = kept
+    return merged
 
 
 def merge(db, checked_entries, today):

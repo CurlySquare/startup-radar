@@ -995,6 +995,10 @@
         {
           "date": "2026-11-13",
           "change": "Beschreibung aktualisiert"
+        },
+        {
+          "date": "2026-11-13",
+          "change": "Duplikat zusammengeführt: Ultra Robotics"
         }
       ],
       "maturity": {
@@ -1007,7 +1011,10 @@
           "logistics"
         ],
         "reason": "Logistik: Zweiarm-Roboter für Verpacken, Sortieren und Kitting im Lager, pilotierbar an einem Standort, Hebel bei Personalkosten. Europäische Verfügbarkeit und Service des US-Anbieters sind nicht belegt."
-      }
+      },
+      "aliases": [
+        "ultrarobotics"
+      ]
     },
     {
       "name": "Atomic",
@@ -1588,51 +1595,6 @@
           "logistics"
         ],
         "reason": "Sparte Logistik: automatische Prüfung von Frachtdokumenten sowie Rechnungsstellung und Zahlungsabwicklung im Straßentransport, Hebel wären Prozesskosten und Durchlaufzeit. Der Fokus liegt auf Finanzprozessen (eher Backoffice), Kernprozess-Bezug und Kundenbasis sind nicht belegt."
-      }
-    },
-    {
-      "name": "Ultra Robotics",
-      "field": "logistics",
-      "description": {
-        "value": "Entwickelt und least Industrieroboter, die das Verpacken von E-Commerce-Bestellungen in Fulfillment-Zentren automatisieren (Robotics-as-a-Service). Okt. 2026: Series A über 50 Mio. US-Dollar.",
-        "source": "https://www.finsmes.com/2026/10/ultra-robotics-raises-50m-in-series-a-funding.html"
-      },
-      "country": {
-        "value": "US",
-        "source": "https://www.finsmes.com/2026/10/ultra-robotics-raises-50m-in-series-a-funding.html"
-      },
-      "founded": {
-        "value": null,
-        "source": null
-      },
-      "funding_stage": {
-        "value": "Series A",
-        "source": "https://www.finsmes.com/2026/10/ultra-robotics-raises-50m-in-series-a-funding.html"
-      },
-      "website": null,
-      "sources": [
-        "https://www.finsmes.com/2026/10/ultra-robotics-raises-50m-in-series-a-funding.html"
-      ],
-      "id": "ultrarobotics",
-      "first_seen": "2026-11-13",
-      "last_updated": "2026-11-13",
-      "history": [
-        {
-          "date": "2026-11-13",
-          "change": "Neu aufgenommen"
-        }
-      ],
-      "maturity": {
-        "score": 3,
-        "reason": "Series A über 50 Mio. US-Dollar und ein Robotics-as-a-Service-Modell mit Leasing deuten auf ein Produkt im Markt hin. Zahl der Kunden, Märkte und Umsatz sind nicht angegeben, daher nicht Stufe 4."
-      },
-      "fit": {
-        "score": 4,
-        "areas": [
-          "logistics",
-          "retail"
-        ],
-        "reason": "Automatisiertes Verpacken von E-Commerce-Bestellungen in Fulfillment-Zentren betrifft einen Kernprozess der Logistik und des Online-Marktplatzes, Hebel sind Kosten und Durchsatz. Leasing-Modell erlaubt Pilotierung in einzelnen Zentren; Hürden sind der US-Sitz und die begrenzte Zahl geeigneter Standorte."
       }
     },
     {

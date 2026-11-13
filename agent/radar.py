@@ -21,7 +21,7 @@ import anthropic
 
 from briefing import make_briefing
 from config import FIELDS
-from merge import merge
+from merge import dedupe_existing, merge
 from rate import rate_entries
 from research import research_field
 from sources import check_startup, domain_of
@@ -50,6 +50,8 @@ def main():
     today = datetime.date.today().isoformat()
     fields = list(FIELDS) if args.felder == "alle" else [f.strip() for f in args.felder.split(",")]
     db = load_db()
+    for m in dedupe_existing(db, today):
+        print(f"Bestehendes Duplikat zusammengeführt: {m}")
     known_domains = {domain_of(s.get("website")) for s in db["startups"] if s.get("website")}
     client = anthropic.Anthropic()  # liest ANTHROPIC_API_KEY aus der Umgebung
 
