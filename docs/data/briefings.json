@@ -1,6 +1,64 @@
 {
   "briefings": [
     {
+      "date": "2026-11-16",
+      "week": "KW 47/2026",
+      "top5": [
+        {
+          "id": "daisytuner-com",
+          "why": "Neu aufgenommen und mit Fit 4 die höchste Bewertung der Woche: Chip-unabhängige Optimierung von KI-Inferenz kann Rechenkosten und Hardware-Abhängigkeit senken und läuft in kundeneigener Infrastruktur. Reifegrad 2 (Seed), Kunden und Umsatz sind nicht belegt; ein Pilot auf einzelnen Clustern wäre möglich."
+        },
+        {
+          "id": "orbisk-com",
+          "why": "Neu aufgenommen, Series A mit Reifegrad 3 und im Einsatz bei Hotels, Catering und Kreuzfahrtbetreibern. KI und Waage erfassen vermeidbare Lebensmittelabfälle, pilotierbar an einzelnen Standorten. Ob sich das auf Filialen oder Werke übertragen lässt, ist nicht belegt."
+        },
+        {
+          "id": "saltz-com",
+          "why": "Neu aufgenommen, Series A mit Reifegrad 3: ein laufender grenzüberschreitender B2B-Marktplatz für Profiküchen. Er könnte das Großkunden- oder Gastronomiegeschäft ergänzen und wäre länderweise pilotierbar. Messbarer Hebel und Kernprozess-Bezug sind nicht belegt."
+        },
+        {
+          "id": "goeve-com",
+          "why": "Die Bewertung wurde angehoben (Reifegrad 1 → 2, Fit 2 → 3). Das patentierte DockChain-System bedient mit einem DC-Schnelllader mehrere Stellplätze nacheinander und kann so Ladekapazität ohne zusätzliche Lader schaffen. Marktstatus, Kunden und Pilotierbarkeit sind weiterhin nicht belegt."
+        },
+        {
+          "id": "enerin-no",
+          "why": "Neu aufgenommen, Series A, seit 2017 aktiv: modulare Hochtemperatur-Wärmepumpen für Prozesswärme bis 250 °C als Ersatz für fossile Kessel. Das kann Energiekosten und CO2 senken und wäre in einem Werk pilotierbar. Referenzanlagen und ein Lebensmittelbezug sind nicht belegt."
+        }
+      ],
+      "trends": [
+        {
+          "title": "E-Lkw-Flotten: Laden und Betrieb",
+          "text": "Drei Startups der Woche befassen sich mit der Elektrifizierung von Lkw- und Fahrzeugflotten, jeweils an einer anderen Stelle. Go Eve will Ladekapazität ohne zusätzliche Lader schaffen, Delta Charge verbindet Depotladen, Batteriespeicher und Software. NexDash betreibt selbst eine E-Lkw-Flotte als Service. Alle drei sind früh (Reifegrad 1–2), Kunden und Referenzen sind nicht belegt.",
+          "sources": [
+            "https://tech.eu/2026/10/21/go-eve-secures-ps750k-to-advance-its-dockchain-ev-charging-technology",
+            "https://www.electrive.net/2025/11/20/e-lkw-lade-startup-delta-charge-sichert-sich-millionen-finanzierung/",
+            "https://www.nexdash.com/news/nexdash-raises-5m-to-electrify-european-road-freight"
+          ]
+        },
+        {
+          "title": "Profiküchen als Zielgruppe",
+          "text": "Saltz und Orbisk adressieren beide die Gastronomie und Profiküchen, aber an unterschiedlichen Punkten der Lebensmittelkette. Saltz deckt die Beschaffung über einen grenzüberschreitenden Marktplatz ab, Orbisk die Abfallmessung per KI und Waage. Beide sind Series A mit Reifegrad 3. Eine Übertragung auf andere Geschäftsfelder ist bei beiden nicht belegt.",
+          "sources": [
+            "https://www.eu-startups.com/2026/03/vilnius-based-food-supply-marketplace-saltz-raises-e20-million-series-a-plans-100-hires-as-it-expands-across-europe/",
+            "https://vpcapital.eu/news/news/vp-capital-invests-in-orbisk-tackling-food-waste-through-ai"
+          ]
+        },
+        {
+          "title": "Loyalty und Cashback für Marken",
+          "text": "TRIFFT Loyalty und 10 % bieten Loyalty- bzw. Cashback-Lösungen im Handel an, die vor allem Marken und mittelgroße Händler ansprechen. Bei 10 % erhalten Marken Kundendaten und Loyalty-Werkzeuge. Beide wurden 2024 gegründet und sind früh (Pre-Seed bzw. Seed). Der Nutzen für große Handelsketten ist jeweils nicht belegt, bei 10 % kommen Datenschutzfragen hinzu.",
+          "sources": [
+            "https://www.eu-startups.com/2025/07/london-based-trifft-loyalty-raises-e550k-to-develop-their-customer-loyalty-platform/",
+            "https://www.vestbee.com/insights/articles/10-raises-2-4-m"
+          ]
+        }
+      ],
+      "stats": {
+        "new": 8,
+        "updated": 1,
+        "total": 77
+      }
+    },
+    {
       "date": "2026-11-13",
       "week": "KW 46/2026",
       "top5": [
