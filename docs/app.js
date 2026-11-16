@@ -70,11 +70,16 @@
     const src = safeUrl(fact.source);
     return esc(fact.value) + (src ? ` <span class="src">${link(src, "Quelle ↗")}</span>` : "");
   }
-  function nextMonday() {
-    const d = new Date();
-    const add = ((8 - d.getDay()) % 7) || 7;
-    d.setDate(d.getDate() + add);
-    return d.toLocaleDateString("de-DE", { weekday: "short", day: "2-digit", month: "2-digit" });
+  // Nächster automatischer Lauf: montags. Ist heute Montag und die Woche noch nicht
+  // aktualisiert, steht der Lauf heute an (GitHub startet geplante Läufe oft verspätet).
+  function nextRun(lastRunIso) {
+    const now = new Date();
+    const monday = new Date(now); monday.setHours(0, 0, 0, 0);
+    monday.setDate(monday.getDate() - ((monday.getDay() + 6) % 7));   // Montag dieser Woche
+    const last = lastRunIso ? new Date(lastRunIso + "T12:00:00") : null;
+    if (!last || last < monday) return now.getDay() === 1 ? "heute" : "ausstehend";
+    const next = new Date(monday); next.setDate(monday.getDate() + 7);
+    return next.toLocaleDateString("de-DE", { weekday: "short", day: "2-digit", month: "2-digit" });
   }
   async function getJson(path) {
     const res = await fetch(path, { cache: "no-cache" });
@@ -233,7 +238,6 @@
   // ---------- Start ----------
   async function init() {
     setupControls();
-    $("stat-next").textContent = nextMonday();
     try {
       const [db, briefings] = await Promise.all([getJson("data/startups.json"), getJson("data/briefings.json")]);
       state.startups = (db.startups || []).filter((s) => s.fit && s.maturity);
@@ -244,6 +248,7 @@
       });
       $("stat-total").textContent = state.startups.length;
       $("stat-updated").textContent = fmtDate(db.updated);
+      $("stat-next").textContent = nextRun(db.last_run && db.last_run.date);
       $("footer-stand").textContent = "Datenstand: " + fmtDate(db.updated);
       applyFilters();
       setupBriefings(briefings);

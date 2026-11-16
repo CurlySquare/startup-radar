@@ -56,6 +56,14 @@ def main():
     today = datetime.date.today().isoformat()
     fields = list(FIELDS) if args.felder == "alle" else [f.strip() for f in args.felder.split(",")]
     db = load_db()
+
+    # Ersatztermine: Ein geplanter Lauf überspringt sich, wenn diese Woche schon einer lief
+    if os.environ.get("EVENT") == "schedule":
+        last = (db.get("last_run") or {}).get("date")
+        if last and datetime.date.fromisoformat(last).isocalendar()[:2] == datetime.date.fromisoformat(today).isocalendar()[:2]:
+            print(f"Diese Woche bereits gelaufen ({last}) – Ersatztermin wird übersprungen.")
+            return
+
     for m in dedupe_existing(db, today):
         print(f"Bestehendes Duplikat zusammengeführt: {m}")
     known = {domain_of(s.get("website")) or s["name"] for s in db["startups"]} | \

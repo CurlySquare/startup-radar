@@ -3,8 +3,14 @@ name: Startup Radar
 on:
   # Automatisch jeden Montag um 05:17 UTC (= 06:17 Uhr deutscher Winterzeit).
   # Ungerade Minute, weil zur vollen Stunde viele Workflows gleichzeitig starten.
+  # GitHub startet geplante Läufe bei hoher Last verspätet oder lässt sie ganz aus.
+  # Deshalb Ersatztermine: Läuft der erste, überspringen die weiteren sich selbst
+  # (Prüfung in agent/radar.py: schon in dieser Kalenderwoche gelaufen?).
   schedule:
-    - cron: "17 5 * * 1"
+    - cron: "17 5 * * 1"    # Montag 06:17 (Winterzeit)
+    - cron: "47 9 * * 1"    # Montag 10:47, Ersatz
+    - cron: "17 14 * * 1"   # Montag 15:17, Ersatz
+    - cron: "17 5 * * 2"    # Dienstag 06:17, letzter Ersatz
   workflow_dispatch:
     inputs:
       modus:
@@ -56,6 +62,7 @@ jobs:
           FELDER: ${{ inputs.felder || 'alle' }}
           THEMEN: ${{ inputs.themen || 'woche' }}
           DEBUG: ${{ inputs.debug || 'false' }}
+          EVENT: ${{ github.event_name }}
         run: python agent/radar.py --modus "$MODUS" --felder "$FELDER" --themen "$THEMEN"
 
       - name: Daten speichern (nur im Modus vollstaendig)
